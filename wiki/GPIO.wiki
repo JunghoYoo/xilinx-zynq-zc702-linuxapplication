@@ -1,0 +1,26 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+GPIO output and input linux application
+
+
+= Details =
+
+gpio_out : Blink DS23 LED 
+
+gpio_in  : Trigger Push button SW14
+
+GPIO device driver uses sysfs.
+
+gpio_out uses usleep() to wait for 1 sec.
+
+gpio_in uses interruptible_sleep_on() and wake_up_interruptible() to wait for GPIO IRQ.
+
+= Execution =
+
+Compile linux kernel from Petalinux 2014.1 release with updated driver gpio-zynq.c(devicedriver folder) & boot linux.
+
+excute ./gpio_in or ./gpio_out.
+
+watch LED DS23 or push SW14.
