@@ -1,0 +1,4 @@
+verilog work "D:/Developers_KIT/Zynq702/PMOD_AUDIO_PSIIC_ISE/PS/hdl/PS.v"
+verilog work "ipcore_dir/CLK12288.v"
+verilog work "PS/PS_top.v"
+verilog work "PL_PS_TOP.v"

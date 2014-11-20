@@ -1,0 +1,2 @@
+alsactl restore 0 -f /etc/asound.state
+arecord -f cd | aplay

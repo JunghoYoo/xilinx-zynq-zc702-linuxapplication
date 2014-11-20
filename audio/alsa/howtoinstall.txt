@@ -1,0 +1,10 @@
+tar xjf alsa-lib-1.0.15.tar.bz2 
+./configure --host=arm-xilinx-linux-gnueabi --build=i386-linux --disable-python
+make
+make DESTDIR=/work/nfsroot install
+
+tar xjf alsa-utils-1.0.15.tar.bz2 
+zcat ../alsa-utils.alsaconf.diff.gz | patch -p1 --verbose --backup --suffix=.orig || exit
+./configure --host=arm-xilinx-linux-gnueabi --build=i386-linux --with-alsa-prefix=/work/nfsroot/usr/lib --with-alsa-inc-prefix=/work/nfsroot/usr/include
+make
+make DESTDIR=/work/nfsroot install

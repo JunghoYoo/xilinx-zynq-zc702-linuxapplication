@@ -1,0 +1,569 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: PL_PS_TOP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PL_PS_TOP.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PL_PS_TOP"
+Output Format                      : NGC
+Target Device                      : xc7z020-1-clg484
+
+---- Source Options
+Top Module Name                    : PL_PS_TOP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:/Developers_KIT/Zynq702/PMOD_AUDIO_PSIIC_ISE/PS/hdl/PS.v" into library work
+Parsing module <PS>.
+Parsing module <PS_processing_system7_0_wrapper>.
+Parsing module <PS_axi_i2s_adi_0_wrapper>.
+Parsing module <PS_axi_interconnect_1_wrapper>.
+Analyzing Verilog file "D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\ipcore_dir\CLK12288.v" into library work
+Parsing module <CLK12288>.
+Analyzing Verilog file "D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\PS\PS_top.v" into library work
+Parsing module <PS_top>.
+Analyzing Verilog file "D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\PL_PS_TOP.v" into library work
+Parsing module <PL_PS_TOP>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <PL_PS_TOP>.
+
+Elaborating module <PS_top>.
+
+Elaborating module <PS>.
+WARNING:HDLCompiler:1499 - "D:/Developers_KIT/Zynq702/PMOD_AUDIO_PSIIC_ISE/PS/hdl/PS.v" Line 5: Empty module <PS> remains a black box.
+
+Elaborating module <CLK12288>.
+
+Elaborating module <IBUFGDS>.
+
+Elaborating module <MMCME2_ADV(BANDWIDTH="OPTIMIZED",CLKOUT4_CASCADE="FALSE",COMPENSATION="ZHOLD",STARTUP_WAIT="FALSE",DIVCLK_DIVIDE=19,CLKFBOUT_MULT_F=61.875,CLKFBOUT_PHASE=0.0,CLKFBOUT_USE_FINE_PS="FALSE",CLKOUT0_DIVIDE_F=53.0,CLKOUT0_PHASE=0.0,CLKOUT0_DUTY_CYCLE=0.5,CLKOUT0_USE_FINE_PS="FALSE",CLKOUT1_DIVIDE=53,CLKOUT1_PHASE=0.0,CLKOUT1_DUTY_CYCLE=0.5,CLKOUT1_USE_FINE_PS="FALSE",CLKIN1_PERIOD=5.0,REF_JITTER1=0.01)>.
+WARNING:HDLCompiler:1127 - "D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\ipcore_dir\CLK12288.v" Line 134: Assignment to clkfboutb_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\ipcore_dir\CLK12288.v" Line 136: Assignment to clkout0b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\ipcore_dir\CLK12288.v" Line 138: Assignment to clkout1b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\ipcore_dir\CLK12288.v" Line 139: Assignment to clkout2_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\ipcore_dir\CLK12288.v" Line 140: Assignment to clkout2b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\ipcore_dir\CLK12288.v" Line 141: Assignment to clkout3_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\ipcore_dir\CLK12288.v" Line 142: Assignment to clkout3b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\ipcore_dir\CLK12288.v" Line 143: Assignment to clkout4_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\ipcore_dir\CLK12288.v" Line 144: Assignment to clkout5_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\ipcore_dir\CLK12288.v" Line 145: Assignment to clkout6_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\ipcore_dir\CLK12288.v" Line 157: Assignment to do_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\ipcore_dir\CLK12288.v" Line 158: Assignment to drdy_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\ipcore_dir\CLK12288.v" Line 164: Assignment to psdone_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\ipcore_dir\CLK12288.v" Line 166: Assignment to locked_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\ipcore_dir\CLK12288.v" Line 167: Assignment to clkinstopped_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\ipcore_dir\CLK12288.v" Line 168: Assignment to clkfbstopped_unused ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <PL_PS_TOP>.
+    Related source file is "D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\PL_PS_TOP.v".
+    Summary:
+	no macro.
+Unit <PL_PS_TOP> synthesized.
+
+Synthesizing Unit <PS_top>.
+    Related source file is "D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\PS\PS_top.v".
+    Set property "BOX_TYPE = user_black_box" for instance <PS_i>.
+    Summary:
+	no macro.
+Unit <PS_top> synthesized.
+
+Synthesizing Unit <CLK12288>.
+    Related source file is "D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\ipcore_dir\CLK12288.v".
+    Summary:
+	no macro.
+Unit <CLK12288> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <PS.ngc>.
+Reading core <PS_processing_system7_0_wrapper.ngc>.
+Reading core <PS_axi_i2s_adi_0_wrapper.ngc>.
+Reading core <PS_axi_interconnect_1_wrapper.ngc>.
+Loading core <PS_processing_system7_0_wrapper> for timing and area information for instance <processing_system7_0>.
+Loading core <PS_axi_i2s_adi_0_wrapper> for timing and area information for instance <axi_i2s_adi_0>.
+Loading core <PS_axi_interconnect_1_wrapper> for timing and area information for instance <axi_interconnect_1>.
+Loading core <PS> for timing and area information for instance <PS_i>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+WARNING:Xst:528 - Multi-source in Unit <processing_system7_0> on signal <PS_SRSTB>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <processing_system7_0_PS_SRSTB_pin>
+   Output port PS7:PSSRSTB of instance <PS_top/PS_i/processing_system7_0/processing_system7_0/PS7_i>
+
+WARNING:Xst:528 - Multi-source in Unit <processing_system7_0> on signal <PS_CLK>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <processing_system7_0_PS_CLK_pin>
+   Output port PS7:PSCLK of instance <PS_top/PS_i/processing_system7_0/processing_system7_0/PS7_i>
+
+WARNING:Xst:528 - Multi-source in Unit <processing_system7_0> on signal <PS_PORB>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <processing_system7_0_PS_PORB_pin>
+   Output port PS7:PSPORB of instance <PS_top/PS_i/processing_system7_0/processing_system7_0/PS7_i>
+
+Optimizing unit <PL_PS_TOP> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PL_PS_TOP, actual ratio is 0.
+INFO:Xst:2260 - The FF/Latch <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0> in Unit <axi_interconnect_1> is equivalent to the following FF/Latch : <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0_1> 
+INFO:Xst:2260 - The FF/Latch <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw> in Unit <axi_interconnect_1> is equivalent to the following FF/Latch : <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1> 
+INFO:Xst:2260 - The FF/Latch <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0> in Unit <axi_interconnect_1> is equivalent to the following FF/Latch : <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0_1> 
+INFO:Xst:2260 - The FF/Latch <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw> in Unit <axi_interconnect_1> is equivalent to the following FF/Latch : <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1> 
+INFO:Xst:2260 - The FF/Latch <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0> in Unit <axi_interconnect_1> is equivalent to the following FF/Latch : <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0_1> 
+INFO:Xst:2260 - The FF/Latch <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw> in Unit <axi_interconnect_1> is equivalent to the following FF/Latch : <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : PL_PS_TOP.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 564
+#      GND                         : 5
+#      INV                         : 112
+#      LUT1                        : 7
+#      LUT2                        : 83
+#      LUT3                        : 41
+#      LUT4                        : 84
+#      LUT5                        : 75
+#      LUT6                        : 96
+#      MUXCY                       : 29
+#      MUXF7                       : 1
+#      VCC                         : 3
+#      XORCY                       : 28
+# FlipFlops/Latches                : 334
+#      FD                          : 28
+#      FDC                         : 6
+#      FDE                         : 103
+#      FDR                         : 56
+#      FDRE                        : 135
+#      FDS                         : 4
+#      FDSE                        : 2
+# RAMS                             : 10
+#      RAM32M                      : 10
+# Clock Buffers                    : 4
+#      BUFG                        : 4
+# IO Buffers                       : 13
+#      IBUF                        : 5
+#      IBUFGDS                     : 1
+#      IOBUF                       : 2
+#      OBUF                        : 5
+# Others                           : 2
+#      MMCME2_ADV                  : 1
+#      PS7                         : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             334  out of  106400     0%  
+ Number of Slice LUTs:                  538  out of  53200     1%  
+    Number used as Logic:               498  out of  53200     0%  
+    Number used as Memory:               40  out of  17400     0%  
+       Number used as RAM:               40
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    702
+   Number with an unused Flip Flop:     368  out of    702    52%  
+   Number with an unused LUT:           164  out of    702    23%  
+   Number of fully used LUT-FF pairs:   170  out of    702    24%  
+   Number of unique control sets:        45
+
+IO Utilization: 
+ Number of IOs:                         141
+ Number of bonded IOBs:                  14  out of    200     7%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                4  out of     32    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                                | Clock buffer(FF name)  | Load  |
+----------------------------------------------------------------------------+------------------------+-------+
+PS_top/PS_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>| BUFG                   | 322   |
+CLK12288/clkout1                                                            | BUFG                   | 22    |
+----------------------------------------------------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 4.826ns (Maximum Frequency: 207.211MHz)
+   Minimum input arrival time before clock: 3.303ns
+   Maximum output required time after clock: 3.383ns
+   Maximum combinational path delay: 0.865ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PS_top/PS_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>'
+  Clock period: 4.826ns (frequency: 207.211MHz)
+  Total number of paths / destination ports: 4885 / 741
+-------------------------------------------------------------------------
+Delay:               4.826ns (Levels of Logic = 7)
+  Source:            PS_top/PS_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot_0 (FF)
+  Destination:       PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/pl330_dma_tx_gen.tx_fifo/fifo/Mram_data_fifo4 (RAM)
+  Source Clock:      PS_top/PS_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0> rising
+  Destination Clock: PS_top/PS_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0> rising
+
+  Data Path: PS_top/PS_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot_0 to PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/pl330_dma_tx_gen.tx_fifo/fifo/Mram_data_fifo4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             17   0.282   0.708  axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot_0 (axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot<0>)
+     LUT4:I1->O            3   0.053   0.616  axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_arvalid<0>1 (DEBUG_MC_MP_ARADDRCONTROL<0>)
+     LUT6:I3->O            3   0.053   0.499  axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/_n011611 (axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/_n01161)
+     LUT2:I0->O            1   0.053   0.602  axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/write_req1 (DEBUG_MP_MR_AWADDRCONTROL<0>)
+     end scope: 'PS_top/PS_i/axi_interconnect_1:M_AXI_AWVALID<0>'
+     begin scope: 'PS_top/PS_i/axi_i2s_adi_0:S_AXI_AWVALID'
+     LUT4:I1->O            8   0.053   0.459  axi_i2s_adi_0/ctrlif/wr_stb1 (axi_i2s_adi_0/wr_stb)
+     LUT6:I5->O            4   0.053   0.433  axi_i2s_adi_0/pl330_dma_tx_gen.tx_fifo/fifo/in_stb_full_AND_4_o1 (axi_i2s_adi_0/pl330_dma_tx_gen.tx_fifo/fifo/in_stb_full_AND_4_o)
+     LUT3:I2->O            4   0.053   0.419  axi_i2s_adi_0/pl330_dma_tx_gen.tx_fifo/fifo/Mmux_BUS_004911 (axi_i2s_adi_0/pl330_dma_tx_gen.tx_fifo/fifo/BUS_0049)
+     RAM32M:WE                 0.490          axi_i2s_adi_0/pl330_dma_tx_gen.tx_fifo/fifo/Mram_data_fifo2
+    ----------------------------------------
+    Total                      4.826ns (1.090ns logic, 3.736ns route)
+                                       (22.6% logic, 77.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK12288/clkout1'
+  Clock period: 1.463ns (frequency: 683.527MHz)
+  Total number of paths / destination ports: 47 / 33
+-------------------------------------------------------------------------
+Delay:               1.463ns (Levels of Logic = 1)
+  Source:            PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/ctrl/tx_sync/rd_addr_0 (FF)
+  Destination:       PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/ctrl/tx_sync/out_data_4 (FF)
+  Source Clock:      CLK12288/clkout1 rising
+  Destination Clock: CLK12288/clkout1 rising
+
+  Data Path: PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/ctrl/tx_sync/rd_addr_0 to PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/ctrl/tx_sync/out_data_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             5   0.282   0.426  axi_i2s_adi_0/ctrl/tx_sync/rd_addr_0 (axi_i2s_adi_0/ctrl/tx_sync/rd_addr<0>)
+     RAM32M:ADDRA0->DOA1    1   0.345   0.399  axi_i2s_adi_0/ctrl/tx_sync/Mram_fifo (axi_i2s_adi_0/ctrl/tx_sync/_n0043<1>)
+     FDE:D                     0.011          axi_i2s_adi_0/ctrl/tx_sync/out_data_1
+    ----------------------------------------
+    Total                      1.463ns (0.638ns logic, 0.825ns route)
+                                       (43.6% logic, 56.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PS_top/PS_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>'
+  Total number of paths / destination ports: 384 / 216
+-------------------------------------------------------------------------
+Offset:              3.303ns (Levels of Logic = 6)
+  Source:            PS_top/PS_i/processing_system7_0/processing_system7_0/PS7_i:MAXIGP0WVALID (PAD)
+  Destination:       PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/pl330_dma_tx_gen.tx_fifo/fifo/Mram_data_fifo4 (RAM)
+  Destination Clock: PS_top/PS_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0> rising
+
+  Data Path: PS_top/PS_i/processing_system7_0/processing_system7_0/PS7_i:MAXIGP0WVALID to PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/pl330_dma_tx_gen.tx_fifo/fifo/Mram_data_fifo4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    PS7:MAXIGP0WVALID      4   0.000   0.000  processing_system7_0/PS7_i (M_AXI_GP0_WVALID)
+     end scope: 'PS_top/PS_i/processing_system7_0:M_AXI_GP0_WVALID'
+     begin scope: 'PS_top/PS_i/axi_interconnect_1:S_AXI_WVALID<0>'
+     LUT5:I1->O            1   0.053   0.635  axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/M_AXI_WVALID1 (DEBUG_MP_MR_WDATACONTROL<0>)
+     end scope: 'PS_top/PS_i/axi_interconnect_1:M_AXI_WVALID<0>'
+     begin scope: 'PS_top/PS_i/axi_i2s_adi_0:S_AXI_WVALID'
+     LUT4:I0->O            8   0.053   0.459  axi_i2s_adi_0/ctrlif/wr_stb1 (axi_i2s_adi_0/wr_stb)
+     LUT6:I5->O            4   0.053   0.433  axi_i2s_adi_0/pl330_dma_tx_gen.tx_fifo/fifo/in_stb_full_AND_4_o1 (axi_i2s_adi_0/pl330_dma_tx_gen.tx_fifo/fifo/in_stb_full_AND_4_o)
+     LUT3:I2->O            4   0.053   0.419  axi_i2s_adi_0/pl330_dma_tx_gen.tx_fifo/fifo/Mmux_BUS_004911 (axi_i2s_adi_0/pl330_dma_tx_gen.tx_fifo/fifo/BUS_0049)
+     RAM32M:WE                 0.490          axi_i2s_adi_0/pl330_dma_tx_gen.tx_fifo/fifo/Mram_data_fifo2
+    ----------------------------------------
+    Total                      3.303ns (1.357ns logic, 1.946ns route)
+                                       (41.1% logic, 58.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK12288/clkout1'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.410ns (Levels of Logic = 2)
+  Source:            axi_i2s_adi_0_SDATA_I_pin (PAD)
+  Destination:       PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/ctrl/rx_sync_fifo_in_4 (FF)
+  Destination Clock: CLK12288/clkout1 rising
+
+  Data Path: axi_i2s_adi_0_SDATA_I_pin to PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/ctrl/rx_sync_fifo_in_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.000   0.399  axi_i2s_adi_0_SDATA_I_pin_IBUF (axi_i2s_adi_0_SDATA_I_pin_IBUF)
+     begin scope: 'PS_top/PS_i:axi_i2s_adi_0_SDATA_I_pin'
+     begin scope: 'PS_top/PS_i/axi_i2s_adi_0:SDATA_I<0>'
+     FDE:D                     0.011          axi_i2s_adi_0/ctrl/rx_sync_fifo_in_4
+    ----------------------------------------
+    Total                      0.410ns (0.011ns logic, 0.399ns route)
+                                       (2.7% logic, 97.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK12288/clkout1'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              0.681ns (Levels of Logic = 2)
+  Source:            PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/ctrl/BCLK_O_0 (FF)
+  Destination:       axi_i2s_adi_0_BCLK_O_pin (PAD)
+  Source Clock:      CLK12288/clkout1 rising
+
+  Data Path: PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/ctrl/BCLK_O_0 to axi_i2s_adi_0_BCLK_O_pin
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              1   0.282   0.399  axi_i2s_adi_0/ctrl/BCLK_O_0 (BCLK_O<0>)
+     end scope: 'PS_top/PS_i/axi_i2s_adi_0:BCLK_O<0>'
+     end scope: 'PS_top/PS_i:axi_i2s_adi_0_BCLK_O_pin'
+     OBUF:I->O                 0.000          axi_i2s_adi_0_BCLK_O_pin_OBUF (axi_i2s_adi_0_BCLK_O_pin)
+    ----------------------------------------
+    Total                      0.681ns (0.282ns logic, 0.399ns route)
+                                       (41.4% logic, 58.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'PS_top/PS_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>'
+  Total number of paths / destination ports: 391 / 70
+-------------------------------------------------------------------------
+Offset:              3.383ns (Levels of Logic = 4)
+  Source:            PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/pl330_dma_rx_gen.rx_fifo/fifo/Mram_data_fifo4 (RAM)
+  Destination:       PS_top/PS_i/processing_system7_0/processing_system7_0/PS7_i:MAXIGP0RDATA31 (PAD)
+  Source Clock:      PS_top/PS_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0> rising
+
+  Data Path: PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/pl330_dma_rx_gen.rx_fifo/fifo/Mram_data_fifo4 to PS_top/PS_i/processing_system7_0/processing_system7_0/PS7_i:MAXIGP0RDATA31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAM32M:WCLK->DOC1     1   1.668   0.725  axi_i2s_adi_0/pl330_dma_rx_gen.rx_fifo/fifo/Mram_data_fifo4 (axi_i2s_adi_0/rx_sample<23>)
+     LUT5:I0->O            1   0.053   0.485  axi_i2s_adi_0/Mmux_rd_data251 (S_AXI_RDATA<31>)
+     end scope: 'PS_top/PS_i/axi_i2s_adi_0:S_AXI_RDATA<31>'
+     begin scope: 'PS_top/PS_i/axi_interconnect_1:M_AXI_RDATA<31>'
+     LUT2:I0->O            1   0.053   0.399  axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_rmesg_mux_inst/O<34>1 (DEBUG_SF_CB_RDATA<31>)
+     end scope: 'PS_top/PS_i/axi_interconnect_1:S_AXI_RDATA<31>'
+     begin scope: 'PS_top/PS_i/processing_system7_0:M_AXI_GP0_RDATA<31>'
+    PS7:MAXIGP0RDATA31         0.000          processing_system7_0/PS7_i
+    ----------------------------------------
+    Total                      3.383ns (1.774ns logic, 1.609ns route)
+                                       (52.4% logic, 47.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 135 / 132
+-------------------------------------------------------------------------
+Delay:               0.865ns (Levels of Logic = 3)
+  Source:            PS_top/PS_i/processing_system7_0/processing_system7_0/PS7_i:EMIOI2C1SDATN (PAD)
+  Destination:       processing_system7_0_I2C1_SDA_pin (PAD)
+
+  Data Path: PS_top/PS_i/processing_system7_0/processing_system7_0/PS7_i:EMIOI2C1SDATN to processing_system7_0_I2C1_SDA_pin
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    PS7:EMIOI2C1SDATN      1   0.000   0.399  processing_system7_0/PS7_i (processing_system7_0/I2C1_SDA_T_n)
+     INV:I->O              1   0.067   0.399  processing_system7_0/I2C1_SDA_T1_INV_0 (I2C1_SDA_T)
+     end scope: 'PS_top/PS_i/processing_system7_0:I2C1_SDA_T'
+     IOBUF:T->IO               0.000          iobuf_0 (processing_system7_0_I2C1_SDA_pin)
+     end scope: 'PS_top/PS_i:processing_system7_0_I2C1_SDA_pin'
+    ----------------------------------------
+    Total                      0.865ns (0.067ns logic, 0.798ns route)
+                                       (7.7% logic, 92.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK12288/clkout1
+----------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------------------------------------+---------+---------+---------+---------+
+CLK12288/clkout1                                                            |    1.463|         |         |         |
+PS_top/PS_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>|    2.078|         |         |         |
+----------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock PS_top/PS_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>
+----------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------------------------------------+---------+---------+---------+---------+
+CLK12288/clkout1                                                            |    2.078|         |         |         |
+PS_top/PS_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>|    4.826|         |         |         |
+----------------------------------------------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.28 secs
+ 
+--> 
+
+Total memory usage is 467840 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   20 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

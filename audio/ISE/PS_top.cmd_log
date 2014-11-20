@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj PMOD_AUDIO_PSIIC_ISE -o D:/Developers_KIT/Zynq702/PMOD_AUDIO_PSIIC_ISE/PS_top.tfi -lib work D:/Developers_KIT/Zynq702/PMOD_AUDIO_PSIIC_ISE/PS//PS_top.v -module PS_top -template C:/Xilinx/14.6/ISE_DS/ISE//data/tfi.tft -deleteonerror 
