@@ -1,0 +1,22 @@
+* Linux kernel Configuration *
+
+Download linux kernel source from https://github.com/analogdevicesinc/linux
+
+Copy sound/soc/adi/zed_adau1761.c
+Copy sound/soc/adi/axi-i2s.c
+Modify sound/soc/adi/Kconfig
+Modify sound/soc/adi/Makefile
+
+Copy sound/soc/codecs/adau17x1.h
+Copy sound/soc/codecs/adau17x1.c
+Copy sound/soc/codecs/adau1761.h
+Copy sound/soc/codecs/adau1761.c
+Copy sound/soc/codecs/adau1761-i2c.c
+Modify sound/soc/codecs/Kconfig
+Modify sound/soc/codecs/Makefile
+
+
+
+Device Drivers>Sound card support>Advanced Linux Sound Architecture>ALSA for Soc audio support>Audio support for Analog Devices reference designs
+Device Drivers>Sound card support>Advanced Linux Sound Architecture>ALSA for Soc audio support>AXI-I2S support 
+Device Drivers>Sound card support>Advanced Linux Sound Architecture>ALSA for Soc audio support>ZED board sound support

@@ -1,0 +1,373 @@
+state.ADAU1761 {
+	control.1 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 2
+		comment.range '0 - 255'
+		iface MIXER
+		name 'Digital Capture Volume'
+		value.0 255
+		value.1 255
+	}
+	control.2 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 2
+		comment.range '0 - 255'
+		iface MIXER
+		name 'Digital Playback Volume'
+		value.0 255
+		value.1 255
+	}
+	control.3 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'ADC High Pass Filter Switch'
+		value false
+	}
+	control.4 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Playback De-emphasis Switch'
+		value false
+	}
+	control.5 {
+		comment.access 'read write'
+		comment.type ENUMERATED
+		comment.count 1
+		comment.item.0 'Normal operation'
+		comment.item.1 'Boost Level 1'
+		comment.item.2 'Boost Level 2'
+		comment.item.3 'Boost Level 3'
+		iface MIXER
+		name 'Capture Boost'
+		value 'Normal operation'
+	}
+	control.6 {
+		comment.access 'read write'
+		comment.type ENUMERATED
+		comment.count 1
+		comment.item.0 'Normal operation'
+		comment.item.1 'High performance'
+		iface MIXER
+		name 'Mic Bias Mode'
+		value 'Normal operation'
+	}
+	control.7 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 7'
+		iface MIXER
+		name 'Input 1 Capture Volume'
+		value 7
+	}
+	control.8 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 7'
+		iface MIXER
+		name 'Input 2 Capture Volume'
+		value 7
+	}
+	control.9 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 7'
+		iface MIXER
+		name 'Input 3 Capture Volume'
+		value 7
+	}
+	control.10 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 7'
+		iface MIXER
+		name 'Input 4 Capture Volume'
+		value 7
+	}
+	control.11 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 63'
+		iface MIXER
+		name 'Mono Playback Volume'
+		value 63
+	}
+	control.12 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Mono Playback Switch'
+		value false
+	}
+	control.13 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 2
+		comment.range '0 - 7'
+		iface MIXER
+		name 'Aux Capture Volume'
+		value.0 0
+		value.1 0
+	}
+	control.14 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 2
+		comment.range '0 - 63'
+		iface MIXER
+		name 'Headphone Playback Volume'
+		value.0 63
+		value.1 63
+	}
+	control.15 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 2
+		iface MIXER
+		name 'Headphone Playback Switch'
+		value.0 true
+		value.1 true
+	}
+	control.16 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 2
+		comment.range '0 - 63'
+		iface MIXER
+		name 'Lineout Playback Volume'
+		value.0 0
+		value.1 0
+	}
+	control.17 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 2
+		iface MIXER
+		name 'Lineout Playback Switch'
+		value.0 false
+		value.1 false
+	}
+	control.18 {
+		comment.access 'read write'
+		comment.type ENUMERATED
+		comment.count 1
+		comment.item.0 'Normal operation'
+		comment.item.1 'Extreme power saving'
+		comment.item.2 'Enhanced performance'
+		comment.item.3 'Power saving'
+		iface MIXER
+		name 'ADC Bias'
+		value 'Normal operation'
+	}
+	control.19 {
+		comment.access 'read write'
+		comment.type ENUMERATED
+		comment.count 1
+		comment.item.0 'Normal operation'
+		comment.item.1 'Extreme power saving'
+		comment.item.2 'Enhanced performance'
+		comment.item.3 'Power saving'
+		iface MIXER
+		name 'DAC Bias'
+		value 'Normal operation'
+	}
+	control.20 {
+		comment.access 'read write'
+		comment.type ENUMERATED
+		comment.count 1
+		comment.item.0 'Normal operation'
+		comment.item.1 'Enhanced performance'
+		comment.item.2 'Power saving'
+		iface MIXER
+		name 'Capture Bias'
+		value 'Normal operation'
+	}
+	control.21 {
+		comment.access 'read write'
+		comment.type ENUMERATED
+		comment.count 1
+		comment.item.0 'Normal operation'
+		comment.item.1 'Enhanced performance'
+		comment.item.2 'Power saving'
+		iface MIXER
+		name 'Playback Bias'
+		value 'Normal operation'
+	}
+	control.22 {
+		comment.access 'read write'
+		comment.type ENUMERATED
+		comment.count 1
+		comment.item.0 'Normal operation'
+		comment.item.1 'Extreme power saving'
+		comment.item.2 'Enhanced performance'
+		comment.item.3 'Power saving'
+		iface MIXER
+		name 'Headphone Bias'
+		value 'Normal operation'
+	}
+	control.23 {
+		comment.access 'read write'
+		comment.type ENUMERATED
+		comment.count 1
+		comment.item.0 DSP
+		comment.item.1 Decimator
+		iface MIXER
+		name 'Capture Mux'
+		value Decimator
+	}
+	control.24 {
+		comment.access 'read write'
+		comment.type ENUMERATED
+		comment.count 1
+		comment.item.0 DSP
+		comment.item.1 AIFIN
+		iface MIXER
+		name 'DAC Playback Mux'
+		value AIFIN
+	}
+	control.25 {
+		comment.access 'read write'
+		comment.type ENUMERATED
+		comment.count 1
+		comment.item.0 Stereo
+		comment.item.1 'Mono Left Channel (L+R)'
+		comment.item.2 'Mono Right Channel (L+R)'
+		comment.item.3 'Mono (L+R)'
+		iface MIXER
+		name 'DAC Mono-Stereo-Mode'
+		value Stereo
+	}
+	control.26 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 2'
+		iface MIXER
+		name 'Right LR Playback Mixer Left Volume'
+		value 2
+	}
+	control.27 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 2'
+		iface MIXER
+		name 'Right LR Playback Mixer Right Volume'
+		value 2
+	}
+	control.28 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 2'
+		iface MIXER
+		name 'Left LR Playback Mixer Left Volume'
+		value 2
+	}
+	control.29 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 2'
+		iface MIXER
+		name 'Left LR Playback Mixer Right Volume'
+		value 2
+	}
+	control.30 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Right Playback Mixer Left DAC Switch'
+		value false
+	}
+	control.31 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Right Playback Mixer Right DAC Switch'
+		value true
+	}
+	control.32 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 8'
+		iface MIXER
+		name 'Right Playback Mixer Aux Bypass Volume'
+		value 8
+	}
+	control.33 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 8'
+		iface MIXER
+		name 'Right Playback Mixer Right Bypass Volume'
+		value 8
+	}
+	control.34 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 8'
+		iface MIXER
+		name 'Right Playback Mixer Left Bypass Volume'
+		value 8
+	}
+	control.35 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Left Playback Mixer Left DAC Switch'
+		value true
+	}
+	control.36 {
+		comment.access 'read write'
+		comment.type BOOLEAN
+		comment.count 1
+		iface MIXER
+		name 'Left Playback Mixer Right DAC Switch'
+		value false
+	}
+	control.37 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 8'
+		iface MIXER
+		name 'Left Playback Mixer Aux Bypass Volume'
+		value 0
+	}
+	control.38 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 8'
+		iface MIXER
+		name 'Left Playback Mixer Right Bypass Volume'
+		value 8
+	}
+	control.39 {
+		comment.access 'read write'
+		comment.type INTEGER
+		comment.count 1
+		comment.range '0 - 8'
+		iface MIXER
+		name 'Left Playback Mixer Left Bypass Volume'
+		value 8
+	}
+}

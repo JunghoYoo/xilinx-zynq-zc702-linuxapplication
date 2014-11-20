@@ -1,0 +1,14 @@
+set -tmpdir D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\PS\synthesis\xst_temp_dir\
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc7z020clg484-1
+-top PS_axi_i2s_adi_0_wrapper
+-ifmt MIXED
+-ifn PS_axi_i2s_adi_0_wrapper_xst.prj
+-ofn ../implementation/PS_axi_i2s_adi_0_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation}
+-vlgincdir {"D:\Developers_KIT\Zynq702\PMOD_AUDIO_PSIIC_ISE\PS\pcores\" "D:\Developers_KIT\Zynq702\analogdevicelibrary\cf_lib\edk\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }

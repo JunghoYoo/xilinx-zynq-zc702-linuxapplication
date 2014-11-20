@@ -1,0 +1,15 @@
+-p
+xc7z020clg484-1
+-lang
+verilog
+-intstyle
+ise
+-lp
+D:/Developers_KIT/Zynq702/analogdevicelibrary/cf_lib/
+-toplevel
+no
+-ti
+PS_i
+-msg
+__xps/ise/xmsgprops.lst
+PS.mhs

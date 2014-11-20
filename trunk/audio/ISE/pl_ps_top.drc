@@ -1,0 +1,50 @@
+Release 14.6 Drc P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Thu Nov 20 21:34:39 2014
+
+drc -z PL_PS_TOP.ncd PL_PS_TOP.pcf
+
+WARNING:PhysDesignRules:367 - The signal
+   <PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/pl330_dma_tx_gen.tx_fifo/fifo/Mram_d
+   ata_fifo3_RAMD_D1_O> is incomplete. The signal does not drive any load pins
+   in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/pl330_dma_tx_gen.tx_fifo/fifo/Mram_d
+   ata_fifo2_RAMD_D1_O> is incomplete. The signal does not drive any load pins
+   in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/pl330_dma_tx_gen.tx_fifo/fifo/Mram_d
+   ata_fifo1_RAMD_D1_O> is incomplete. The signal does not drive any load pins
+   in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/pl330_dma_tx_gen.tx_fifo/fifo/Mram_d
+   ata_fifo4_RAMD_D1_O> is incomplete. The signal does not drive any load pins
+   in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/pl330_dma_rx_gen.rx_fifo/fifo/Mram_d
+   ata_fifo4_RAMD_D1_O> is incomplete. The signal does not drive any load pins
+   in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/pl330_dma_rx_gen.rx_fifo/fifo/Mram_d
+   ata_fifo2_RAMD_D1_O> is incomplete. The signal does not drive any load pins
+   in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/pl330_dma_rx_gen.rx_fifo/fifo/Mram_d
+   ata_fifo3_RAMD_D1_O> is incomplete. The signal does not drive any load pins
+   in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/pl330_dma_rx_gen.rx_fifo/fifo/Mram_d
+   ata_fifo1_RAMD_D1_O> is incomplete. The signal does not drive any load pins
+   in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/ctrl/tx_sync/Mram_fifo_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/ctrl/rx_gen.rx_sync/Mram_fifo_RAMD_D
+   1_O> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <PS_top/PS_i/axi_i2s_adi_0/axi_i2s_adi_0/ctrl/rx_sync_fifo_in<3>> is
+   incomplete. The signal does not drive any load pins in the design.
+DRC detected 0 errors and 11 warnings.  Please see the previously displayed
+individual error or warning messages for more details.
