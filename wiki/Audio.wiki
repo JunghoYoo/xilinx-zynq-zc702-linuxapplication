@@ -4,7 +4,7 @@ Audio Codec with AXI I2S and I2C
 
 Use ALSA library & tool to test on the linux
 
-Details
+= Details =
 
 Audio Codec : Analog Device ADAU1761
 
