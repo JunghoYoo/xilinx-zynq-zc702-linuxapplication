@@ -41,8 +41,10 @@ Set IP Address by ifconfig wlan0 192.168.0.10
 
 = Caution =
 Only SDIO thru MIO is used to connect Silex SX-SDCAN WiFI.
+
 Because clock speed of SDIO thru EMIO is limited.
 (Refer to http://forums.xilinx.com/t5/Embedded-Processor-System-Design/Zynq-SDIO-via-EMIO/td-p/327479)
+
 Also, Silex SX-SDCAN is not working when SDHCI High-speed is disabled.
 (My experiment shows that device driver is not working)
  
