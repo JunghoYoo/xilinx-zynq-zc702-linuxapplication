@@ -1,0 +1,40 @@
+= Introduction =
+
+WiFI thru SDIO  
+
+Use iwconfig to set wireless LAN on the linux
+
+= Details =
+
+WiFI : Silex SX-SDCAN (Qualcomm Atheros AR6233)
+
+iwconfig : version 29
+(http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Tools.html)
+
+Connection : J64 on ZC702 (MMC0)
+
+Device Driver : ath6kl_sdio
+
+Linux Kernel Configuration: 
+
+ Networking support/Wireless/cfg80211
+
+ Networking support/Wireless/cfg80211 wireless extensions compatibility
+
+ Networking support/Wireless/Generic IEEE 802.11 Networking Stack
+
+ Device Drivers/Network device support/Wireless LAN/Atheros Wireless  Cards/Atheros mobile chipsets support
+
+ Device Drivers/Network device support/Wireless LAN/Atheros Wireless Cards/Atheros ath6kl SDIO support
+
+Compile linux kernel & wireless tool.
+
+Power-on & boot linux 
+
+Insert Silex SDIO WiFI on J64
+
+Load device driver module by insmod ath6kl_sdio.ko
+
+Connect AP by iwconfig wlan0 essid 'apname'
+
+Set IP Address by ifconfig wlan0 192.168.0.10
