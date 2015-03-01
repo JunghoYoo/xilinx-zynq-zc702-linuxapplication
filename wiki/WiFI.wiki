@@ -49,4 +49,10 @@ Because clock speed of SDIO thru EMIO is limited.
 Also, Silex SX-SDCAN is not working when SDHCI High-speed is disabled.
 
 (My experiment shows that device driver is not working)
+
+= Reference =
+http://www.silexamerica.com/products/connectivity-solutions/embedded-wireless/radio-modules/sx-sdcan/
+http://forums.xilinx.com/t5/Embedded-Processor-System-Design/Zynq-SDIO-via-EMIO/td-p/327479
+http://www.xilinx.com/support/answers/47874.html
+https://wireless.wiki.kernel.org/en/users/Documentation/iw
  
