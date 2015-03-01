@@ -17,15 +17,15 @@ Device Driver : ath6kl_sdio
 
 Linux Kernel Configuration: 
 
- Networking support/Wireless/cfg80211
+ Networking support/Wireless/cfg80211(builtin)
 
- Networking support/Wireless/cfg80211 wireless extensions compatibility
+ Networking support/Wireless/cfg80211 wireless extensions compatibility(builtin)
 
- Networking support/Wireless/Generic IEEE 802.11 Networking Stack
+ Networking support/Wireless/Generic IEEE 802.11 Networking Stack(builtin)
 
- Device Drivers/Network device support/Wireless LAN/Atheros Wireless  Cards/Atheros mobile chipsets support
+ Device Drivers/Network device support/Wireless LAN/Atheros Wireless  Cards/Atheros mobile chipsets support(builtin)
 
- Device Drivers/Network device support/Wireless LAN/Atheros Wireless Cards/Atheros ath6kl SDIO support
+ Device Drivers/Network device support/Wireless LAN/Atheros Wireless Cards/Atheros ath6kl SDIO support(module)
 
 Compile linux kernel & wireless tool.
 
@@ -52,6 +52,8 @@ Also, Silex SX-SDCAN is not working when SDHCI High-speed is disabled.
 
 = Reference =
 http://www.silexamerica.com/products/connectivity-solutions/embedded-wireless/radio-modules/sx-sdcan/
+
+http://www.wiki.xilinx.com/Zynq+SDIO+WiFi
 
 http://forums.xilinx.com/t5/Embedded-Processor-System-Design/Zynq-SDIO-via-EMIO/td-p/327479
 
