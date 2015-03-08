@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	[bootloader]D:\Developers_KIT\Zynq702\xilinx-zynq-zc702-linuxapplication\vivado\project_1.sdk\workspace\fsbl\Debug\fsbl.elf
+	D:\Developers_KIT\Zynq702\xilinx-zynq-zc702-linuxapplication\vivado\project_1.sdk\workspace\system_top_hw_platform_0\system_top.bit
+	D:\Developers_KIT\Zynq702\xilinx-zynq-zc702-linuxapplication\bootimage\u-boot.elf
+}

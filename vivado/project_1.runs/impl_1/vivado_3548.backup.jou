@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sat Jan 24 18:06:53 2015
+# Process ID: 352
+# Log file: D:/Developers_KIT/Zynq702/analogdevicelibrary/hdl/hdl-hdl_2014_r2/hdl-hdl_2014_r2/projects/adv7511/zc702/adv7511_zc702.runs/impl_1/system_top.vdi
+# Journal file: D:/Developers_KIT/Zynq702/analogdevicelibrary/hdl/hdl-hdl_2014_r2/hdl-hdl_2014_r2/projects/adv7511/zc702/adv7511_zc702.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source system_top.tcl -notrace

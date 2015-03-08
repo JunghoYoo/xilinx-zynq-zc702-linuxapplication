@@ -1,2 +1,0 @@
- -p xc7z020clg484-1 -lang verilog$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -toplevel no -ti PS_i -msg __xps/ise/xmsgprops.lst
-

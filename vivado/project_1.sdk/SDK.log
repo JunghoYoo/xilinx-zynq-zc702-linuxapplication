@@ -1,0 +1,5 @@
+10:28:57 INFO  : Processing command line option -hwspec D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk/system_top.hdf.
+10:29:03 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+10:31:46 INFO  : Processing command line option -hwspec D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk/system_top.hdf.
+10:31:47 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+10:31:48 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
