@@ -66,14 +66,14 @@ int main()
         exit(1);
     }
  
-    write(exportfd, "12", 3);
+    write(exportfd, "918", 3);
     close(exportfd);
  
     printf("GPIO exported successfully\n");
 
     // Update the direction of the GPIO to be an input
  
-    directionfd = open("/sys/class/gpio/gpio12/direction", O_RDWR);
+    directionfd = open("/sys/class/gpio/gpio918/direction", O_RDWR);
     if (directionfd < 0)
     {
         printf("Cannot open GPIO direction it\n");
@@ -87,7 +87,7 @@ int main()
  
     // Update the edge of the GPIO to be an rising
     
-    edgefd = open("/sys/class/gpio/gpio12/edge", O_RDWR);
+    edgefd = open("/sys/class/gpio/gpio918/edge", O_RDWR);
     if (edgefd < 0)
     {
         printf("Cannot open GPIO edge it\n");
@@ -101,7 +101,7 @@ int main()
 
     // Get the GPIO value ready to be read
  
-    valuefd = open("/sys/class/gpio/gpio12/value", O_RDONLY);
+    valuefd = open("/sys/class/gpio/gpio918/value", O_RDONLY);
     if (valuefd < 0)
     {
         printf("Cannot open GPIO value\n");
@@ -127,7 +127,7 @@ int main()
         exit(1);
     }
  
-    write(unexportfd, "12", 3);
+    write(unexportfd, "918", 3);
     close(unexportfd);
   
     printf("GPIO unexported successfully\n");

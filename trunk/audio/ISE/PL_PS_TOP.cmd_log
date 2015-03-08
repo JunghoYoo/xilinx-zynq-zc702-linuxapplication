@@ -1,8 +1,0 @@
-xst -intstyle ise -ifn "D:/Developers_KIT/Zynq702/PMOD_AUDIO_PSIIC_ISE/PL_PS_TOP.xst" -ofn "D:/Developers_KIT/Zynq702/PMOD_AUDIO_PSIIC_ISE/PL_PS_TOP.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc system.ucf -bm edkBmmFile.bmm -p xc7z020-clg484-1 PL_PS_TOP.ngc PL_PS_TOP.ngd  
-map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o PL_PS_TOP_map.ncd PL_PS_TOP.ngd PL_PS_TOP.pcf 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc system.ucf -bm edkBmmFile.bmm -p xc7z020-clg484-1 PL_PS_TOP.ngc PL_PS_TOP.ngd  
-map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o PL_PS_TOP_map.ncd PL_PS_TOP.ngd PL_PS_TOP.pcf 
-par -w -intstyle ise -ol high -mt off PL_PS_TOP_map.ncd PL_PS_TOP.ncd PL_PS_TOP.pcf 
-trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml PL_PS_TOP.twx PL_PS_TOP.ncd -o PL_PS_TOP.twr PL_PS_TOP.pcf -ucf system.ucf 
-bitgen -intstyle ise -f PL_PS_TOP.ut PL_PS_TOP.ncd 

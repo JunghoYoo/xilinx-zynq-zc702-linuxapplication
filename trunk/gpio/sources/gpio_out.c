@@ -65,14 +65,14 @@ int main()
         exit(1);
     }
  
-    write(exportfd, "10", 3);
+    write(exportfd, "916", 3);
     close(exportfd);
  
     printf("GPIO exported successfully\n");
  
     // Update the direction of the GPIO to be an output
  
-    directionfd = open("/sys/class/gpio/gpio10/direction", O_RDWR);
+    directionfd = open("/sys/class/gpio/gpio916/direction", O_RDWR);
     if (directionfd < 0)
     {
         printf("Cannot open GPIO direction it\n");
@@ -86,7 +86,7 @@ int main()
  
     // Get the GPIO value ready to be toggled
  
-    valuefd = open("/sys/class/gpio/gpio10/value", O_RDWR);
+    valuefd = open("/sys/class/gpio/gpio916/value", O_RDWR);
     if (valuefd < 0)
     {
         printf("Cannot open GPIO value\n");

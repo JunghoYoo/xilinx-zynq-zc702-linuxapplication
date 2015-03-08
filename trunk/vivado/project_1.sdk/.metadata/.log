@@ -1,0 +1,49 @@
+!SESSION 2015-02-28 10:28:52.180 -----------------------------------------------
+eclipse.buildId=2014.4
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk
+
+!ENTRY org.eclipse.tcf 4 0 2015-02-28 10:28:56.938
+!MESSAGE Cannot send datagram packet to /192.168.141.1
+!STACK 0
+java.net.SocketException: Bad address: Datagram send failed
+	at java.net.TwoStacksPlainDatagramSocketImpl.send(Native Method)
+	at java.net.DatagramSocket.send(Unknown Source)
+	at org.eclipse.tcf.internal.services.local.LocatorService.sendDatagramPacket(LocatorService.java:771)
+	at org.eclipse.tcf.internal.services.local.LocatorService.sendPeersRequest(LocatorService.java:848)
+	at org.eclipse.tcf.internal.services.local.LocatorService.access$15(LocatorService.java:845)
+	at org.eclipse.tcf.internal.services.local.LocatorService$7.run(LocatorService.java:576)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2015-02-28 10:29:26.089
+!MESSAGE Cannot close channel streams
+!STACK 0
+java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at java.io.BufferedOutputStream.flushBuffer(Unknown Source)
+	at java.io.BufferedOutputStream.flush(Unknown Source)
+	at java.io.FilterOutputStream.close(Unknown Source)
+	at org.eclipse.tcf.core.ChannelTCP.stop(ChannelTCP.java:194)
+	at org.eclipse.tcf.core.AbstractChannel$8.run(AbstractChannel.java:691)
+!SESSION 2015-02-28 10:31:39.698 -----------------------------------------------
+eclipse.buildId=2014.4
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk
+
+!ENTRY org.eclipse.tcf 4 0 2015-02-28 10:31:52.120
+!MESSAGE Cannot close channel streams
+!STACK 0
+java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at java.io.BufferedOutputStream.flushBuffer(Unknown Source)
+	at java.io.BufferedOutputStream.flush(Unknown Source)
+	at java.io.FilterOutputStream.close(Unknown Source)
+	at org.eclipse.tcf.core.ChannelTCP.stop(ChannelTCP.java:194)
+	at org.eclipse.tcf.core.AbstractChannel$8.run(AbstractChannel.java:691)
