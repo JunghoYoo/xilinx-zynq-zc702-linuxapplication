@@ -1,0 +1,92 @@
+= Introduction =
+
+HDMI console  
+
+Use ADV7511 as HDMI transmitter.
+
+Porting AXI VDMA, AXI HDMI by analog device ip
+
+
+Also, xilinx base trd has hdmi output. but this trd requires ip license.
+
+= Details =
+
+Before test on linux, hdmi test on bare metal system is possible.
+
+linux kernel from analog devices has all required device driver for hdmi.
+
+Prepare Custom Boot logo :
+
+prepare zynq_logo.png
+
+pngtopnm zynq_logo.png | pnmtoplainpnm > zynq_logo.ppm
+
+pnmquant -fs 223 zynq_logo.ppm > zynq_logo_256.ppm
+
+pnmnoraw zynq_logo_256.ppm> logo_linux_custom_clut224.ppm
+
+cp -a logo_linux_custom_clut224.ppm ./drivers/video/logo/   
+
+Edit drivers/video/logo/Kconfig as
+
+ config LOGO_LINUX_CUSTOM_CLUT224
+    bool "Custom Linux logo"
+    default y
+
+Edit drivers/video/logo/Kconfig as
+
+ obj-$(CONFIG_LOGO_LINUX_CUSTOM_CLUT224) += logo_linux_custom_clut224.o
+
+Edit drivers/video/logo.c as
+
+ #ifdef CONFIG_LOGO_LINUX_CUSTOM_CLUT224
+         /* Custom Linux logo */
+         logo = &logo_linux_custom_clut224;
+ #endif
+
+Linux Kernel Configuration: 
+
+ Device drivers -> graphics -> bootup logo
+ Device drivers -> Common clock framework -> axi clkgen driver
+ Device drivers -> Graphics support -> DRM Support for Analog FPGA platforms 
+ Device drivers -> Graphics support -> Bootup logo -> Custom Linux logo
+
+Device tree :
+
+adv7511 via i2c, axivdma, hdmi_clock, axi_hdmi, axi_spdif_tx, adv7511_hdmi_snd
+
+Enable Console in /etc/inittab:
+
+ 1:2345:respawn:/sbin/getty -L 115200 tty1 vt100 
+
+Connect monitor thru HDMI on P1
+
+Power-on & boot linux 
+
+HDMI will display Zynq Logo & prompt
+
+To enable the hdmi to sleep 
+
+ echo 1 > /sys/class/graphics/fb0/blank
+
+To disable the hdmi to sleep 
+
+ echo 0 > /sys/class/graphics/fb0/blank
+
+To read the hdmi timeout to sleep 
+
+ cat /sys/module/kernel/parameters/consoleblank
+
+To write the hdmi timeout to sleep 
+
+ echo 100 > /sys/module/kernel/parameters/consoleblank
+
+
+= Reference =
+http://wiki.analog.com/resources/tools-software/linux-drivers/platforms/zynq
+http://wiki.analog.com/resources/fpga/xilinx/kc705/adv7511
+http://www.wiki.xilinx.com/Zynq+Base+TRD+2013.3
+http://wiki.analog.com/resources/tools-software/linux-drivers/drm/hdl-axi-hdmi
+https://fpgacpu.wordpress.com/2013/05/24/yet-another-guide-to-running-linaro-ubuntu-desktop-on-xilinx-zynq-on-the-zedboard/
+http://linux.about.com/od/commands/l/blcmdl5_inittab.htm
+http://208.74.204.60/t5/New-Users-Forum/HDMI-for-ZYNQ/td-p/555367
