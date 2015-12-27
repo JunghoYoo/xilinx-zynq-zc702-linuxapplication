@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2012 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2012 - 2015 Xilinx, Inc.  All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -18,8 +18,8 @@
 *
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-* XILINX CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
 * OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
@@ -32,6 +32,8 @@
 /*****************************************************************************/
 /**
  *  @file xaxivdma_hw.h
+* @addtogroup axivdma_v6_0
+* @{
  *
  * Hardware definition file. It defines the register interface and Buffer
  * Descriptor (BD) definitions.
@@ -52,7 +54,7 @@
  *			 support 32 Frame Stores.
  *		       - XAxiVdma_ChannelConfig API is changed to support
  *			 modified Park Offset Register bits.
- *		       - Added APIs: 
+ *		       - Added APIs:
  *			 XAxiVdma_FsyncSrcSelect()
  *			 XAxiVdma_GenLockSourceSelect()
  *			 XAxiVdma_ChannelHiFrmAddrEnable()
@@ -62,7 +64,7 @@
  * 4.02a srt  10/11/12 - Changed Error bitmasks to support IP version 5.02a.
  *			 (CR 679959)
  * 4.04a srt  03/03/13 - Support for the GenlockRepeat Control bit (Bit 15)
- *                       added in the new version of IP v5.04 (CR: 691391)  
+ *                       added in the new version of IP v5.04 (CR: 691391)
  * 4.06a srt  04/09/13 - Added support for the newly added S2MM_DMA_IRQ_MASK
  *			 register (CR 734741)
  * </pre>
@@ -93,6 +95,8 @@ extern "C" {
  * Maximum number of the frame store
  */
 #define XAXIVDMA_MAX_FRAMESTORE    32  /**< Maximum # of the frame store */
+
+#define XAXIVDMA_MAX_FRAMESTORE_64 16  /**< Maximum # of the frame store for 64 bit*/
 
 /*@}*/
 
@@ -162,6 +166,8 @@ extern "C" {
 #define XAXIVDMA_STRD_FRMDLY_OFFSET   0x00000008  /**< Horizontal size */
 #define XAXIVDMA_START_ADDR_OFFSET    0x0000000C  /**< Start of address */
 #define XAXIVDMA_START_ADDR_LEN       0x00000004  /**< Each entry is 4 bytes */
+#define XAXIVDMA_START_ADDR_MSB_OFFSET 0x00000010  /**< Start of address */
+
 /*@}*/
 
 /** @name Bitmasks of the XAXIVDMA_CR_OFFSET register
@@ -365,3 +371,4 @@ extern "C" {
 #endif
 
 #endif
+/** @} */

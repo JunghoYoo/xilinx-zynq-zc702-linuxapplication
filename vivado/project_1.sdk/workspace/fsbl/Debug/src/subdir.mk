@@ -14,7 +14,7 @@ C_SRCS += \
 ../src/nand.c \
 ../src/nor.c \
 ../src/pcap.c \
-D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk/workspace/system_top_hw_platform_0/ps7_init.c \
+D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk/workspace/system_hw_platform_0/ps7_init.c \
 ../src/qspi.c \
 ../src/rsa.c \
 ../src/sd.c 
@@ -57,21 +57,21 @@ C_DEPS += \
 src/%.o: ../src/%.S
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM gcc compiler'
-	arm-xilinx-eabi-gcc -DFSBL_DEBUG_INFO -Wall -O0 -g3 -I"D:\Developers_KIT\Zynq702\xilinx-zynq-zc702-linuxapplication\vivado\project_1.sdk\workspace\system_top_hw_platform_0" -c -fmessage-length=0 -MT"$@" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"D:\Developers_KIT\Zynq702\xilinx-zynq-zc702-linuxapplication\vivado\project_1.sdk\workspace\system_hw_platform_0" -c -fmessage-length=0 -MT"$@" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 src/%.o: ../src/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM gcc compiler'
-	arm-xilinx-eabi-gcc -DFSBL_DEBUG_INFO -Wall -O0 -g3 -I"D:\Developers_KIT\Zynq702\xilinx-zynq-zc702-linuxapplication\vivado\project_1.sdk\workspace\system_top_hw_platform_0" -c -fmessage-length=0 -MT"$@" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"D:\Developers_KIT\Zynq702\xilinx-zynq-zc702-linuxapplication\vivado\project_1.sdk\workspace\system_hw_platform_0" -c -fmessage-length=0 -MT"$@" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-src/ps7_init.o: D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk/workspace/system_top_hw_platform_0/ps7_init.c
+src/ps7_init.o: D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk/workspace/system_hw_platform_0/ps7_init.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM gcc compiler'
-	arm-xilinx-eabi-gcc -DFSBL_DEBUG_INFO -Wall -O0 -g3 -I"D:\Developers_KIT\Zynq702\xilinx-zynq-zc702-linuxapplication\vivado\project_1.sdk\workspace\system_top_hw_platform_0" -c -fmessage-length=0 -MT"$@" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"D:\Developers_KIT\Zynq702\xilinx-zynq-zc702-linuxapplication\vivado\project_1.sdk\workspace\system_hw_platform_0" -c -fmessage-length=0 -MT"$@" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

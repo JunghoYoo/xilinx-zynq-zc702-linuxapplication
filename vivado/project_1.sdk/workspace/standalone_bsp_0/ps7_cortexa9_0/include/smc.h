@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2010 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2010 - 2015 Xilinx, Inc.  All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -18,8 +18,8 @@
 *
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-* XILINX CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
 * OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
@@ -66,42 +66,42 @@ extern "C" {
 /************************** Constant Definitions *****************************/
 
 /* Memory controller configuration register offset */
-#define XSMCPSS_MC_STATUS		0x000	/* Controller status reg, RO */
-#define XSMCPSS_MC_INTERFACE_CONFIG	0x004	/* Interface config reg, RO */
-#define XSMCPSS_MC_SET_CONFIG		0x008	/* Set configuration reg, WO */
-#define XSMCPSS_MC_CLR_CONFIG		0x00C	/* Clear config reg, WO */
-#define XSMCPSS_MC_DIRECT_CMD		0x010	/* Direct command reg, WO */
-#define XSMCPSS_MC_SET_CYCLES		0x014	/* Set cycles register, WO */
-#define XSMCPSS_MC_SET_OPMODE		0x018	/* Set opmode register, WO */
-#define XSMCPSS_MC_REFRESH_PERIOD_0	0x020	/* Refresh period_0 reg, RW */
-#define XSMCPSS_MC_REFRESH_PERIOD_1	0x024	/* Refresh period_1 reg, RW */
+#define XSMCPSS_MC_STATUS		0x000U	/* Controller status reg, RO */
+#define XSMCPSS_MC_INTERFACE_CONFIG	0x004U	/* Interface config reg, RO */
+#define XSMCPSS_MC_SET_CONFIG		0x008U	/* Set configuration reg, WO */
+#define XSMCPSS_MC_CLR_CONFIG		0x00CU	/* Clear config reg, WO */
+#define XSMCPSS_MC_DIRECT_CMD		0x010U	/* Direct command reg, WO */
+#define XSMCPSS_MC_SET_CYCLES		0x014U	/* Set cycles register, WO */
+#define XSMCPSS_MC_SET_OPMODE		0x018U	/* Set opmode register, WO */
+#define XSMCPSS_MC_REFRESH_PERIOD_0	0x020U	/* Refresh period_0 reg, RW */
+#define XSMCPSS_MC_REFRESH_PERIOD_1	0x024U	/* Refresh period_1 reg, RW */
 
 /* Chip select configuration register offset */
-#define XSMCPSS_CS_IF0_CHIP_0_OFFSET	0x100	/* Interface 0 chip 0 config */
-#define XSMCPSS_CS_IF0_CHIP_1_OFFSET	0x120	/* Interface 0 chip 1 config */
-#define XSMCPSS_CS_IF0_CHIP_2_OFFSET	0x140	/* Interface 0 chip 2 config */
-#define XSMCPSS_CS_IF0_CHIP_3_OFFSET	0x160	/* Interface 0 chip 3 config */
-#define XSMCPSS_CS_IF1_CHIP_0_OFFSET	0x180	/* Interface 1 chip 0 config */
-#define XSMCPSS_CS_IF1_CHIP_1_OFFSET	0x1A0	/* Interface 1 chip 1 config */
-#define XSMCPSS_CS_IF1_CHIP_2_OFFSET	0x1C0	/* Interface 1 chip 2 config */
-#define XSMCPSS_CS_IF1_CHIP_3_OFFSET	0x1E0	/* Interface 1 chip 3 config */
+#define XSMCPSS_CS_IF0_CHIP_0_OFFSET	0x100U	/* Interface 0 chip 0 config */
+#define XSMCPSS_CS_IF0_CHIP_1_OFFSET	0x120U	/* Interface 0 chip 1 config */
+#define XSMCPSS_CS_IF0_CHIP_2_OFFSET	0x140U	/* Interface 0 chip 2 config */
+#define XSMCPSS_CS_IF0_CHIP_3_OFFSET	0x160U	/* Interface 0 chip 3 config */
+#define XSMCPSS_CS_IF1_CHIP_0_OFFSET	0x180U	/* Interface 1 chip 0 config */
+#define XSMCPSS_CS_IF1_CHIP_1_OFFSET	0x1A0U	/* Interface 1 chip 1 config */
+#define XSMCPSS_CS_IF1_CHIP_2_OFFSET	0x1C0U	/* Interface 1 chip 2 config */
+#define XSMCPSS_CS_IF1_CHIP_3_OFFSET	0x1E0U	/* Interface 1 chip 3 config */
 
 /* User configuration register offset */
-#define XSMCPSS_UC_STATUS_OFFSET	0x200	/* User status reg, RO */
-#define XSMCPSS_UC_CONFIG_OFFSET	0x204	/* User config reg, WO */
+#define XSMCPSS_UC_STATUS_OFFSET	0x200U	/* User status reg, RO */
+#define XSMCPSS_UC_CONFIG_OFFSET	0x204U	/* User config reg, WO */
 
 /* Integration test register offset */
-#define XSMCPSS_IT_OFFSET		0xE00
+#define XSMCPSS_IT_OFFSET		0xE00U
 
 /* ID configuration register offset */
-#define XSMCPSS_ID_PERIP_0_OFFSET	0xFE0
-#define XSMCPSS_ID_PERIP_1_OFFSET	0xFE4
-#define XSMCPSS_ID_PERIP_2_OFFSET	0xFE8
-#define XSMCPSS_ID_PERIP_3_OFFSET	0xFEC
-#define XSMCPSS_ID_PCELL_0_OFFSET	0xFF0
-#define XSMCPSS_ID_PCELL_1_OFFSET	0xFF4
-#define XSMCPSS_ID_PCELL_2_OFFSET	0xFF8
-#define XSMCPSS_ID_PCELL_3_OFFSET	0xFFC
+#define XSMCPSS_ID_PERIP_0_OFFSET	0xFE0U
+#define XSMCPSS_ID_PERIP_1_OFFSET	0xFE4U
+#define XSMCPSS_ID_PERIP_2_OFFSET	0xFE8U
+#define XSMCPSS_ID_PERIP_3_OFFSET	0xFECU
+#define XSMCPSS_ID_PCELL_0_OFFSET	0xFF0U
+#define XSMCPSS_ID_PCELL_1_OFFSET	0xFF4U
+#define XSMCPSS_ID_PCELL_2_OFFSET	0xFF8U
+#define XSMCPSS_ID_PCELL_3_OFFSET	0xFFCU
 
 /************************** Variable Definitions *****************************/
 

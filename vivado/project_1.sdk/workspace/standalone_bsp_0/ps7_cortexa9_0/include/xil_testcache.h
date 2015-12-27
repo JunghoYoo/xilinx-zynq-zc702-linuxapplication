@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2009 - 2015 Xilinx, Inc. All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -18,8 +18,8 @@
 *
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-* XILINX CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
 * OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
@@ -45,14 +45,16 @@
 #ifndef XIL_TESTCACHE_H	/* prevent circular inclusions */
 #define XIL_TESTCACHE_H	/* by using protection macros */
 
+#include "xil_types.h"
+
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-extern int Xil_TestDCacheRange(void);
-extern int Xil_TestDCacheAll(void);
-extern int Xil_TestICacheRange(void);
-extern int Xil_TestICacheAll(void);
+extern s32 Xil_TestDCacheRange(void);
+extern s32 Xil_TestDCacheAll(void);
+extern s32 Xil_TestICacheRange(void);
+extern s32 Xil_TestICacheAll(void);
 
 #ifdef __cplusplus
 }

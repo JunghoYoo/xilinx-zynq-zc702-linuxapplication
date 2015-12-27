@@ -18,8 +18,8 @@
 *
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
-* XILINX CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF 
 * OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
 * SOFTWARE.
@@ -43,6 +43,7 @@
 * ----- ---- -------- -------------------------------------------------------
 * 1.00a jz	04/28/11 Initial release
 * 7.00a kc  10/18/13 Integrated SD/MMC driver
+* 12.00a ssc 12/11/14 Fix for CR# 839182
 *
 * </pre>
 *
@@ -102,9 +103,10 @@ u32 InitSD(const char *filename)
 {
 
 	FRESULT rc;
+	TCHAR *path = "0:/"; /* Logical drive number is 0 */
 
 	/* Register volume work area, initialize device */
-	rc = f_mount(0, &fatfs);
+	rc = f_mount(&fatfs, path, 0);
 	fsbl_printf(DEBUG_INFO,"SD: rc= %.8x\n\r", rc);
 
 	if (rc != FR_OK) {
@@ -150,7 +152,7 @@ u32 SDAccess( u32 SourceAddress, u32 DestinationAddress, u32 LengthBytes)
 
 	rc = f_lseek(&fil, SourceAddress);
 	if (rc) {
-		fsbl_printf(DEBUG_INFO,"SD: Unable to seek to %x\n", SourceAddress);
+		fsbl_printf(DEBUG_INFO,"SD: Unable to seek to %lx\n", SourceAddress);
 		return XST_FAILURE;
 	}
 

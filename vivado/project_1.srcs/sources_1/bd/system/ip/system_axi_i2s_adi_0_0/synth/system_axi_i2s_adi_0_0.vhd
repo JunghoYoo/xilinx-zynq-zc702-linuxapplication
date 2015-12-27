@@ -176,7 +176,7 @@ ARCHITECTURE system_axi_i2s_adi_0_0_arch OF system_axi_i2s_adi_0_0 IS
     );
   END COMPONENT axi_i2s_adi;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF system_axi_i2s_adi_0_0_arch: ARCHITECTURE IS "axi_i2s_adi,Vivado 2014.4";
+  ATTRIBUTE X_CORE_INFO OF system_axi_i2s_adi_0_0_arch: ARCHITECTURE IS "axi_i2s_adi,Vivado 2015.3";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF system_axi_i2s_adi_0_0_arch : ARCHITECTURE IS "system_axi_i2s_adi_0_0,axi_i2s_adi,{}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;

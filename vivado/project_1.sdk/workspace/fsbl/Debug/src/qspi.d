@@ -16,7 +16,7 @@ src/qspi.o src/qspi.d: ../src/qspi.c ../src/qspi.h ../src/fsbl.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_assert.h \
  ../src/fsbl_debug.h \
- D:\Developers_KIT\Zynq702\xilinx-zynq-zc702-linuxapplication\vivado\project_1.sdk\workspace\system_top_hw_platform_0/ps7_init.h \
+ D:\Developers_KIT\Zynq702\xilinx-zynq-zc702-linuxapplication\vivado\project_1.sdk\workspace\system_hw_platform_0/ps7_init.h \
  ../src/image_mover.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xqspips_hw.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xqspips.h \
@@ -62,7 +62,7 @@ src/qspi.o src/qspi.d: ../src/qspi.c ../src/qspi.h ../src/fsbl.h \
 
 ../src/fsbl_debug.h:
 
-D:\Developers_KIT\Zynq702\xilinx-zynq-zc702-linuxapplication\vivado\project_1.sdk\workspace\system_top_hw_platform_0/ps7_init.h:
+D:\Developers_KIT\Zynq702\xilinx-zynq-zc702-linuxapplication\vivado\project_1.sdk\workspace\system_hw_platform_0/ps7_init.h:
 
 ../src/image_mover.h:
 

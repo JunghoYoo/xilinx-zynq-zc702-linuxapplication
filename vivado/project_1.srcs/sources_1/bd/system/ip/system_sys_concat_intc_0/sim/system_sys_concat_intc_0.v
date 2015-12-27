@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:xlconcat:2.1
-// IP Revision: 1
+// IP Revision: 2
 
 `timescale 1ns/1ps
 

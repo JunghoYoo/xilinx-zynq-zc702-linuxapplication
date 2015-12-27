@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2010 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2010 - 2015 Xilinx, Inc.  All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -18,8 +18,8 @@
 *
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-* XILINX CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
 * OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
@@ -33,6 +33,9 @@
 /**
 *
 * @file xscutimer.h
+* @addtogroup scutimer_v2_1
+* @{
+* @details
 *
 * The timer driver supports the Cortex A9 private timer.
 *
@@ -99,6 +102,7 @@
 *		     when the xstatus.h in the common driver overwrites
 *		     the xstatus.h of the standalone BSP during the
 *		     libgen.
+* 2.1 	sk  02/26/15 Modified the code for MISRA-C:2012 compliance.
 * </pre>
 *
 ******************************************************************************/
@@ -176,7 +180,7 @@ typedef struct {
 *
 ******************************************************************************/
 #define XScuTimer_RestartTimer(InstancePtr)				\
-	XScuTimer_LoadTimer(InstancePtr,				\
+	XScuTimer_LoadTimer((InstancePtr),				\
 		XScuTimer_ReadReg((InstancePtr)->Config.BaseAddr, \
 					XSCUTIMER_LOAD_OFFSET))
 
@@ -198,7 +202,7 @@ typedef struct {
 ******************************************************************************/
 #define XScuTimer_LoadTimer(InstancePtr, Value)				\
 	XScuTimer_WriteReg((InstancePtr)->Config.BaseAddr,		\
-			XSCUTIMER_LOAD_OFFSET, Value)
+			XSCUTIMER_LOAD_OFFSET, (Value))
 
 /****************************************************************************/
 /**
@@ -342,12 +346,12 @@ XScuTimer_Config *XScuTimer_LookupConfig(u16 DeviceId);
 /*
  * Selftest function in xscutimer_selftest.c
  */
-int XScuTimer_SelfTest(XScuTimer *InstancePtr);
+s32 XScuTimer_SelfTest(XScuTimer *InstancePtr);
 
 /*
  * Interface functions in xscutimer.c
  */
-int XScuTimer_CfgInitialize(XScuTimer *InstancePtr,
+s32 XScuTimer_CfgInitialize(XScuTimer *InstancePtr,
 			    XScuTimer_Config *ConfigPtr, u32 EffectiveAddress);
 void XScuTimer_Start(XScuTimer *InstancePtr);
 void XScuTimer_Stop(XScuTimer *InstancePtr);
@@ -359,3 +363,4 @@ u8 XScuTimer_GetPrescaler(XScuTimer *InstancePtr);
 #endif
 
 #endif	/* end of protection macro */
+/** @} */

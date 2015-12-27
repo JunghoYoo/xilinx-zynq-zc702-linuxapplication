@@ -59,6 +59,7 @@
 #define XPAR_AXI_HDMI_DMA_ENABLE_DEBUG_INFO_14 1
 #define XPAR_AXI_HDMI_DMA_ENABLE_DEBUG_INFO_15 1
 #define XPAR_AXI_HDMI_DMA_ENABLE_DEBUG_ALL 0
+#define XPAR_AXI_HDMI_DMA_ADDR_WIDTH 32
 
 
 /******************************************************************/
@@ -99,6 +100,7 @@
 #define XPAR_AXIVDMA_0_ENABLE_DEBUG_INFO_14 1
 #define XPAR_AXIVDMA_0_ENABLE_DEBUG_INFO_15 1
 #define XPAR_AXIVDMA_0_ENABLE_DEBUG_ALL 0
+#define XPAR_AXIVDMA_0_c_addr_width 32
 
 
 /******************************************************************/
@@ -120,6 +122,14 @@
 #define XPAR_XCANPS_0_BASEADDR 0xE0008000
 #define XPAR_XCANPS_0_HIGHADDR 0xE0008FFF
 #define XPAR_XCANPS_0_CAN_CLK_FREQ_HZ 23809523
+
+
+/******************************************************************/
+
+
+/* Definitions for peripheral PS7_DDR_0 */
+#define XPAR_PS7_DDR_0_S_AXI_BASEADDR 0x00100000
+#define XPAR_PS7_DDR_0_S_AXI_HIGHADDR 0x3FFFFFFF
 
 
 /******************************************************************/
@@ -245,16 +255,6 @@
 /* Definitions for peripheral PS7_AFI_3 */
 #define XPAR_PS7_AFI_3_S_AXI_BASEADDR 0xF800B000
 #define XPAR_PS7_AFI_3_S_AXI_HIGHADDR 0xF800BFFF
-
-
-/* Definitions for peripheral PS7_CORESIGHT_COMP_0 */
-#define XPAR_PS7_CORESIGHT_COMP_0_S_AXI_BASEADDR 0xF8800000
-#define XPAR_PS7_CORESIGHT_COMP_0_S_AXI_HIGHADDR 0xF88FFFFF
-
-
-/* Definitions for peripheral PS7_DDR_0 */
-#define XPAR_PS7_DDR_0_S_AXI_BASEADDR 0x00100000
-#define XPAR_PS7_DDR_0_S_AXI_HIGHADDR 0x3FFFFFFF
 
 
 /* Definitions for peripheral PS7_DDRC_0 */
@@ -430,23 +430,7 @@
 
 /******************************************************************/
 
-
-/***Definitions for Core_nIRQ/nFIQ interrupts ****/
 /* Definitions for Fabric interrupts connected to ps7_scugic_0 */
-#define XPAR_FABRIC_SYSTEM_PS_INTR_0_INTR 61
-#define XPAR_FABRIC_SYSTEM_PS_INTR_1_INTR 62
-#define XPAR_FABRIC_SYSTEM_PS_INTR_2_INTR 63
-#define XPAR_FABRIC_SYSTEM_PS_INTR_3_INTR 64
-#define XPAR_FABRIC_SYSTEM_PS_INTR_4_INTR 65
-#define XPAR_FABRIC_SYSTEM_PS_INTR_5_INTR 66
-#define XPAR_FABRIC_SYSTEM_PS_INTR_6_INTR 67
-#define XPAR_FABRIC_SYSTEM_PS_INTR_7_INTR 68
-#define XPAR_FABRIC_SYSTEM_PS_INTR_8_INTR 84
-#define XPAR_FABRIC_SYSTEM_PS_INTR_9_INTR 85
-#define XPAR_FABRIC_SYSTEM_PS_INTR_10_INTR 86
-#define XPAR_FABRIC_SYSTEM_PS_INTR_11_INTR 87
-#define XPAR_FABRIC_SYSTEM_PS_INTR_12_INTR 88
-#define XPAR_FABRIC_SYSTEM_PS_INTR_13_INTR 89
 #define XPAR_FABRIC_AXI_IIC_MAIN_IIC2INTC_IRPT_INTR 90
 #define XPAR_FABRIC_AXI_HDMI_DMA_MM2S_INTROUT_INTR 91
 
@@ -523,6 +507,8 @@
 #define XPAR_PS7_SD_0_BASEADDR 0xE0100000
 #define XPAR_PS7_SD_0_HIGHADDR 0xE0100FFF
 #define XPAR_PS7_SD_0_SDIO_CLK_FREQ_HZ 50000000
+#define XPAR_PS7_SD_0_HAS_CD 1
+#define XPAR_PS7_SD_0_HAS_WP 1
 
 
 /* Definitions for peripheral PS7_SD_1 */
@@ -530,6 +516,8 @@
 #define XPAR_PS7_SD_1_BASEADDR 0xE0101000
 #define XPAR_PS7_SD_1_HIGHADDR 0xE0101FFF
 #define XPAR_PS7_SD_1_SDIO_CLK_FREQ_HZ 50000000
+#define XPAR_PS7_SD_1_HAS_CD 1
+#define XPAR_PS7_SD_1_HAS_WP 1
 
 
 /******************************************************************/
@@ -539,12 +527,37 @@
 #define XPAR_XSDPS_0_BASEADDR 0xE0100000
 #define XPAR_XSDPS_0_HIGHADDR 0xE0100FFF
 #define XPAR_XSDPS_0_SDIO_CLK_FREQ_HZ 50000000
+#define XPAR_XSDPS_0_HAS_CD 1
+#define XPAR_XSDPS_0_HAS_WP 1
 
 /* Canonical definitions for peripheral PS7_SD_1 */
 #define XPAR_XSDPS_1_DEVICE_ID XPAR_PS7_SD_1_DEVICE_ID
 #define XPAR_XSDPS_1_BASEADDR 0xE0101000
 #define XPAR_XSDPS_1_HIGHADDR 0xE0101FFF
 #define XPAR_XSDPS_1_SDIO_CLK_FREQ_HZ 50000000
+#define XPAR_XSDPS_1_HAS_CD 1
+#define XPAR_XSDPS_1_HAS_WP 1
+
+
+/******************************************************************/
+
+/* Definitions for driver SPIPS */
+#define XPAR_XSPIPS_NUM_INSTANCES 1
+
+/* Definitions for peripheral PS7_SPI_0 */
+#define XPAR_PS7_SPI_0_DEVICE_ID 0
+#define XPAR_PS7_SPI_0_BASEADDR 0xE0006000
+#define XPAR_PS7_SPI_0_HIGHADDR 0xE0006FFF
+#define XPAR_PS7_SPI_0_SPI_CLK_FREQ_HZ 166666672
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral PS7_SPI_0 */
+#define XPAR_XSPIPS_0_DEVICE_ID XPAR_PS7_SPI_0_DEVICE_ID
+#define XPAR_XSPIPS_0_BASEADDR 0xE0006000
+#define XPAR_XSPIPS_0_HIGHADDR 0xE0006FFF
+#define XPAR_XSPIPS_0_SPI_CLK_FREQ_HZ 166666672
 
 
 /******************************************************************/

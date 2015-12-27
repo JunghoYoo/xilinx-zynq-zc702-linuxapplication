@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2010 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2010 - 2015 Xilinx, Inc.  All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -18,8 +18,8 @@
 *
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-* XILINX CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
 * OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
@@ -33,6 +33,8 @@
 /**
 *
 * @file xscutimer_hw.h
+* @addtogroup scutimer_v2_1
+* @{
 *
 * This file contains the hardware interface to the Timer.
 *
@@ -48,6 +50,7 @@
 *		     when the xstatus.h in the common driver overwrites
 *		     the xstatus.h of the standalone BSP during the
 *		     libgen.
+* 2.1 	sk  02/26/15 Modified the code for MISRA-C:2012 compliance.
 * </pre>
 *
 ******************************************************************************/
@@ -69,10 +72,10 @@ extern "C" {
  * @{
  */
 
-#define XSCUTIMER_LOAD_OFFSET		0x00 /**< Timer Load Register */
-#define XSCUTIMER_COUNTER_OFFSET	0x04 /**< Timer Counter Register */
-#define XSCUTIMER_CONTROL_OFFSET	0x08 /**< Timer Control Register */
-#define XSCUTIMER_ISR_OFFSET		0x0C /**< Timer Interrupt
+#define XSCUTIMER_LOAD_OFFSET		0x00U /**< Timer Load Register */
+#define XSCUTIMER_COUNTER_OFFSET	0x04U /**< Timer Counter Register */
+#define XSCUTIMER_CONTROL_OFFSET	0x08U /**< Timer Control Register */
+#define XSCUTIMER_ISR_OFFSET		0x0CU /**< Timer Interrupt
 						  Status Register */
 /* @} */
 
@@ -82,11 +85,11 @@ extern "C" {
  * @{
  */
 
-#define XSCUTIMER_CONTROL_PRESCALER_MASK	0x0000FF00 /**< Prescaler */
-#define XSCUTIMER_CONTROL_PRESCALER_SHIFT	8
-#define XSCUTIMER_CONTROL_IRQ_ENABLE_MASK	0x00000004 /**< Intr enable */
-#define XSCUTIMER_CONTROL_AUTO_RELOAD_MASK	0x00000002 /**< Auto-reload */
-#define XSCUTIMER_CONTROL_ENABLE_MASK		0x00000001 /**< Timer enable */
+#define XSCUTIMER_CONTROL_PRESCALER_MASK	0x0000FF00U /**< Prescaler */
+#define XSCUTIMER_CONTROL_PRESCALER_SHIFT	8U
+#define XSCUTIMER_CONTROL_IRQ_ENABLE_MASK	0x00000004U /**< Intr enable */
+#define XSCUTIMER_CONTROL_AUTO_RELOAD_MASK	0x00000002U /**< Auto-reload */
+#define XSCUTIMER_CONTROL_ENABLE_MASK		0x00000001U /**< Timer enable */
 /* @} */
 
 /** @name Interrupt Status register
@@ -94,7 +97,7 @@ extern "C" {
  * @{
  */
 
-#define XSCUTIMER_ISR_EVENT_FLAG_MASK		0x00000001 /**< Event flag */
+#define XSCUTIMER_ISR_EVENT_FLAG_MASK		0x00000001U /**< Event flag */
 /*@}*/
 
 /**************************** Type Definitions *******************************/
@@ -118,7 +121,7 @@ extern "C" {
 *
 ******************************************************************************/
 #define XScuTimer_SetLoadReg(BaseAddr, Value)				\
-	XScuTimer_WriteReg(BaseAddr, XSCUTIMER_LOAD_OFFSET, Value)
+	XScuTimer_WriteReg(BaseAddr, XSCUTIMER_LOAD_OFFSET, (Value))
 
 /****************************************************************************/
 /**
@@ -151,7 +154,7 @@ extern "C" {
 *
 ******************************************************************************/
 #define XScuTimer_SetCounterReg(BaseAddr, Value)			\
-	XScuTimer_WriteReg(BaseAddr, XSCUTIMER_COUNTER_OFFSET, Value)
+	XScuTimer_WriteReg(BaseAddr, XSCUTIMER_COUNTER_OFFSET, (Value))
 
 /****************************************************************************/
 /**
@@ -186,7 +189,7 @@ extern "C" {
 *
 ******************************************************************************/
 #define XScuTimer_SetControlReg(BaseAddr, Value)			\
-	XScuTimer_WriteReg(BaseAddr, XSCUTIMER_CONTROL_OFFSET, Value)
+	XScuTimer_WriteReg(BaseAddr, XSCUTIMER_CONTROL_OFFSET, (Value))
 
 /****************************************************************************/
 /**
@@ -219,7 +222,7 @@ extern "C" {
 *
 ******************************************************************************/
 #define XScuTimer_SetIntrReg(BaseAddr, Value)				\
-	XScuTimer_WriteReg(BaseAddr, XSCUTIMER_ISR_OFFSET, Value)
+	XScuTimer_WriteReg(BaseAddr, XSCUTIMER_ISR_OFFSET, (Value))
 
 /****************************************************************************/
 /**
@@ -281,3 +284,4 @@ extern "C" {
 #endif
 
 #endif	/* end of protection macro */
+/** @} */

@@ -346,6 +346,20 @@ unsigned long ps7_clock_init_data_3_0[] = {
     // .. 
     EMIT_MASKWRITE(0XF8000154, 0x00003F33U ,0x00001403U),
     // .. CLKACT0 = 0x1
+    // .. ==> 0XF8000158[0:0] = 0x00000001U
+    // ..     ==> MASK : 0x00000001U    VAL : 0x00000001U
+    // .. CLKACT1 = 0x0
+    // .. ==> 0XF8000158[1:1] = 0x00000000U
+    // ..     ==> MASK : 0x00000002U    VAL : 0x00000000U
+    // .. SRCSEL = 0x0
+    // .. ==> 0XF8000158[5:4] = 0x00000000U
+    // ..     ==> MASK : 0x00000030U    VAL : 0x00000000U
+    // .. DIVISOR = 0x6
+    // .. ==> 0XF8000158[13:8] = 0x00000006U
+    // ..     ==> MASK : 0x00003F00U    VAL : 0x00000600U
+    // .. 
+    EMIT_MASKWRITE(0XF8000158, 0x00003F33U ,0x00000601U),
+    // .. CLKACT0 = 0x1
     // .. ==> 0XF800015C[0:0] = 0x00000001U
     // ..     ==> MASK : 0x00000001U    VAL : 0x00000001U
     // .. CLKACT1 = 0x0
@@ -459,9 +473,9 @@ unsigned long ps7_clock_init_data_3_0[] = {
     // .. .. SDI1_CPU_1XCLKACT = 0x1
     // .. .. ==> 0XF800012C[11:11] = 0x00000001U
     // .. ..     ==> MASK : 0x00000800U    VAL : 0x00000800U
-    // .. .. SPI0_CPU_1XCLKACT = 0x0
-    // .. .. ==> 0XF800012C[14:14] = 0x00000000U
-    // .. ..     ==> MASK : 0x00004000U    VAL : 0x00000000U
+    // .. .. SPI0_CPU_1XCLKACT = 0x1
+    // .. .. ==> 0XF800012C[14:14] = 0x00000001U
+    // .. ..     ==> MASK : 0x00004000U    VAL : 0x00004000U
     // .. .. SPI1_CPU_1XCLKACT = 0x0
     // .. .. ==> 0XF800012C[15:15] = 0x00000000U
     // .. ..     ==> MASK : 0x00008000U    VAL : 0x00000000U
@@ -493,7 +507,7 @@ unsigned long ps7_clock_init_data_3_0[] = {
     // .. .. ==> 0XF800012C[24:24] = 0x00000001U
     // .. ..     ==> MASK : 0x01000000U    VAL : 0x01000000U
     // .. .. 
-    EMIT_MASKWRITE(0XF800012C, 0x01FFCCCDU ,0x01FD0C4DU),
+    EMIT_MASKWRITE(0XF800012C, 0x01FFCCCDU ,0x01FD4C4DU),
     // .. FINISH: CLOCK CONTROL SLCR REGISTERS
     // .. START: THIS SHOULD BE BLANK
     // .. FINISH: THIS SHOULD BE BLANK
@@ -728,9 +742,9 @@ unsigned long ps7_ddr_init_data_3_0[] = {
     // .. .. reg_ddrc_burst_rdwr = 0x4
     // .. .. ==> 0XF8006034[3:0] = 0x00000004U
     // .. ..     ==> MASK : 0x0000000FU    VAL : 0x00000004U
-    // .. .. reg_ddrc_pre_cke_x1024 = 0x105
-    // .. .. ==> 0XF8006034[13:4] = 0x00000105U
-    // .. ..     ==> MASK : 0x00003FF0U    VAL : 0x00001050U
+    // .. .. reg_ddrc_pre_cke_x1024 = 0x16d
+    // .. .. ==> 0XF8006034[13:4] = 0x0000016DU
+    // .. ..     ==> MASK : 0x00003FF0U    VAL : 0x000016D0U
     // .. .. reg_ddrc_post_cke_x1024 = 0x1
     // .. .. ==> 0XF8006034[25:16] = 0x00000001U
     // .. ..     ==> MASK : 0x03FF0000U    VAL : 0x00010000U
@@ -738,7 +752,7 @@ unsigned long ps7_ddr_init_data_3_0[] = {
     // .. .. ==> 0XF8006034[28:28] = 0x00000000U
     // .. ..     ==> MASK : 0x10000000U    VAL : 0x00000000U
     // .. .. 
-    EMIT_MASKWRITE(0XF8006034, 0x13FF3FFFU ,0x00011054U),
+    EMIT_MASKWRITE(0XF8006034, 0x13FF3FFFU ,0x000116D4U),
     // .. .. reg_ddrc_force_low_pri_n = 0x0
     // .. .. ==> 0XF8006038[0:0] = 0x00000000U
     // .. ..     ==> MASK : 0x00000001U    VAL : 0x00000000U
@@ -3811,29 +3825,6 @@ unsigned long ps7_peripherals_init_data_3_0[] = {
     // .. 
     EMIT_MASKWRITE(0XE0000004, 0x000003FFU ,0x00000020U),
     // .. FINISH: UART REGISTERS
-    // .. START: TPIU WIDTH IN CASE OF EMIO
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0XC5ACCE55
-    // .. .. ==> 0XF8803FB0[31:0] = 0xC5ACCE55U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0xC5ACCE55U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0xC5ACCE55U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. .. START: TRACE CURRENT PORT SIZE
-    // .. .. a = 2
-    // .. .. ==> 0XF8803004[31:0] = 0x00000002U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000002U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803004, 0xFFFFFFFFU ,0x00000002U),
-    // .. .. FINISH: TRACE CURRENT PORT SIZE
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0X0
-    // .. .. ==> 0XF8803FB0[31:0] = 0x00000000U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000000U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0x00000000U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. FINISH: TPIU WIDTH IN CASE OF EMIO
     // .. START: QSPI REGISTERS
     // .. Holdb_dr = 1
     // .. ==> 0XE000D000[19:19] = 0x00000001U
@@ -4244,29 +4235,6 @@ unsigned long ps7_post_config_3_0[] = {
     // .. 
     EMIT_MASKWRITE(0XF8000900, 0x0000000FU ,0x0000000FU),
     // .. FINISH: ENABLING LEVEL SHIFTER
-    // .. START: TPIU WIDTH IN CASE OF EMIO
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0XC5ACCE55
-    // .. .. ==> 0XF8803FB0[31:0] = 0xC5ACCE55U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0xC5ACCE55U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0xC5ACCE55U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. .. START: TRACE CURRENT PORT SIZE
-    // .. .. a = 2
-    // .. .. ==> 0XF8803004[31:0] = 0x00000002U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000002U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803004, 0xFFFFFFFFU ,0x00000002U),
-    // .. .. FINISH: TRACE CURRENT PORT SIZE
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0X0
-    // .. .. ==> 0XF8803FB0[31:0] = 0x00000000U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000000U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0x00000000U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. FINISH: TPIU WIDTH IN CASE OF EMIO
     // .. START: FPGA RESETS TO 0
     // .. reserved_3 = 0
     // .. ==> 0XF8000240[31:25] = 0x00000000U
@@ -4343,6 +4311,8 @@ unsigned long ps7_post_config_3_0[] = {
     // .. .. FINISH: AFI2 REGISTERS
     // .. .. START: AFI3 REGISTERS
     // .. .. FINISH: AFI3 REGISTERS
+    // .. .. START: AFI2 SECURE REGISTER
+    // .. .. FINISH: AFI2 SECURE REGISTER
     // .. FINISH: AFI REGISTERS
     // .. START: LOCK IT BACK
     // .. LOCK_KEY = 0X767B
@@ -4700,6 +4670,20 @@ unsigned long ps7_clock_init_data_2_0[] = {
     // .. 
     EMIT_MASKWRITE(0XF8000154, 0x00003F33U ,0x00001403U),
     // .. CLKACT0 = 0x1
+    // .. ==> 0XF8000158[0:0] = 0x00000001U
+    // ..     ==> MASK : 0x00000001U    VAL : 0x00000001U
+    // .. CLKACT1 = 0x0
+    // .. ==> 0XF8000158[1:1] = 0x00000000U
+    // ..     ==> MASK : 0x00000002U    VAL : 0x00000000U
+    // .. SRCSEL = 0x0
+    // .. ==> 0XF8000158[5:4] = 0x00000000U
+    // ..     ==> MASK : 0x00000030U    VAL : 0x00000000U
+    // .. DIVISOR = 0x6
+    // .. ==> 0XF8000158[13:8] = 0x00000006U
+    // ..     ==> MASK : 0x00003F00U    VAL : 0x00000600U
+    // .. 
+    EMIT_MASKWRITE(0XF8000158, 0x00003F33U ,0x00000601U),
+    // .. CLKACT0 = 0x1
     // .. ==> 0XF800015C[0:0] = 0x00000001U
     // ..     ==> MASK : 0x00000001U    VAL : 0x00000001U
     // .. CLKACT1 = 0x0
@@ -4813,9 +4797,9 @@ unsigned long ps7_clock_init_data_2_0[] = {
     // .. .. SDI1_CPU_1XCLKACT = 0x1
     // .. .. ==> 0XF800012C[11:11] = 0x00000001U
     // .. ..     ==> MASK : 0x00000800U    VAL : 0x00000800U
-    // .. .. SPI0_CPU_1XCLKACT = 0x0
-    // .. .. ==> 0XF800012C[14:14] = 0x00000000U
-    // .. ..     ==> MASK : 0x00004000U    VAL : 0x00000000U
+    // .. .. SPI0_CPU_1XCLKACT = 0x1
+    // .. .. ==> 0XF800012C[14:14] = 0x00000001U
+    // .. ..     ==> MASK : 0x00004000U    VAL : 0x00004000U
     // .. .. SPI1_CPU_1XCLKACT = 0x0
     // .. .. ==> 0XF800012C[15:15] = 0x00000000U
     // .. ..     ==> MASK : 0x00008000U    VAL : 0x00000000U
@@ -4847,7 +4831,7 @@ unsigned long ps7_clock_init_data_2_0[] = {
     // .. .. ==> 0XF800012C[24:24] = 0x00000001U
     // .. ..     ==> MASK : 0x01000000U    VAL : 0x01000000U
     // .. .. 
-    EMIT_MASKWRITE(0XF800012C, 0x01FFCCCDU ,0x01FD0C4DU),
+    EMIT_MASKWRITE(0XF800012C, 0x01FFCCCDU ,0x01FD4C4DU),
     // .. FINISH: CLOCK CONTROL SLCR REGISTERS
     // .. START: THIS SHOULD BE BLANK
     // .. FINISH: THIS SHOULD BE BLANK
@@ -5106,9 +5090,9 @@ unsigned long ps7_ddr_init_data_2_0[] = {
     // .. .. reg_ddrc_burst_rdwr = 0x4
     // .. .. ==> 0XF8006034[3:0] = 0x00000004U
     // .. ..     ==> MASK : 0x0000000FU    VAL : 0x00000004U
-    // .. .. reg_ddrc_pre_cke_x1024 = 0x105
-    // .. .. ==> 0XF8006034[13:4] = 0x00000105U
-    // .. ..     ==> MASK : 0x00003FF0U    VAL : 0x00001050U
+    // .. .. reg_ddrc_pre_cke_x1024 = 0x16d
+    // .. .. ==> 0XF8006034[13:4] = 0x0000016DU
+    // .. ..     ==> MASK : 0x00003FF0U    VAL : 0x000016D0U
     // .. .. reg_ddrc_post_cke_x1024 = 0x1
     // .. .. ==> 0XF8006034[25:16] = 0x00000001U
     // .. ..     ==> MASK : 0x03FF0000U    VAL : 0x00010000U
@@ -5116,7 +5100,7 @@ unsigned long ps7_ddr_init_data_2_0[] = {
     // .. .. ==> 0XF8006034[28:28] = 0x00000000U
     // .. ..     ==> MASK : 0x10000000U    VAL : 0x00000000U
     // .. .. 
-    EMIT_MASKWRITE(0XF8006034, 0x13FF3FFFU ,0x00011054U),
+    EMIT_MASKWRITE(0XF8006034, 0x13FF3FFFU ,0x000116D4U),
     // .. .. reg_ddrc_force_low_pri_n = 0x0
     // .. .. ==> 0XF8006038[0:0] = 0x00000000U
     // .. ..     ==> MASK : 0x00000001U    VAL : 0x00000000U
@@ -8332,29 +8316,6 @@ unsigned long ps7_peripherals_init_data_2_0[] = {
     // .. 
     EMIT_MASKWRITE(0XE0000004, 0x00000FFFU ,0x00000020U),
     // .. FINISH: UART REGISTERS
-    // .. START: TPIU WIDTH IN CASE OF EMIO
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0XC5ACCE55
-    // .. .. ==> 0XF8803FB0[31:0] = 0xC5ACCE55U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0xC5ACCE55U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0xC5ACCE55U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. .. START: TRACE CURRENT PORT SIZE
-    // .. .. a = 2
-    // .. .. ==> 0XF8803004[31:0] = 0x00000002U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000002U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803004, 0xFFFFFFFFU ,0x00000002U),
-    // .. .. FINISH: TRACE CURRENT PORT SIZE
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0X0
-    // .. .. ==> 0XF8803FB0[31:0] = 0x00000000U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000000U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0x00000000U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. FINISH: TPIU WIDTH IN CASE OF EMIO
     // .. START: QSPI REGISTERS
     // .. Holdb_dr = 1
     // .. ==> 0XE000D000[19:19] = 0x00000001U
@@ -8759,29 +8720,6 @@ unsigned long ps7_post_config_2_0[] = {
     // .. 
     EMIT_MASKWRITE(0XF8000900, 0x0000000FU ,0x0000000FU),
     // .. FINISH: ENABLING LEVEL SHIFTER
-    // .. START: TPIU WIDTH IN CASE OF EMIO
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0XC5ACCE55
-    // .. .. ==> 0XF8803FB0[31:0] = 0xC5ACCE55U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0xC5ACCE55U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0xC5ACCE55U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. .. START: TRACE CURRENT PORT SIZE
-    // .. .. a = 2
-    // .. .. ==> 0XF8803004[31:0] = 0x00000002U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000002U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803004, 0xFFFFFFFFU ,0x00000002U),
-    // .. .. FINISH: TRACE CURRENT PORT SIZE
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0X0
-    // .. .. ==> 0XF8803FB0[31:0] = 0x00000000U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000000U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0x00000000U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. FINISH: TPIU WIDTH IN CASE OF EMIO
     // .. START: FPGA RESETS TO 0
     // .. reserved_3 = 0
     // .. ==> 0XF8000240[31:25] = 0x00000000U
@@ -9215,6 +9153,20 @@ unsigned long ps7_clock_init_data_1_0[] = {
     // .. 
     EMIT_MASKWRITE(0XF8000154, 0x00003F33U ,0x00001403U),
     // .. CLKACT0 = 0x1
+    // .. ==> 0XF8000158[0:0] = 0x00000001U
+    // ..     ==> MASK : 0x00000001U    VAL : 0x00000001U
+    // .. CLKACT1 = 0x0
+    // .. ==> 0XF8000158[1:1] = 0x00000000U
+    // ..     ==> MASK : 0x00000002U    VAL : 0x00000000U
+    // .. SRCSEL = 0x0
+    // .. ==> 0XF8000158[5:4] = 0x00000000U
+    // ..     ==> MASK : 0x00000030U    VAL : 0x00000000U
+    // .. DIVISOR = 0x6
+    // .. ==> 0XF8000158[13:8] = 0x00000006U
+    // ..     ==> MASK : 0x00003F00U    VAL : 0x00000600U
+    // .. 
+    EMIT_MASKWRITE(0XF8000158, 0x00003F33U ,0x00000601U),
+    // .. CLKACT0 = 0x1
     // .. ==> 0XF800015C[0:0] = 0x00000001U
     // ..     ==> MASK : 0x00000001U    VAL : 0x00000001U
     // .. CLKACT1 = 0x0
@@ -9328,9 +9280,9 @@ unsigned long ps7_clock_init_data_1_0[] = {
     // .. .. SDI1_CPU_1XCLKACT = 0x1
     // .. .. ==> 0XF800012C[11:11] = 0x00000001U
     // .. ..     ==> MASK : 0x00000800U    VAL : 0x00000800U
-    // .. .. SPI0_CPU_1XCLKACT = 0x0
-    // .. .. ==> 0XF800012C[14:14] = 0x00000000U
-    // .. ..     ==> MASK : 0x00004000U    VAL : 0x00000000U
+    // .. .. SPI0_CPU_1XCLKACT = 0x1
+    // .. .. ==> 0XF800012C[14:14] = 0x00000001U
+    // .. ..     ==> MASK : 0x00004000U    VAL : 0x00004000U
     // .. .. SPI1_CPU_1XCLKACT = 0x0
     // .. .. ==> 0XF800012C[15:15] = 0x00000000U
     // .. ..     ==> MASK : 0x00008000U    VAL : 0x00000000U
@@ -9362,7 +9314,7 @@ unsigned long ps7_clock_init_data_1_0[] = {
     // .. .. ==> 0XF800012C[24:24] = 0x00000001U
     // .. ..     ==> MASK : 0x01000000U    VAL : 0x01000000U
     // .. .. 
-    EMIT_MASKWRITE(0XF800012C, 0x01FFCCCDU ,0x01FD0C4DU),
+    EMIT_MASKWRITE(0XF800012C, 0x01FFCCCDU ,0x01FD4C4DU),
     // .. FINISH: CLOCK CONTROL SLCR REGISTERS
     // .. START: THIS SHOULD BE BLANK
     // .. FINISH: THIS SHOULD BE BLANK
@@ -9621,9 +9573,9 @@ unsigned long ps7_ddr_init_data_1_0[] = {
     // .. .. reg_ddrc_burst_rdwr = 0x4
     // .. .. ==> 0XF8006034[3:0] = 0x00000004U
     // .. ..     ==> MASK : 0x0000000FU    VAL : 0x00000004U
-    // .. .. reg_ddrc_pre_cke_x1024 = 0x105
-    // .. .. ==> 0XF8006034[13:4] = 0x00000105U
-    // .. ..     ==> MASK : 0x00003FF0U    VAL : 0x00001050U
+    // .. .. reg_ddrc_pre_cke_x1024 = 0x16d
+    // .. .. ==> 0XF8006034[13:4] = 0x0000016DU
+    // .. ..     ==> MASK : 0x00003FF0U    VAL : 0x000016D0U
     // .. .. reg_ddrc_post_cke_x1024 = 0x1
     // .. .. ==> 0XF8006034[25:16] = 0x00000001U
     // .. ..     ==> MASK : 0x03FF0000U    VAL : 0x00010000U
@@ -9631,7 +9583,7 @@ unsigned long ps7_ddr_init_data_1_0[] = {
     // .. .. ==> 0XF8006034[28:28] = 0x00000000U
     // .. ..     ==> MASK : 0x10000000U    VAL : 0x00000000U
     // .. .. 
-    EMIT_MASKWRITE(0XF8006034, 0x13FF3FFFU ,0x00011054U),
+    EMIT_MASKWRITE(0XF8006034, 0x13FF3FFFU ,0x000116D4U),
     // .. .. reg_ddrc_force_low_pri_n = 0x0
     // .. .. ==> 0XF8006038[0:0] = 0x00000000U
     // .. ..     ==> MASK : 0x00000001U    VAL : 0x00000000U
@@ -12780,29 +12732,6 @@ unsigned long ps7_peripherals_init_data_1_0[] = {
     // .. 
     EMIT_MASKWRITE(0XE0000004, 0x00000FFFU ,0x00000020U),
     // .. FINISH: UART REGISTERS
-    // .. START: TPIU WIDTH IN CASE OF EMIO
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0XC5ACCE55
-    // .. .. ==> 0XF8803FB0[31:0] = 0xC5ACCE55U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0xC5ACCE55U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0xC5ACCE55U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. .. START: TRACE CURRENT PORT SIZE
-    // .. .. a = 2
-    // .. .. ==> 0XF8803004[31:0] = 0x00000002U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000002U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803004, 0xFFFFFFFFU ,0x00000002U),
-    // .. .. FINISH: TRACE CURRENT PORT SIZE
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0X0
-    // .. .. ==> 0XF8803FB0[31:0] = 0x00000000U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000000U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0x00000000U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. FINISH: TPIU WIDTH IN CASE OF EMIO
     // .. START: QSPI REGISTERS
     // .. Holdb_dr = 1
     // .. ==> 0XE000D000[19:19] = 0x00000001U
@@ -13207,29 +13136,6 @@ unsigned long ps7_post_config_1_0[] = {
     // .. 
     EMIT_MASKWRITE(0XF8000900, 0x0000000FU ,0x0000000FU),
     // .. FINISH: ENABLING LEVEL SHIFTER
-    // .. START: TPIU WIDTH IN CASE OF EMIO
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0XC5ACCE55
-    // .. .. ==> 0XF8803FB0[31:0] = 0xC5ACCE55U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0xC5ACCE55U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0xC5ACCE55U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. .. START: TRACE CURRENT PORT SIZE
-    // .. .. a = 2
-    // .. .. ==> 0XF8803004[31:0] = 0x00000002U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000002U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803004, 0xFFFFFFFFU ,0x00000002U),
-    // .. .. FINISH: TRACE CURRENT PORT SIZE
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0X0
-    // .. .. ==> 0XF8803FB0[31:0] = 0x00000000U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000000U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0x00000000U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. FINISH: TPIU WIDTH IN CASE OF EMIO
     // .. START: FPGA RESETS TO 0
     // .. reserved_3 = 0
     // .. ==> 0XF8000240[31:25] = 0x00000000U
@@ -13384,7 +13290,7 @@ ps7GetSiliconVersion () {
 }
 
 void mask_write (unsigned long add , unsigned long  mask, unsigned long val ) {
-        unsigned long *addr = (unsigned long*) add;
+        volatile unsigned long *addr = (volatile unsigned long*) add;
         *addr = ( val & mask ) | ( *addr & ~mask);
         //xil_printf("MaskWrite : 0x%x--> 0x%x \n \r" ,add, *addr);
 }
@@ -13404,7 +13310,7 @@ int mask_poll(unsigned long add , unsigned long mask ) {
 }
 
 unsigned long mask_read(unsigned long add , unsigned long mask ) {
-        unsigned long *addr = (unsigned long*) add;
+        volatile unsigned long *addr = (volatile unsigned long*) add;
         unsigned long val = (*addr & mask);
         //xil_printf("MaskRead : 0x%x --> 0x%x \n \r" , add, val);
         return val;

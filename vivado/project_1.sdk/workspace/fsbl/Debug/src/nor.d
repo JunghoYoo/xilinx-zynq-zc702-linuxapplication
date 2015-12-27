@@ -16,7 +16,7 @@ src/nor.o src/nor.d: ../src/nor.c ../src/fsbl.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_assert.h \
  ../src/fsbl_debug.h \
- D:\Developers_KIT\Zynq702\xilinx-zynq-zc702-linuxapplication\vivado\project_1.sdk\workspace\system_top_hw_platform_0/ps7_init.h \
+ D:\Developers_KIT\Zynq702\xilinx-zynq-zc702-linuxapplication\vivado\project_1.sdk\workspace\system_hw_platform_0/ps7_init.h \
  ../src/nor.h ../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h
 
 ../src/fsbl.h:
@@ -57,7 +57,7 @@ src/nor.o src/nor.d: ../src/nor.c ../src/fsbl.h \
 
 ../src/fsbl_debug.h:
 
-D:\Developers_KIT\Zynq702\xilinx-zynq-zc702-linuxapplication\vivado\project_1.sdk\workspace\system_top_hw_platform_0/ps7_init.h:
+D:\Developers_KIT\Zynq702\xilinx-zynq-zc702-linuxapplication\vivado\project_1.sdk\workspace\system_hw_platform_0/ps7_init.h:
 
 ../src/nor.h:
 

@@ -18,8 +18,8 @@
 *
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
-* XILINX CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF 
 * OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
 * SOFTWARE.
@@ -218,6 +218,16 @@
 *						remaining in unknown state.
 *						Resolution: LinearBootDeviceFlag is initialized 0
 *						in main.c
+* 12.00a ssc 12/11/14	839182 - FSBL -In the file sd.c, f_mount is called with
+*                       two arguments but f_mount is expecting the 3 arguments
+*                       from build 2015.1_1210_1, causing compilation error.
+*						Resolution: Arguments for f_mount in InitSD() are
+*						changed as per new signature.
+* 13.00a ssc 04/10/15	846899 - FSBL -In the file pcap.c, to clear DMA done
+*                       count, devcfg.INT_STS register is written to, which is
+*                       not correct.
+*                       Resolution: Corresponding fields in the devcfg.STATUS
+*                       register are written to, for clearing DMA done count.
 *
 * </pre>
 *
@@ -303,8 +313,8 @@ extern "C" {
 /*
  * SDK release version
  */
-#define SDK_RELEASE_YEAR	2014
-#define SDK_RELEASE_QUARTER	4
+#define SDK_RELEASE_YEAR	2015
+#define SDK_RELEASE_QUARTER	3
 
 #define WORD_LENGTH_SHIFT	2
 

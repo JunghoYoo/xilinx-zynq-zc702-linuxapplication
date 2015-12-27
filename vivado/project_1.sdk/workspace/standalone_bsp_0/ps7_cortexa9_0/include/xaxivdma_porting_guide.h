@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2012 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2012 - 2015 Xilinx, Inc.  All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -18,8 +18,8 @@
 *
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-* XILINX CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
 * OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
@@ -33,6 +33,8 @@
 /**
 *
 * @file xaxivdma_porting_guide.h
+* @addtogroup axivdma_v6_0
+* @{
 *
 * This is a guide on how to move from using the xvdma driver to use xaxivdma
 * driver.
@@ -46,18 +48,18 @@
 * 2.00a jz   12/10/10 Added support for direct register access mode, v3 core
 * 2.01a jz   01/19/11 Added ability to re-assign BD addresses
 * 	rkv  03/28/11 Added support for frame store register.
-* 3.00a srt  08/26/11 - Added support for Flush on Frame Sync and dynamic 
+* 3.00a srt  08/26/11 - Added support for Flush on Frame Sync and dynamic
 *		      	programming of Line Buffer Thresholds.
 *		      - XAxiVdma_ChannelErrors API is changed to support for
 *			Flush on Frame Sync feature.
 *		      - Two flags, XST_VDMA_MISMATCH_ERROR & XAXIVDMA_MIS
 *			MATCH_ERROR are added to report error status when
-*			Flush on Frame Sync feature is enabled.		    
+*			Flush on Frame Sync feature is enabled.
 * 4.00a srt  11/21/11 - XAxiVdma_ChannelSetBufferAddr API is changed to
 *			support 32 Frame Stores.
 *		      - XAxiVdma_ChannelConfig API is changed to support
 *			modified Park Offset Register bits.
-*		      - Added APIs: 
+*		      - Added APIs:
 *			XAxiVdma_FsyncSrcSelect()
 *			XAxiVdma_GenLockSourceSelect()
 *		      - Modified structures XAxiVdma_Config and XAxiVdma to
@@ -66,14 +68,14 @@
 *			XAxiVdma_GetDmaChannelErrors()
 *			XAxiVdma_ClearDmaChannelErrors()
 *			XAxiVdma_ClearChannelErrors()
-*		      - XAxiVdma_ChannelErrors API is changed to remove 
+*		      - XAxiVdma_ChannelErrors API is changed to remove
 *			Mismatch error logic.
 *		      - Removed Error checking logic in the channel APIs.
 *			Provided User APIs to do this.
 *		      - Added new error bit mask XAXIVDMA_SR_ERR_SOF_LATE_MASK
 *		      - XAXIVDMA_MISMATCH_ERROR flag is deprecated.
 * 		      - Modified the logic of Error handling in interrupt
-*		        handlers. 
+*		        handlers.
 * </pre>
 *
 * <b>Overview</b>
@@ -93,10 +95,10 @@
 * region that SG hardware can access.
 *
 * For 13.4 release, the hardware, v5.00a core has added new features to select
-* Internal GenLock and Frame Sync Sources in the control register. Due to 
+* Internal GenLock and Frame Sync Sources in the control register. Due to
 * hardware changes, we have added new API functions for the two new features.
 *
-* For 14.2 release, the hardware, v5.02a core has modified the handling of 
+* For 14.2 release, the hardware, v5.02a core has modified the handling of
 * VDMA errors.  To support this, we have changed some APIs and added some new
 * APIs.
 *
@@ -249,3 +251,4 @@
 *
 *
 ******************************************************************************/
+/** @} */

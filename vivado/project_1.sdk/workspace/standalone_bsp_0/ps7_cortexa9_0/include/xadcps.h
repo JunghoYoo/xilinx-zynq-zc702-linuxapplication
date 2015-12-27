@@ -18,8 +18,8 @@
 *
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-* XILINX CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
 * OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
@@ -33,6 +33,9 @@
 /**
 *
 * @file xadcps.h
+* @addtogroup xadcps_v2_2
+* @{
+* @details
 *
 * The XAdcPs driver supports the Xilinx XADC/ADC device.
 *
@@ -165,6 +168,9 @@
 *			functions.
 *			Modified Assert for XAdcPs_SetSingleChParams in
 *			xadcps.c to fix CR #807563.
+* 2.2   bss    04/27/14 Modified to use correct Device Config base address in
+*						xadcps.c (CR#854437).
+*
 *
 * </pre>
 *
@@ -574,3 +580,4 @@ void XAdcPs_IntrClear(XAdcPs *InstancePtr, u32 Mask);
 #endif
 
 #endif  /* End of protection macro. */
+/** @} */

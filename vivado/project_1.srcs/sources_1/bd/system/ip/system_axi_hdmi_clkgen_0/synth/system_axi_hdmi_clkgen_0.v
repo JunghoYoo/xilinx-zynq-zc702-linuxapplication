@@ -50,7 +50,7 @@
 // IP VLNV: analog.com:user:axi_clkgen:1.0
 // IP Revision: 1
 
-(* X_CORE_INFO = "axi_clkgen,Vivado 2014.4" *)
+(* X_CORE_INFO = "axi_clkgen,Vivado 2015.3" *)
 (* CHECK_LICENSE_TYPE = "system_axi_hdmi_clkgen_0,axi_clkgen,{}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_axi_hdmi_clkgen_0 (

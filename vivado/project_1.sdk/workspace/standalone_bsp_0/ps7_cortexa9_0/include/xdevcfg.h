@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2010 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2010 - 2015 Xilinx, Inc.  All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -18,8 +18,8 @@
 *
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-* XILINX CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
 * OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
@@ -33,6 +33,9 @@
 /**
 *
 * @file xdevcfg.h
+* @addtogroup devcfg_v3_3
+* @{
+* @details
 *
 * The is the main header file for the Device Configuration Interface of the Zynq
 * device. The device configuration interface has three main functionality.
@@ -148,6 +151,7 @@
 *		     A new example has been added to read back the
 *		     configuration registers from the PL region.
 *		     xdevcfg_reg_readback_example.c
+* 3.3   sk  04/06/15 Modified XDcfg_ReadMultiBootConfig Macro CR# 851335.
 *
 * </pre>
 *
@@ -265,7 +269,7 @@ typedef struct {
 *
 *****************************************************************************/
 #define XDcfg_ReadMultiBootConfig(InstancePtr)			\
-	XDcfg_ReadReg((InstancePtr)->Config.BaseAddr + 		\
+	XDcfg_ReadReg((InstancePtr)->Config.BaseAddr,  		\
 			XDCFG_MULTIBOOT_ADDR_OFFSET)
 
 
@@ -390,3 +394,4 @@ void XDcfg_SetHandler(XDcfg *InstancePtr, void *CallBackFunc,
 #endif
 
 #endif	/* end of protection macro */
+/** @} */

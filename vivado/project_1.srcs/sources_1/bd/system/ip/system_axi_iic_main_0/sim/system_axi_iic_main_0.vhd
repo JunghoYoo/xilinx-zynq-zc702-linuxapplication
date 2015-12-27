@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:axi_iic:2.0
--- IP Revision: 7
+-- IP Revision: 9
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY axi_iic_v2_0;
-USE axi_iic_v2_0.axi_iic;
+LIBRARY axi_iic_v2_0_9;
+USE axi_iic_v2_0_9.axi_iic;
 
 ENTITY system_axi_iic_main_0 IS
   PORT (

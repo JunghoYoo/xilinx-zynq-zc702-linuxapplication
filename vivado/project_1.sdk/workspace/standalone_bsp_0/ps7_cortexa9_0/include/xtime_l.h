@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2009 - 2015 Xilinx, Inc.  All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -18,8 +18,8 @@
 *
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-* XILINX CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
 * OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
@@ -56,19 +56,21 @@ extern "C" {
 #endif
 
 /***************************** Include Files *********************************/
+
+#include "xil_types.h"
 #include "xparameters.h"
 
 /***************** Macros (Inline Functions) Definitions *********************/
 
 /**************************** Type Definitions *******************************/
 
-typedef unsigned long long XTime;
+typedef u64 XTime;
 
 /************************** Constant Definitions *****************************/
 #define GLOBAL_TMR_BASEADDR               XPAR_GLOBAL_TMR_BASEADDR
-#define GTIMER_COUNTER_LOWER_OFFSET       0x00
-#define GTIMER_COUNTER_UPPER_OFFSET       0x04
-#define GTIMER_CONTROL_OFFSET             0x08
+#define GTIMER_COUNTER_LOWER_OFFSET       0x00U
+#define GTIMER_COUNTER_UPPER_OFFSET       0x04U
+#define GTIMER_CONTROL_OFFSET             0x08U
 
 
 /* Global Timer is always clocked at half of the CPU frequency */
@@ -77,8 +79,8 @@ typedef unsigned long long XTime;
 
 /************************** Function Prototypes ******************************/
 
-void XTime_SetTime(XTime Xtime);
-void XTime_GetTime(XTime *Xtime);
+void XTime_SetTime(XTime Xtime_Global);
+void XTime_GetTime(XTime *Xtime_Global);
 
 #ifdef __cplusplus
 }

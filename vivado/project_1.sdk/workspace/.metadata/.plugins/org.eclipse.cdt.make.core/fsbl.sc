@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
-<instance id="xilinx.gnu.arm.exe.debug.868088936;xilinx.gnu.arm.exe.debug.868088936.">
+<instance id="xilinx.gnu.arm.exe.debug.1290942736;xilinx.gnu.arm.exe.debug.1290942736.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-<includePath path="c:\xilinx\sdk\2014.4\gnu\arm\nt\bin\../lib/gcc/arm-xilinx-eabi/4.8.3/include"/>
-<includePath path="c:\xilinx\sdk\2014.4\gnu\arm\nt\bin\../lib/gcc/arm-xilinx-eabi/4.8.3/include-fixed"/>
-<includePath path="c:\xilinx\sdk\2014.4\gnu\arm\nt\bin\../lib/gcc/arm-xilinx-eabi/4.8.3/../../../../arm-xilinx-eabi/include"/>
+<includePath path="c:\xilinx\sdk\2015.3\gnu\arm\nt\bin\../lib/gcc/arm-xilinx-eabi/4.9.2/include"/>
+<includePath path="c:\xilinx\sdk\2015.3\gnu\arm\nt\bin\../lib/gcc/arm-xilinx-eabi/4.9.2/include-fixed"/>
+<includePath path="c:\xilinx\sdk\2015.3\gnu\arm\nt\bin\../lib/gcc/arm-xilinx-eabi/4.9.2/../../../../arm-xilinx-eabi/include"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__STDC_HOSTED__=1"/>
 <definedSymbol symbol="__GNUC__=4"/>
-<definedSymbol symbol="__GNUC_MINOR__=8"/>
-<definedSymbol symbol="__GNUC_PATCHLEVEL__=3"/>
-<definedSymbol symbol="__VERSION__=&quot;4.8.3 20140320 (prerelease)&quot;"/>
+<definedSymbol symbol="__GNUC_MINOR__=9"/>
+<definedSymbol symbol="__GNUC_PATCHLEVEL__=2"/>
+<definedSymbol symbol="__VERSION__=&quot;4.9.2&quot;"/>
 <definedSymbol symbol="__ATOMIC_RELAXED=0"/>
 <definedSymbol symbol="__ATOMIC_SEQ_CST=5"/>
 <definedSymbol symbol="__ATOMIC_ACQUIRE=2"/>
@@ -69,6 +69,8 @@
 <definedSymbol symbol="__UINT_FAST64_TYPE__=long long unsigned int"/>
 <definedSymbol symbol="__INTPTR_TYPE__=int"/>
 <definedSymbol symbol="__UINTPTR_TYPE__=unsigned int"/>
+<definedSymbol symbol="__has_include(STR)=__has_include__(STR)"/>
+<definedSymbol symbol="__has_include_next(STR)=__has_include_next__(STR)"/>
 <definedSymbol symbol="__GXX_ABI_VERSION=1002"/>
 <definedSymbol symbol="__SCHAR_MAX__=127"/>
 <definedSymbol symbol="__SHRT_MAX__=32767"/>
@@ -121,6 +123,8 @@
 <definedSymbol symbol="__UINT_FAST64_MAX__=18446744073709551615ULL"/>
 <definedSymbol symbol="__INTPTR_MAX__=2147483647"/>
 <definedSymbol symbol="__UINTPTR_MAX__=4294967295U"/>
+<definedSymbol symbol="__GCC_IEC_559=2"/>
+<definedSymbol symbol="__GCC_IEC_559_COMPLEX=2"/>
 <definedSymbol symbol="__FLT_EVAL_METHOD__=0"/>
 <definedSymbol symbol="__DEC_EVAL_METHOD__=2"/>
 <definedSymbol symbol="__FLT_RADIX__=2"/>
@@ -331,6 +335,7 @@
 <definedSymbol symbol="__ARM_FEATURE_QBIT=1"/>
 <definedSymbol symbol="__ARM_FEATURE_SAT=1"/>
 <definedSymbol symbol="__ARM_FEATURE_UNALIGNED=1"/>
+<definedSymbol symbol="__ARM_32BIT_STATE=1"/>
 <definedSymbol symbol="__ARM_FEATURE_LDREX=15"/>
 <definedSymbol symbol="__ARM_FEATURE_CLZ=1"/>
 <definedSymbol symbol="__ARM_FEATURE_SIMD32=1"/>
@@ -355,22 +360,22 @@
 <definedSymbol symbol="__GXX_TYPEINFO_EQUALITY_INLINE=0"/>
 <definedSymbol symbol="__ELF__=1"/>
 <definedSymbol symbol="__USES_INITFINI__=1"/>
-<definedSymbol symbol="__CS_SOURCERYGXX_MAJ__=2014"/>
+<definedSymbol symbol="__CS_SOURCERYGXX_MAJ__=2015"/>
 <definedSymbol symbol="__CS_SOURCERYGXX_MIN__=5"/>
-<definedSymbol symbol="__CS_SOURCERYGXX_REV__=22"/>
+<definedSymbol symbol="__CS_SOURCERYGXX_REV__=16"/>
 </collector>
 </instance>
-<instance id="xilinx.gnu.arm.exe.release.24840096;xilinx.gnu.arm.exe.release.24840096.">
+<instance id="xilinx.gnu.arm.exe.release.98706;xilinx.gnu.arm.exe.release.98706.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-<includePath path="c:\xilinx\sdk\2014.4\gnu\arm\nt\bin\../lib/gcc/arm-xilinx-eabi/4.8.3/include"/>
-<includePath path="c:\xilinx\sdk\2014.4\gnu\arm\nt\bin\../lib/gcc/arm-xilinx-eabi/4.8.3/include-fixed"/>
-<includePath path="c:\xilinx\sdk\2014.4\gnu\arm\nt\bin\../lib/gcc/arm-xilinx-eabi/4.8.3/../../../../arm-xilinx-eabi/include"/>
+<includePath path="c:\xilinx\sdk\2015.3\gnu\arm\nt\bin\../lib/gcc/arm-xilinx-eabi/4.9.2/include"/>
+<includePath path="c:\xilinx\sdk\2015.3\gnu\arm\nt\bin\../lib/gcc/arm-xilinx-eabi/4.9.2/include-fixed"/>
+<includePath path="c:\xilinx\sdk\2015.3\gnu\arm\nt\bin\../lib/gcc/arm-xilinx-eabi/4.9.2/../../../../arm-xilinx-eabi/include"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__STDC_HOSTED__=1"/>
 <definedSymbol symbol="__GNUC__=4"/>
-<definedSymbol symbol="__GNUC_MINOR__=8"/>
-<definedSymbol symbol="__GNUC_PATCHLEVEL__=3"/>
-<definedSymbol symbol="__VERSION__=&quot;4.8.3 20140320 (prerelease)&quot;"/>
+<definedSymbol symbol="__GNUC_MINOR__=9"/>
+<definedSymbol symbol="__GNUC_PATCHLEVEL__=2"/>
+<definedSymbol symbol="__VERSION__=&quot;4.9.2&quot;"/>
 <definedSymbol symbol="__ATOMIC_RELAXED=0"/>
 <definedSymbol symbol="__ATOMIC_SEQ_CST=5"/>
 <definedSymbol symbol="__ATOMIC_ACQUIRE=2"/>
@@ -429,6 +434,8 @@
 <definedSymbol symbol="__UINT_FAST64_TYPE__=long long unsigned int"/>
 <definedSymbol symbol="__INTPTR_TYPE__=int"/>
 <definedSymbol symbol="__UINTPTR_TYPE__=unsigned int"/>
+<definedSymbol symbol="__has_include(STR)=__has_include__(STR)"/>
+<definedSymbol symbol="__has_include_next(STR)=__has_include_next__(STR)"/>
 <definedSymbol symbol="__GXX_ABI_VERSION=1002"/>
 <definedSymbol symbol="__SCHAR_MAX__=127"/>
 <definedSymbol symbol="__SHRT_MAX__=32767"/>
@@ -481,6 +488,8 @@
 <definedSymbol symbol="__UINT_FAST64_MAX__=18446744073709551615ULL"/>
 <definedSymbol symbol="__INTPTR_MAX__=2147483647"/>
 <definedSymbol symbol="__UINTPTR_MAX__=4294967295U"/>
+<definedSymbol symbol="__GCC_IEC_559=2"/>
+<definedSymbol symbol="__GCC_IEC_559_COMPLEX=2"/>
 <definedSymbol symbol="__FLT_EVAL_METHOD__=0"/>
 <definedSymbol symbol="__DEC_EVAL_METHOD__=2"/>
 <definedSymbol symbol="__FLT_RADIX__=2"/>
@@ -691,6 +700,7 @@
 <definedSymbol symbol="__ARM_FEATURE_QBIT=1"/>
 <definedSymbol symbol="__ARM_FEATURE_SAT=1"/>
 <definedSymbol symbol="__ARM_FEATURE_UNALIGNED=1"/>
+<definedSymbol symbol="__ARM_32BIT_STATE=1"/>
 <definedSymbol symbol="__ARM_FEATURE_LDREX=15"/>
 <definedSymbol symbol="__ARM_FEATURE_CLZ=1"/>
 <definedSymbol symbol="__ARM_FEATURE_SIMD32=1"/>
@@ -715,9 +725,9 @@
 <definedSymbol symbol="__GXX_TYPEINFO_EQUALITY_INLINE=0"/>
 <definedSymbol symbol="__ELF__=1"/>
 <definedSymbol symbol="__USES_INITFINI__=1"/>
-<definedSymbol symbol="__CS_SOURCERYGXX_MAJ__=2014"/>
+<definedSymbol symbol="__CS_SOURCERYGXX_MAJ__=2015"/>
 <definedSymbol symbol="__CS_SOURCERYGXX_MIN__=5"/>
-<definedSymbol symbol="__CS_SOURCERYGXX_REV__=22"/>
+<definedSymbol symbol="__CS_SOURCERYGXX_REV__=16"/>
 </collector>
 </instance>
 </scannerInfo>

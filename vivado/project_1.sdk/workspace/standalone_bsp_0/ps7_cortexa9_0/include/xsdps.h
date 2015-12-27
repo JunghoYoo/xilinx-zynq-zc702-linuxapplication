@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2013 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2013 - 2015 Xilinx, Inc.  All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -18,8 +18,8 @@
 *
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-* XILINX CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
 * OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
@@ -33,6 +33,9 @@
 /**
 *
 * @file xsdps.h
+* @addtogroup sdps_v2_5
+* @{
+* @details
 *
 * This file contains the implementation of XSdPs driver.
 * This driver is used initialize read from and write to the SD card.
@@ -108,6 +111,13 @@
 *                       when re-initialization is done.CR# 819614.
 *						Use XSdPs_Change_ClkFreq API whenever changing
 *						clock.CR# 816586.
+* 2.4	sk	   12/04/14 Added support for micro SD without
+* 						WP/CD. CR# 810655.
+*						Checked for DAT Inhibit mask instead of CMD
+* 						Inhibit mask in Cmd Transfer API.
+*						Added Support for SD Card v1.0
+* 2.5 	sg		07/09/15 Added SD 3.0 features
+*       kvn     07/15/15 Modified the code according to MISRAC-2012.
 *
 * </pre>
 *
@@ -121,14 +131,14 @@
 extern "C" {
 #endif
 
+#include "xil_printf.h"
+#include "xil_cache.h"
 #include "xstatus.h"
 #include "xsdps_hw.h"
 #include <string.h>
 
 /************************** Constant Definitions *****************************/
 
-#define XSDPS_CLK_400_KHZ		400000		/**< 400 KHZ */
-#define XSDPS_CLK_50_MHZ		50000000	/**< 50 MHZ */
 /**************************** Type Definitions *******************************/
 /**
  * This typedef contains configuration information for the device.
@@ -137,11 +147,11 @@ typedef struct {
 	u16 DeviceId;			/**< Unique ID  of device */
 	u32 BaseAddress;		/**< Base address of the device */
 	u32 InputClockHz;		/**< Input clock frequency */
+	u32 CardDetect;			/**< Card Detect */
+	u32 WriteProtect;			/**< Write Protect */
 } XSdPs_Config;
 
-/*
- * ADMA2 descriptor table
- */
+/* ADMA2 descriptor table */
 typedef struct {
 	u16 Attribute;		/**< Attributes of descriptor */
 	u16 Length;		/**< Length of current dma transfer */
@@ -157,9 +167,18 @@ typedef struct {
 	XSdPs_Config Config;	/**< Configuration structure */
 	u32 IsReady;		/**< Device is initialized and ready */
 	u32 Host_Caps;		/**< Capabilities of host controller */
+	u32 Host_CapsExt;	/**< Extended Capabilities */
 	u32 HCS;		/**< High capacity support in card */
-	u32 CardID[4];		/**< Card ID */
+	u8  CardType;		/**< Type of card - SD/MMC/eMMC */
+	u8  Card_Version;	/**< Card version */
+	u8  HC_Version;		/**< Host controller version */
+	u8  BusWidth;		/**< Current operating bus width */
+	u32 BusSpeed;		/**< Current operating bus speed */
+	u8  Switch1v8;		/**< 1.8V Switch support */
+	u32 CardID[4];		/**< Card ID Register */
 	u32 RelCardAddr;	/**< Relative Card Address */
+	u32 CardSpecData[4];	/**< Card Specific Data Register */
+	u32 SdCardConfig;	/**< Sd Card Configuration Register */
 	/**< ADMA Descriptors */
 #ifdef __ICCARM__
 #pragma data_alignment = 32
@@ -174,24 +193,26 @@ typedef struct {
 
 /************************** Function Prototypes ******************************/
 XSdPs_Config *XSdPs_LookupConfig(u16 DeviceId);
-int XSdPs_CfgInitialize(XSdPs *InstancePtr, XSdPs_Config *ConfigPtr,
+s32 XSdPs_CfgInitialize(XSdPs *InstancePtr, XSdPs_Config *ConfigPtr,
 				u32 EffectiveAddr);
-int XSdPs_SdCardInitialize(XSdPs *InstancePtr);
-int XSdPs_ReadPolled(XSdPs *InstancePtr, u32 Arg, u32 BlkCnt, u8 *Buff);
-int XSdPs_WritePolled(XSdPs *InstancePtr, u32 Arg, u32 BlkCnt, const u8 *Buff);
-int XSdPs_SetBlkSize(XSdPs *InstancePtr, u16 BlkSize);
-int XSdPs_Select_Card (XSdPs *InstancePtr);
-int XSdPs_Change_ClkFreq(XSdPs *InstancePtr, u32 SelFreq);
-int XSdPs_Change_BusWidth(XSdPs *InstancePtr);
-int XSdPs_Change_BusSpeed(XSdPs *InstancePtr);
-int XSdPs_Get_BusWidth(XSdPs *InstancePtr, u8 *SCR);
-int XSdPs_Get_BusSpeed(XSdPs *InstancePtr, u8 *ReadBuff);
-int XSdPs_Pullup(XSdPs *InstancePtr);
-int XSdPs_MmcCardInitialize(XSdPs *InstancePtr);
-int XSdPs_Get_Mmc_ExtCsd(XSdPs *InstancePtr, u8 *ReadBuff);
+s32 XSdPs_SdCardInitialize(XSdPs *InstancePtr);
+s32 XSdPs_ReadPolled(XSdPs *InstancePtr, u32 Arg, u32 BlkCnt, u8 *Buff);
+s32 XSdPs_WritePolled(XSdPs *InstancePtr, u32 Arg, u32 BlkCnt, const u8 *Buff);
+s32 XSdPs_SetBlkSize(XSdPs *InstancePtr, u16 BlkSize);
+s32 XSdPs_Select_Card (XSdPs *InstancePtr);
+s32 XSdPs_Change_ClkFreq(XSdPs *InstancePtr, u32 SelFreq);
+s32 XSdPs_Change_BusWidth(XSdPs *InstancePtr);
+s32 XSdPs_Change_BusSpeed(XSdPs *InstancePtr);
+s32 XSdPs_Get_BusWidth(XSdPs *InstancePtr, u8 *SCR);
+s32 XSdPs_Get_BusSpeed(XSdPs *InstancePtr, u8 *ReadBuff);
+s32 XSdPs_Pullup(XSdPs *InstancePtr);
+s32 XSdPs_MmcCardInitialize(XSdPs *InstancePtr);
+s32 XSdPs_CardInitialize(XSdPs *InstancePtr);
+s32 XSdPs_Get_Mmc_ExtCsd(XSdPs *InstancePtr, u8 *ReadBuff);
 
 #ifdef __cplusplus
 }
 #endif
 
 #endif /* SD_H_ */
+/** @} */

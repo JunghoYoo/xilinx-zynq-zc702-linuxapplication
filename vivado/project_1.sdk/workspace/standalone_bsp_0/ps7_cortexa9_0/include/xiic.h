@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2002 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2002 - 2015 Xilinx, Inc.  All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -18,8 +18,8 @@
 *
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-* XILINX CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
 * OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
@@ -33,6 +33,9 @@
 /**
 *
 * @file xiic.h
+* @addtogroup iic_v3_1
+* @{
+* @details
 *
 * XIic is the driver for an IIC master or slave device.
 *
@@ -286,6 +289,10 @@
 *		      It Fixes the CR:685759 Changes are done in the file
 *		      xiic_l.c in the function XIic_Recv.
 * 3.0   adk  19/12/13 Updated as per the New Tcl API's
+* 3.1   adk  01/08/15 When configured as a slave return the actual number of
+*                     bytes have been received/sent by the Master
+*                     to the user callback (CR: 828504). Changes are made in the
+*		      file xiic_slave.c.
 * </pre>
 *
 ******************************************************************************/
@@ -570,3 +577,4 @@ void XIic_MultiMasterInclude(void);
 #endif
 
 #endif /* end of protection macro */
+/** @} */

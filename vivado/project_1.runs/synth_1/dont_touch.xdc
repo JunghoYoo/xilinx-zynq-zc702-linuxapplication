@@ -3,6 +3,8 @@
 
 # XDC: new/system_top.xdc
 
+# XDC: zc702_system_constr.xdc
+
 # Block Designs: bd/system/system.bd
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system || ORIG_REF_NAME==system}]
 
@@ -17,9 +19,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_sys_conc
 
 # IP: bd/system/ip/system_axi_cpu_interconnect_0/system_axi_cpu_interconnect_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_cpu_interconnect_0 || ORIG_REF_NAME==system_axi_cpu_interconnect_0}]
-
-# IP: bd/system/ip/system_xbar_0/system_xbar_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xbar_0 || ORIG_REF_NAME==system_xbar_0}]
 
 # IP: bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_sys_rstgen_0 || ORIG_REF_NAME==system_sys_rstgen_0}]
@@ -45,6 +44,12 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_spdi
 # IP: bd/system/ip/system_axi_i2s_adi_0_0/system_axi_i2s_adi_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_i2s_adi_0_0 || ORIG_REF_NAME==system_axi_i2s_adi_0_0}]
 
+# IP: bd/system/ip/system_xbar_0/system_xbar_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xbar_0 || ORIG_REF_NAME==system_xbar_0}]
+
+# IP: bd/system/ip/system_xlconstant_0_0/system_xlconstant_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xlconstant_0_0 || ORIG_REF_NAME==system_xlconstant_0_0}]
+
 # IP: bd/system/ip/system_auto_pc_0/system_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_0 || ORIG_REF_NAME==system_auto_pc_0}]
 
@@ -59,8 +64,6 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/system/ip/system_axi_iic_main_0/system_axi_iic_main_0_ooc.xdc
 
-# XDC: bd/system/ip/system_xbar_0/system_xbar_0_ooc.xdc
-
 # XDC: bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0_board.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_sys_rstgen_0 || ORIG_REF_NAME==system_sys_rstgen_0}]
 
@@ -69,7 +72,7 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0_ooc.xdc
 
-# XDC: ipshared/analog.com/axi_hdmi_tx_v1_0/8027155a/axi_hdmi_tx_constr.xdc
+# XDC: ipshared/analog.com/axi_hdmi_tx_v1_0/axi_hdmi_tx_constr.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_hdmi_core_0 || ORIG_REF_NAME==system_axi_hdmi_core_0}]
 
 # XDC: bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0.xdc
@@ -88,13 +91,13 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0_ooc.xdc
 
-# XDC: ipshared/analog.com/axi_spdif_tx_v1_0/dce0d057/axi_spdif_tx_constr.xdc
+# XDC: ipshared/analog.com/axi_spdif_tx_v1_0/axi_spdif_tx_constr.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_spdif_tx_core_0 || ORIG_REF_NAME==system_axi_spdif_tx_core_0}]
+
+# XDC: bd/system/ip/system_xbar_0/system_xbar_0_ooc.xdc
 
 # XDC: bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc
 
 # XDC: bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc
 
 # XDC: bd/system/system_ooc.xdc
-
-# XDC: D:/Developers_KIT/Zynq702/analogdevicelibrary/hdl/hdl-hdl_2014_r2/hdl-hdl_2014_r2/projects/common/zc702/zc702_system_constr.xdc

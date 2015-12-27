@@ -69,6 +69,41 @@ ENET0_SOF_TX,
 GPIO_I, 
 GPIO_O, 
 GPIO_T, 
+I2C1_SDA_I, 
+I2C1_SDA_O, 
+I2C1_SDA_T, 
+I2C1_SCL_I, 
+I2C1_SCL_O, 
+I2C1_SCL_T, 
+SDIO1_CLK, 
+SDIO1_CLK_FB, 
+SDIO1_CMD_O, 
+SDIO1_CMD_I, 
+SDIO1_CMD_T, 
+SDIO1_DATA_I, 
+SDIO1_DATA_O, 
+SDIO1_DATA_T, 
+SDIO1_LED, 
+SDIO1_CDN, 
+SDIO1_WP, 
+SDIO1_BUSPOW, 
+SDIO1_BUSVOLT, 
+SPI0_SCLK_I, 
+SPI0_SCLK_O, 
+SPI0_SCLK_T, 
+SPI0_MOSI_I, 
+SPI0_MOSI_O, 
+SPI0_MOSI_T, 
+SPI0_MISO_I, 
+SPI0_MISO_O, 
+SPI0_MISO_T, 
+SPI0_SS_I, 
+SPI0_SS_O, 
+SPI0_SS1_O, 
+SPI0_SS2_O, 
+SPI0_SS_T, 
+UART0_TX, 
+UART0_RX, 
 USB0_PORT_INDCTL, 
 USB0_VBUS_PWRSELECT, 
 USB0_VBUS_PWRFAULT, 
@@ -160,15 +195,30 @@ IRQ_F2P,
 DMA0_DATYPE, 
 DMA0_DAVALID, 
 DMA0_DRREADY, 
+DMA1_DATYPE, 
+DMA1_DAVALID, 
+DMA1_DRREADY, 
+DMA2_DATYPE, 
+DMA2_DAVALID, 
+DMA2_DRREADY, 
 DMA0_ACLK, 
 DMA0_DAREADY, 
 DMA0_DRLAST, 
 DMA0_DRVALID, 
+DMA1_ACLK, 
+DMA1_DAREADY, 
+DMA1_DRLAST, 
+DMA1_DRVALID, 
+DMA2_ACLK, 
+DMA2_DAREADY, 
+DMA2_DRLAST, 
+DMA2_DRVALID, 
 DMA0_DRTYPE, 
+DMA1_DRTYPE, 
+DMA2_DRTYPE, 
 FCLK_CLK0, 
 FCLK_CLK1, 
 FCLK_RESET0_N, 
-FCLK_RESET1_N, 
 MIO, 
 DDR_CAS_n, 
 DDR_CKE, 
@@ -201,9 +251,44 @@ output ENET0_PTP_SYNC_FRAME_RX;
 output ENET0_PTP_SYNC_FRAME_TX;
 output ENET0_SOF_RX;
 output ENET0_SOF_TX;
-input [31 : 0] GPIO_I;
-output [31 : 0] GPIO_O;
-output [31 : 0] GPIO_T;
+input [7 : 0] GPIO_I;
+output [7 : 0] GPIO_O;
+output [7 : 0] GPIO_T;
+input I2C1_SDA_I;
+output I2C1_SDA_O;
+output I2C1_SDA_T;
+input I2C1_SCL_I;
+output I2C1_SCL_O;
+output I2C1_SCL_T;
+output SDIO1_CLK;
+input SDIO1_CLK_FB;
+output SDIO1_CMD_O;
+input SDIO1_CMD_I;
+output SDIO1_CMD_T;
+input [3 : 0] SDIO1_DATA_I;
+output [3 : 0] SDIO1_DATA_O;
+output [3 : 0] SDIO1_DATA_T;
+output SDIO1_LED;
+input SDIO1_CDN;
+input SDIO1_WP;
+output SDIO1_BUSPOW;
+output [2 : 0] SDIO1_BUSVOLT;
+input SPI0_SCLK_I;
+output SPI0_SCLK_O;
+output SPI0_SCLK_T;
+input SPI0_MOSI_I;
+output SPI0_MOSI_O;
+output SPI0_MOSI_T;
+input SPI0_MISO_I;
+output SPI0_MISO_O;
+output SPI0_MISO_T;
+input SPI0_SS_I;
+output SPI0_SS_O;
+output SPI0_SS1_O;
+output SPI0_SS2_O;
+output SPI0_SS_T;
+output UART0_TX;
+input UART0_RX;
 output [1 : 0] USB0_PORT_INDCTL;
 output USB0_VBUS_PWRSELECT;
 input USB0_VBUS_PWRFAULT;
@@ -295,15 +380,30 @@ input [15 : 0] IRQ_F2P;
 output [1 : 0] DMA0_DATYPE;
 output DMA0_DAVALID;
 output DMA0_DRREADY;
+output [1 : 0] DMA1_DATYPE;
+output DMA1_DAVALID;
+output DMA1_DRREADY;
+output [1 : 0] DMA2_DATYPE;
+output DMA2_DAVALID;
+output DMA2_DRREADY;
 input DMA0_ACLK;
 input DMA0_DAREADY;
 input DMA0_DRLAST;
 input DMA0_DRVALID;
+input DMA1_ACLK;
+input DMA1_DAREADY;
+input DMA1_DRLAST;
+input DMA1_DRVALID;
+input DMA2_ACLK;
+input DMA2_DAREADY;
+input DMA2_DRLAST;
+input DMA2_DRVALID;
 input [1 : 0] DMA0_DRTYPE;
+input [1 : 0] DMA1_DRTYPE;
+input [1 : 0] DMA2_DRTYPE;
 output FCLK_CLK0;
 output FCLK_CLK1;
 output FCLK_RESET0_N;
-output FCLK_RESET1_N;
 input [53 : 0] MIO;
 input DDR_CAS_n;
 input DDR_CKE;
@@ -326,7 +426,7 @@ input PS_SRSTB;
 input PS_CLK;
 input PS_PORB;
 
-  processing_system7_bfm_v2_0_processing_system7_bfm #(
+  processing_system7_bfm_v2_0_5_processing_system7_bfm #(
     .C_USE_M_AXI_GP0(1),
     .C_USE_M_AXI_GP1(0),
     .C_USE_S_AXI_ACP(0),
@@ -341,10 +441,10 @@ input PS_PORB;
     .C_S_AXI_HP2_DATA_WIDTH(64),
     .C_S_AXI_HP3_DATA_WIDTH(64),
     .C_HIGH_OCM_EN(0),
-    .C_FCLK_CLK0_FREQ(100),
-    .C_FCLK_CLK1_FREQ(200),
-    .C_FCLK_CLK2_FREQ(50),
-    .C_FCLK_CLK3_FREQ(50),
+    .C_FCLK_CLK0_FREQ(100.0),
+    .C_FCLK_CLK1_FREQ(200.0),
+    .C_FCLK_CLK2_FREQ(50.0),
+    .C_FCLK_CLK3_FREQ(50.0),
 	.C_M_AXI_GP0_ENABLE_STATIC_REMAP(0),
 	.C_M_AXI_GP1_ENABLE_STATIC_REMAP(0),
 	.C_M_AXI_GP0_THREAD_ID_WIDTH (12), 
@@ -711,7 +811,7 @@ input PS_PORB;
 	
     .FCLK_CLK3(),
     .FCLK_RESET0_N(FCLK_RESET0_N),
-    .FCLK_RESET1_N(FCLK_RESET1_N),
+    .FCLK_RESET1_N(),
     .FCLK_RESET2_N(),
     .FCLK_RESET3_N(),
     .IRQ_F2P(IRQ_F2P),

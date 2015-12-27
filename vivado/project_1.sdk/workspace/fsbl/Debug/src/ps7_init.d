@@ -1,6 +1,6 @@
 src/ps7_init.o src/ps7_init.d: \
- D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk/workspace/system_top_hw_platform_0/ps7_init.c \
- D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk/workspace/system_top_hw_platform_0/ps7_init.h \
+ D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk/workspace/system_hw_platform_0/ps7_init.c \
+ D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk/workspace/system_hw_platform_0/ps7_init.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_types.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xpseudo_asm.h \
@@ -10,7 +10,7 @@ src/ps7_init.o src/ps7_init.d: \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters_ps.h
 
-D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk/workspace/system_top_hw_platform_0/ps7_init.h:
+D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk/workspace/system_hw_platform_0/ps7_init.h:
 
 ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:
 

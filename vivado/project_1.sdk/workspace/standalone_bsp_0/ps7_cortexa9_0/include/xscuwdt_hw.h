@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2010 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2010 - 2015 Xilinx, Inc.  All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -18,8 +18,8 @@
 *
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-* XILINX CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
 * OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
@@ -33,6 +33,8 @@
 /**
 *
 * @file xscuwdt_hw.h
+* @addtogroup scuwdt_v2_1
+* @{
 *
 * This file contains the hardware interface to the Xilinx SCU private Watch Dog
 * Timer (XSCUWDT).
@@ -50,6 +52,7 @@
 *		     when the xstatus.h in the common driver overwrites
 *		     the xstatus.h of the standalone BSP during the
 *		     libgen.
+* 2.1 	sk  02/26/15 Modified the code for MISRA-C:2012 compliance.
 * </pre>
 *
 ******************************************************************************/
@@ -73,12 +76,12 @@ extern "C" {
  * @{
  */
 
-#define XSCUWDT_LOAD_OFFSET	0x00 /**< Watchdog Load Register */
-#define XSCUWDT_COUNTER_OFFSET	0x04 /**< Watchdog Counter Register */
-#define XSCUWDT_CONTROL_OFFSET	0x08 /**< Watchdog Control Register */
-#define XSCUWDT_ISR_OFFSET	0x0C /**< Watchdog Interrupt Status Register */
-#define XSCUWDT_RST_STS_OFFSET	0x10 /**< Watchdog Reset Status Register */
-#define XSCUWDT_DISABLE_OFFSET	0x14 /**< Watchdog Disable Register */
+#define XSCUWDT_LOAD_OFFSET	0x00U /**< Watchdog Load Register */
+#define XSCUWDT_COUNTER_OFFSET	0x04U /**< Watchdog Counter Register */
+#define XSCUWDT_CONTROL_OFFSET	0x08U /**< Watchdog Control Register */
+#define XSCUWDT_ISR_OFFSET	0x0CU /**< Watchdog Interrupt Status Register */
+#define XSCUWDT_RST_STS_OFFSET	0x10U /**< Watchdog Reset Status Register */
+#define XSCUWDT_DISABLE_OFFSET	0x14U /**< Watchdog Disable Register */
 /* @} */
 
 /** @name Watchdog Control register
@@ -87,14 +90,14 @@ extern "C" {
  * @{
  */
 
-#define XSCUWDT_CONTROL_PRESCALER_MASK	 0x0000FF00 /**< Prescaler */
-#define XSCUWDT_CONTROL_PRESCALER_SHIFT	 8
-#define XSCUWDT_CONTROL_WD_MODE_MASK	 0x00000008 /**< Watchdog/Timer mode */
-#define XSCUWDT_CONTROL_IT_ENABLE_MASK	 0x00000004 /**< Intr enable (in
+#define XSCUWDT_CONTROL_PRESCALER_MASK	 0x0000FF00U /**< Prescaler */
+#define XSCUWDT_CONTROL_PRESCALER_SHIFT	 8U
+#define XSCUWDT_CONTROL_WD_MODE_MASK	 0x00000008U /**< Watchdog/Timer mode */
+#define XSCUWDT_CONTROL_IT_ENABLE_MASK	 0x00000004U /**< Intr enable (in
 							 timer mode) */
-#define XSCUWDT_CONTROL_AUTO_RELOAD_MASK 0x00000002 /**< Auto-reload (in
+#define XSCUWDT_CONTROL_AUTO_RELOAD_MASK 0x00000002U /**< Auto-reload (in
 							 timer mode) */
-#define XSCUWDT_CONTROL_WD_ENABLE_MASK	 0x00000001 /**< Watchdog enable */
+#define XSCUWDT_CONTROL_WD_ENABLE_MASK	 0x00000001U /**< Watchdog enable */
 /* @} */
 
 /** @name Interrupt Status register
@@ -103,7 +106,7 @@ extern "C" {
  * @{
  */
 
-#define XSCUWDT_ISR_EVENT_FLAG_MASK	0x00000001 /**< Event flag */
+#define XSCUWDT_ISR_EVENT_FLAG_MASK	0x00000001U /**< Event flag */
 /*@}*/
 
 /** @name Reset Status register
@@ -112,7 +115,7 @@ extern "C" {
  * @{
  */
 
-#define XSCUWDT_RST_STS_RESET_FLAG_MASK	0x00000001 /**< Time out occured */
+#define XSCUWDT_RST_STS_RESET_FLAG_MASK	0x00000001U /**< Time out occured */
 /*@}*/
 
 /** @name Disable register
@@ -122,9 +125,9 @@ extern "C" {
  * Control Register is set to zero.
  * @{
  */
-#define XSCUWDT_DISABLE_VALUE1		0x12345678 /**< Watchdog mode disable
+#define XSCUWDT_DISABLE_VALUE1		0x12345678U /**< Watchdog mode disable
 							value 1 */
-#define XSCUWDT_DISABLE_VALUE2		0x87654321 /**< Watchdog mode disable
+#define XSCUWDT_DISABLE_VALUE2		0x87654321U /**< Watchdog mode disable
 							value 2 */
 /*@}*/
 
@@ -147,7 +150,7 @@ extern "C" {
 *
 *****************************************************************************/
 #define XScuWdt_ReadReg(BaseAddr, RegOffset)		\
-	Xil_In32((BaseAddr) + (RegOffset))
+	Xil_In32((BaseAddr) + ((u32)RegOffset))
 
 /****************************************************************************/
 /**
@@ -165,7 +168,7 @@ extern "C" {
 *
 *****************************************************************************/
 #define XScuWdt_WriteReg(BaseAddr, RegOffset, Data)	\
-	Xil_Out32((BaseAddr) + (RegOffset), (Data))
+	Xil_Out32((BaseAddr) + ((u32)RegOffset), ((u32)Data))
 
 /************************** Function Prototypes ******************************/
 
@@ -176,3 +179,4 @@ extern "C" {
 #endif
 
 #endif	/* end of protection macro */
+/** @} */

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>standalone_bsp_0</name>
-	<comment>Created by SDK v2014.4</comment>
+	<comment>Created by SDK v2015.3</comment>
 	<projects>
-		<project>system_top_hw_platform_0</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:axi_vdma:6.2
--- IP Revision: 2
+-- IP Revision: 5
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY axi_vdma_v6_2;
-USE axi_vdma_v6_2.axi_vdma;
+LIBRARY axi_vdma_v6_2_5;
+USE axi_vdma_v6_2_5.axi_vdma;
 
 ENTITY system_axi_hdmi_dma_0 IS
   PORT (

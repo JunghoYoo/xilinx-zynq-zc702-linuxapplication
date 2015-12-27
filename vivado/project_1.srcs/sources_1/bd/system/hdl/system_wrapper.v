@@ -1,7 +1,7 @@
-//Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+//Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
-//Date        : Sat Feb 28 10:01:21 2015
+//Tool Version: Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
+//Date        : Sat Dec 26 23:47:01 2015
 //Host        : Peter-PC running 64-bit Service Pack 1  (build 7601)
 //Command     : generate_target system_wrapper.bd
 //Design      : system_wrapper
@@ -44,16 +44,13 @@ module system_wrapper
     LRCLK_O,
     SDATA_I,
     SDATA_O,
-    SDIO1_CDN,
-    SDIO1_CLK,
-    SDIO1_CLK_FB,
-    SDIO1_CMD_I,
-    SDIO1_CMD_O,
-    SDIO1_CMD_T,
-    SDIO1_DATA_I,
-    SDIO1_DATA_O,
-    SDIO1_DATA_T,
-    SDIO1_WP,
+    SDIO1_buspow,
+    SDIO1_busvolt,
+    SDIO1_cdn,
+    SDIO1_clk,
+    SDIO1_clk_fb,
+    SDIO1_led,
+    SDIO1_wp,
     UART0_RX,
     UART0_TX,
     clkout12288,
@@ -78,7 +75,20 @@ module system_wrapper
     ps_intr_7,
     ps_intr_8,
     ps_intr_9,
-    spdif);
+    sdio1_cmd_i,
+    sdio1_cmd_o,
+    sdio1_cmd_t,
+    sdio1_data_i,
+    sdio1_data_o,
+    sdio1_data_t,
+    spdif,
+    spi0_io0_io,
+    spi0_io1_io,
+    spi0_sck_io,
+    spi0_ss1_o,
+    spi0_ss2_o,
+    spi0_ss_o,
+    spi0_ss_t);
   output [0:0]BCLK_O;
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
@@ -113,16 +123,13 @@ module system_wrapper
   output [0:0]LRCLK_O;
   input [0:0]SDATA_I;
   output [0:0]SDATA_O;
-  input SDIO1_CDN;
-  output SDIO1_CLK;
-  input SDIO1_CLK_FB;
-  input SDIO1_CMD_I;
-  output SDIO1_CMD_O;
-  output SDIO1_CMD_T;
-  input [3:0]SDIO1_DATA_I;
-  output [3:0]SDIO1_DATA_O;
-  output [3:0]SDIO1_DATA_T;
-  input SDIO1_WP;
+  output SDIO1_buspow;
+  output [2:0]SDIO1_busvolt;
+  input SDIO1_cdn;
+  output SDIO1_clk;
+  input SDIO1_clk_fb;
+  output SDIO1_led;
+  input SDIO1_wp;
   input UART0_RX;
   output UART0_TX;
   output clkout12288;
@@ -147,7 +154,20 @@ module system_wrapper
   input ps_intr_7;
   input ps_intr_8;
   input ps_intr_9;
+  input sdio1_cmd_i;
+  output sdio1_cmd_o;
+  output sdio1_cmd_t;
+  input [3:0]sdio1_data_i;
+  output [3:0]sdio1_data_o;
+  output [3:0]sdio1_data_t;
   output spdif;
+  inout spi0_io0_io;
+  inout spi0_io1_io;
+  inout spi0_sck_io;
+  output spi0_ss1_o;
+  output spi0_ss2_o;
+  output spi0_ss_o;
+  output spi0_ss_t;
 
   wire [0:0]BCLK_O;
   wire [14:0]DDR_addr;
@@ -183,16 +203,13 @@ module system_wrapper
   wire [0:0]LRCLK_O;
   wire [0:0]SDATA_I;
   wire [0:0]SDATA_O;
-  wire SDIO1_CDN;
-  wire SDIO1_CLK;
-  wire SDIO1_CLK_FB;
-  wire SDIO1_CMD_I;
-  wire SDIO1_CMD_O;
-  wire SDIO1_CMD_T;
-  wire [3:0]SDIO1_DATA_I;
-  wire [3:0]SDIO1_DATA_O;
-  wire [3:0]SDIO1_DATA_T;
-  wire SDIO1_WP;
+  wire SDIO1_buspow;
+  wire [2:0]SDIO1_busvolt;
+  wire SDIO1_cdn;
+  wire SDIO1_clk;
+  wire SDIO1_clk_fb;
+  wire SDIO1_led;
+  wire SDIO1_wp;
   wire UART0_RX;
   wire UART0_TX;
   wire clkout12288;
@@ -223,19 +240,56 @@ module system_wrapper
   wire ps_intr_7;
   wire ps_intr_8;
   wire ps_intr_9;
+  wire sdio1_cmd_i;
+  wire sdio1_cmd_o;
+  wire sdio1_cmd_t;
+  wire [3:0]sdio1_data_i;
+  wire [3:0]sdio1_data_o;
+  wire [3:0]sdio1_data_t;
   wire spdif;
+  wire spi0_io0_i;
+  wire spi0_io0_io;
+  wire spi0_io0_o;
+  wire spi0_io0_t;
+  wire spi0_io1_i;
+  wire spi0_io1_io;
+  wire spi0_io1_o;
+  wire spi0_io1_t;
+  wire spi0_sck_i;
+  wire spi0_sck_io;
+  wire spi0_sck_o;
+  wire spi0_sck_t;
+  wire spi0_ss1_o;
+  wire spi0_ss2_o;
+  wire spi0_ss_o;
+  wire spi0_ss_t;
 
-IOBUF iic_main_scl_iobuf
+  IOBUF iic_main_scl_iobuf
        (.I(iic_main_scl_o),
         .IO(iic_main_scl_io),
         .O(iic_main_scl_i),
         .T(iic_main_scl_t));
-IOBUF iic_main_sda_iobuf
+  IOBUF iic_main_sda_iobuf
        (.I(iic_main_sda_o),
         .IO(iic_main_sda_io),
         .O(iic_main_sda_i),
         .T(iic_main_sda_t));
-system system_i
+  IOBUF spi0_io0_iobuf
+       (.I(spi0_io0_o),
+        .IO(spi0_io0_io),
+        .O(spi0_io0_i),
+        .T(spi0_io0_t));
+  IOBUF spi0_io1_iobuf
+       (.I(spi0_io1_o),
+        .IO(spi0_io1_io),
+        .O(spi0_io1_i),
+        .T(spi0_io1_t));
+  IOBUF spi0_sck_iobuf
+       (.I(spi0_sck_o),
+        .IO(spi0_sck_io),
+        .O(spi0_sck_i),
+        .T(spi0_sck_t));
+  system system_i
        (.BCLK_O(BCLK_O),
         .DDR_addr(DDR_addr),
         .DDR_ba(DDR_ba),
@@ -276,16 +330,30 @@ system system_i
         .LRCLK_O(LRCLK_O),
         .SDATA_I(SDATA_I),
         .SDATA_O(SDATA_O),
-        .SDIO1_CDN(SDIO1_CDN),
-        .SDIO1_CLK(SDIO1_CLK),
-        .SDIO1_CLK_FB(SDIO1_CLK_FB),
-        .SDIO1_CMD_I(SDIO1_CMD_I),
-        .SDIO1_CMD_O(SDIO1_CMD_O),
-        .SDIO1_CMD_T(SDIO1_CMD_T),
-        .SDIO1_DATA_I(SDIO1_DATA_I),
-        .SDIO1_DATA_O(SDIO1_DATA_O),
-        .SDIO1_DATA_T(SDIO1_DATA_T),
-        .SDIO1_WP(SDIO1_WP),
+        .SDIO1_buspow(SDIO1_buspow),
+        .SDIO1_busvolt(SDIO1_busvolt),
+        .SDIO1_cdn(SDIO1_cdn),
+        .SDIO1_clk(SDIO1_clk),
+        .SDIO1_clk_fb(SDIO1_clk_fb),
+        .SDIO1_cmd_i(sdio1_cmd_i),
+        .SDIO1_cmd_o(sdio1_cmd_o),
+        .SDIO1_data_i(sdio1_data_i),
+        .SDIO1_data_o(sdio1_data_o),
+        .SDIO1_led(SDIO1_led),
+        .SDIO1_wp(SDIO1_wp),
+        .SPI0_io0_i(spi0_io0_i),
+        .SPI0_io0_o(spi0_io0_o),
+        .SPI0_io0_t(spi0_io0_t),
+        .SPI0_io1_i(spi0_io1_i),
+        .SPI0_io1_o(spi0_io1_o),
+        .SPI0_io1_t(spi0_io1_t),
+        .SPI0_sck_i(spi0_sck_i),
+        .SPI0_sck_o(spi0_sck_o),
+        .SPI0_sck_t(spi0_sck_t),
+        .SPI0_ss1_o(spi0_ss1_o),
+        .SPI0_ss2_o(spi0_ss2_o),
+        .SPI0_ss_o(spi0_ss_o),
+        .SPI0_ss_t(spi0_ss_t),
         .UART0_RX(UART0_RX),
         .UART0_TX(UART0_TX),
         .clkout12288(clkout12288),
@@ -308,5 +376,7 @@ system system_i
         .ps_intr_7(ps_intr_7),
         .ps_intr_8(ps_intr_8),
         .ps_intr_9(ps_intr_9),
+        .sdio1_cmd_t(sdio1_cmd_t),
+        .sdio1_data_t(sdio1_data_t),
         .spdif(spdif));
 endmodule

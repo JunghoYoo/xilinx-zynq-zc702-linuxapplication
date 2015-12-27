@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2012 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2012 - 2015 Xilinx, Inc.  All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -18,8 +18,8 @@
 *
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-* XILINX CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
 * OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
@@ -32,6 +32,8 @@
 /*****************************************************************************/
 /**
  *  @file xaxivdma_i.h
+* @addtogroup axivdma_v6_0
+* @{
  *
  * Internal API definitions shared by driver files.
  *
@@ -46,17 +48,17 @@
  *		       Replaced include xenv.h with string.h in xaxivdma_i.h
  * 		       file.
  *  	 rkv  03/28/11 Added support for frame store register.
- * 3.00a srt  08/26/11 Added support for Flush on Frame Sync and dynamic 
+ * 3.00a srt  08/26/11 Added support for Flush on Frame Sync and dynamic
  *		       programming of Line Buffer Thresholds.
- * 4.00a srt  11/21/11 Added support for 32 Frame Stores and modified bit  
+ * 4.00a srt  11/21/11 Added support for 32 Frame Stores and modified bit
  *		       mask of Park Offset Register.
  *		       Added support for GenLock & Fsync Source Selection.
  * 4.03a srt  01/18/13 -  Added StreamWidth parameter to XAxiVdma_Channel
  *		       structure (CR 691866).
  * 4.04a srt  03/03/13 Support for the GenlockRepeat Control bit (Bit 15)
  *                     added in the new version of IP v5.04 (CR: 691391)
- *					 - Support for *_ENABLE_DEBUG_INFO_* debug configuration                       
- *			           parameters (CR: 703738)	 
+ *					 - Support for *_ENABLE_DEBUG_INFO_* debug configuration
+ *			           parameters (CR: 703738)
  *
  * </pre>
  *
@@ -94,14 +96,14 @@ typedef struct {
     int HasDRE;         /* Whether support unaligned transfer */
     int LineBufDepth;	/* Depth of Channel Line Buffer FIFO */
     int LineBufThreshold;	/* Threshold point at which Channel Line
-                     	 	 *  almost empty flag asserts high */
+				 *  almost empty flag asserts high */
     int WordLength;     /* Word length */
     int NumFrames;	/* Number of frames to work on */
 
-    u32 HeadBdPhysAddr; /* Physical address of the first BD */
-    u32 HeadBdAddr;     /* Virtual address of the first BD */
-    u32 TailBdPhysAddr; /* Physical address of the last BD */
-    u32 TailBdAddr;     /* Virtual address of the last BD */
+    UINTPTR HeadBdPhysAddr; /* Physical address of the first BD */
+    UINTPTR HeadBdAddr;     /* Virtual address of the first BD */
+    UINTPTR TailBdPhysAddr; /* Physical address of the last BD */
+    UINTPTR TailBdAddr;     /* Virtual address of the last BD */
     int Hsize;          /* Horizontal size */
     int Vsize;          /* Vertical size saved for no-sg mode hw start */
 
@@ -113,6 +115,8 @@ typedef struct {
     XAxiVdma_Bd BDs[XAXIVDMA_MAX_FRAMESTORE] __attribute__((__aligned__(32)));
                         /*Statically allocated BDs */
     u32 DbgFeatureFlags; /* Debug Parameter Flags */
+	int AddrWidth;
+	int direction;	/* Determines whether Read or write channel */
 }XAxiVdma_Channel;
 
 /* Duplicate layout of XAxiVdma_DmaSetup
@@ -129,7 +133,7 @@ typedef struct {
     int EnableSync;         /**< Gen-Lock Mode? */
     int PointNum;           /**< Master we synchronize with */
     int EnableFrameCounter; /**< Frame Counter Enable */
-    u32 FrameStoreStartAddr[XAXIVDMA_MAX_FRAMESTORE];
+    UINTPTR FrameStoreStartAddr[XAXIVDMA_MAX_FRAMESTORE];
                             /**< Start Addresses of Frame Store Buffers. */
     int FixedFrameStoreAddr;/**< Fixed Frame Store Address index */
     int GenLockRepeat;      /**< Gen-Lock Repeat? */
@@ -157,11 +161,11 @@ u32 XAxiVdma_ChannelGetEnabledIntr(XAxiVdma_Channel *Channel);
 void XAxiVdma_ChannelIntrClear(XAxiVdma_Channel *Channel, u32 IntrType);
 int XAxiVdma_ChannelStartTransfer(XAxiVdma_Channel *Channel,
         XAxiVdma_ChannelSetup *ChannelCfgPtr);
-int XAxiVdma_ChannelSetBdAddrs(XAxiVdma_Channel *Channel, u32 BdAddrPhys,
-          u32 BdAddrVirt);
+int XAxiVdma_ChannelSetBdAddrs(XAxiVdma_Channel *Channel, UINTPTR BdAddrPhys,
+          UINTPTR BdAddrVirt);
 int XAxiVdma_ChannelConfig(XAxiVdma_Channel *Channel,
         XAxiVdma_ChannelSetup *ChannelCfgPtr);
-int XAxiVdma_ChannelSetBufferAddr(XAxiVdma_Channel *Channel, u32 *AddrSet,
+int XAxiVdma_ChannelSetBufferAddr(XAxiVdma_Channel *Channel, UINTPTR *AddrSet,
         int NumFrames);
 int XAxiVdma_ChannelStart(XAxiVdma_Channel *Channel);
 void XAxiVdma_ChannelStop(XAxiVdma_Channel *Channel);
@@ -176,3 +180,4 @@ void XAxiVdma_ClearChannelErrors(XAxiVdma_Channel *Channel, u32 ErrorMask);
 #endif
 
 #endif
+/** @} */

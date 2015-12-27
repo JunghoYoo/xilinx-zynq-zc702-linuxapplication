@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:ip:processing_system7:5.5
-// IP Revision: 0
+// IP Revision: 3
 
-(* X_CORE_INFO = "processing_system7_v5_5_processing_system7,Vivado 2014.4" *)
+(* X_CORE_INFO = "processing_system7_v5_5_processing_system7,Vivado 2015.3" *)
 (* CHECK_LICENSE_TYPE = "system_sys_ps7_0,processing_system7_v5_5_processing_system7,{}" *)
-(* CORE_GENERATION_INFO = "system_sys_ps7_0,processing_system7_v5_5_processing_system7,{x_ipProduct=Vivado 2014.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=processing_system7,x_ipVersion=5.5,x_ipCoreRevision=0,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_EN_EMIO_PJTAG=0,C_EN_EMIO_ENET0=0,C_EN_EMIO_ENET1=0,C_EN_EMIO_TRACE=0,C_INCLUDE_TRACE_BUFFER=0,C_TRACE_BUFFER_FIFO_SIZE=128,USE_TRACE_DATA_EDGE_DETECTOR=0,C_TRACE_PIPELINE_WIDTH=8,C_TRACE_BUFFER_CLOCK_DELAY=12,C_EMIO_GPIO_WIDTH=8,C_INCLUDE_ACP_TRANS_CHECK=0,C_USE_DEFAULT_ACP_USER_VAL=0,C_S_AXI_ACP_ARUSER_VAL=31,C_S_AXI_ACP_AWUSER_VAL=31,C_M_AXI_GP0_ID_WIDTH=12,C_M_AXI_GP0_ENABLE_STATIC_REMAP=0,C_M_AXI_GP1_ID_WIDTH=12,C_M_AXI_GP1_ENABLE_STATIC_REMAP=0,C_S_AXI_GP0_ID_WIDTH=6,C_S_AXI_GP1_ID_WIDTH=6,C_S_AXI_ACP_ID_WIDTH=3,C_S_AXI_HP0_ID_WIDTH=6,C_S_AXI_HP0_DATA_WIDTH=64,C_S_AXI_HP1_ID_WIDTH=6,C_S_AXI_HP1_DATA_WIDTH=64,C_S_AXI_HP2_ID_WIDTH=6,C_S_AXI_HP2_DATA_WIDTH=64,C_S_AXI_HP3_ID_WIDTH=6,C_S_AXI_HP3_DATA_WIDTH=64,C_M_AXI_GP0_THREAD_ID_WIDTH=12,C_M_AXI_GP1_THREAD_ID_WIDTH=12,C_NUM_F2P_INTR_INPUTS=16,C_IRQ_F2P_MODE=DIRECT,C_DQ_WIDTH=32,C_DQS_WIDTH=4,C_DM_WIDTH=4,C_MIO_PRIMITIVE=54,C_TRACE_INTERNAL_WIDTH=2,C_PS7_SI_REV=PRODUCTION,C_FCLK_CLK0_BUF=true,C_FCLK_CLK1_BUF=true,C_FCLK_CLK2_BUF=false,C_FCLK_CLK3_BUF=false,C_PACKAGE_NAME=clg484}" *)
+(* CORE_GENERATION_INFO = "system_sys_ps7_0,processing_system7_v5_5_processing_system7,{x_ipProduct=Vivado 2015.3,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=processing_system7,x_ipVersion=5.5,x_ipCoreRevision=3,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_EN_EMIO_PJTAG=0,C_EN_EMIO_ENET0=0,C_EN_EMIO_ENET1=0,C_EN_EMIO_TRACE=0,C_INCLUDE_TRACE_BUFFER=0,C_TRACE_BUFFER_FIFO_SIZE=128,USE_TRACE_DATA_EDGE_DETECTOR=0,C_TRACE_PIPELINE_WIDTH=8,C_TRACE_BUFFER_CLOCK_DELAY=12,C_EMIO_GPIO_WIDTH=8,C_INCLUDE_ACP_TRANS_CHECK=0,C_USE_DEFAULT_ACP_USER_VAL=0,C_S_AXI_ACP_ARUSER_VAL=31,C_S_AXI_ACP_AWUSER_VAL=31,C_M_AXI_GP0_ID_WIDTH=12,C_M_AXI_GP0_ENABLE_STATIC_REMAP=0,C_M_AXI_GP1_ID_WIDTH=12,C_M_AXI_GP1_ENABLE_STATIC_REMAP=0,C_S_AXI_GP0_ID_WIDTH=6,C_S_AXI_GP1_ID_WIDTH=6,C_S_AXI_ACP_ID_WIDTH=3,C_S_AXI_HP0_ID_WIDTH=6,C_S_AXI_HP0_DATA_WIDTH=64,C_S_AXI_HP1_ID_WIDTH=6,C_S_AXI_HP1_DATA_WIDTH=64,C_S_AXI_HP2_ID_WIDTH=6,C_S_AXI_HP2_DATA_WIDTH=64,C_S_AXI_HP3_ID_WIDTH=6,C_S_AXI_HP3_DATA_WIDTH=64,C_M_AXI_GP0_THREAD_ID_WIDTH=12,C_M_AXI_GP1_THREAD_ID_WIDTH=12,C_NUM_F2P_INTR_INPUTS=16,C_IRQ_F2P_MODE=DIRECT,C_DQ_WIDTH=32,C_DQS_WIDTH=4,C_DM_WIDTH=4,C_MIO_PRIMITIVE=54,C_TRACE_INTERNAL_WIDTH=2,C_USE_AXI_NONSECURE=0,C_USE_M_AXI_GP0=1,C_USE_M_AXI_GP1=0,C_USE_S_AXI_GP0=0,C_USE_S_AXI_HP0=1,C_USE_S_AXI_HP1=0,C_USE_S_AXI_HP2=0,C_USE_S_AXI_HP3=0,C_USE_S_AXI_ACP=0,C_PS7_SI_REV=PRODUCTION,C_FCLK_CLK0_BUF=true,C_FCLK_CLK1_BUF=true,C_FCLK_CLK2_BUF=false,C_FCLK_CLK3_BUF=false,C_PACKAGE_NAME=clg484}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_sys_ps7_0 (
   ENET0_PTP_DELAY_REQ_RX,
@@ -87,6 +87,20 @@ module system_sys_ps7_0 (
   SDIO1_WP,
   SDIO1_BUSPOW,
   SDIO1_BUSVOLT,
+  SPI0_SCLK_I,
+  SPI0_SCLK_O,
+  SPI0_SCLK_T,
+  SPI0_MOSI_I,
+  SPI0_MOSI_O,
+  SPI0_MOSI_T,
+  SPI0_MISO_I,
+  SPI0_MISO_O,
+  SPI0_MISO_T,
+  SPI0_SS_I,
+  SPI0_SS_O,
+  SPI0_SS1_O,
+  SPI0_SS2_O,
+  SPI0_SS_T,
   UART0_TX,
   UART0_RX,
   USB0_PORT_INDCTL,
@@ -291,6 +305,34 @@ input wire SDIO1_WP;
 output wire SDIO1_BUSPOW;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_1 BUSVOLT" *)
 output wire [2 : 0] SDIO1_BUSVOLT;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SCK_I" *)
+input wire SPI0_SCLK_I;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SCK_O" *)
+output wire SPI0_SCLK_O;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SCK_T" *)
+output wire SPI0_SCLK_T;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO0_I" *)
+input wire SPI0_MOSI_I;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO0_O" *)
+output wire SPI0_MOSI_O;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO0_T" *)
+output wire SPI0_MOSI_T;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO1_I" *)
+input wire SPI0_MISO_I;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO1_O" *)
+output wire SPI0_MISO_O;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO1_T" *)
+output wire SPI0_MISO_T;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS_I" *)
+input wire SPI0_SS_I;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS_O" *)
+output wire SPI0_SS_O;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS1_O" *)
+output wire SPI0_SS1_O;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS2_O" *)
+output wire SPI0_SS2_O;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS_T" *)
+output wire SPI0_SS_T;
 (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 TxD" *)
 output wire UART0_TX;
 (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 RxD" *)
@@ -607,6 +649,15 @@ inout wire PS_PORB;
     .C_DM_WIDTH(4),
     .C_MIO_PRIMITIVE(54),
     .C_TRACE_INTERNAL_WIDTH(2),
+    .C_USE_AXI_NONSECURE(0),
+    .C_USE_M_AXI_GP0(1),
+    .C_USE_M_AXI_GP1(0),
+    .C_USE_S_AXI_GP0(0),
+    .C_USE_S_AXI_HP0(1),
+    .C_USE_S_AXI_HP1(0),
+    .C_USE_S_AXI_HP2(0),
+    .C_USE_S_AXI_HP3(0),
+    .C_USE_S_AXI_ACP(0),
     .C_PS7_SI_REV("PRODUCTION"),
     .C_FCLK_CLK0_BUF("true"),
     .C_FCLK_CLK1_BUF("true"),
@@ -713,20 +764,20 @@ inout wire PS_PORB;
     .SDIO1_WP(SDIO1_WP),
     .SDIO1_BUSPOW(SDIO1_BUSPOW),
     .SDIO1_BUSVOLT(SDIO1_BUSVOLT),
-    .SPI0_SCLK_I(1'B0),
-    .SPI0_SCLK_O(),
-    .SPI0_SCLK_T(),
-    .SPI0_MOSI_I(1'B0),
-    .SPI0_MOSI_O(),
-    .SPI0_MOSI_T(),
-    .SPI0_MISO_I(1'B0),
-    .SPI0_MISO_O(),
-    .SPI0_MISO_T(),
-    .SPI0_SS_I(1'B0),
-    .SPI0_SS_O(),
-    .SPI0_SS1_O(),
-    .SPI0_SS2_O(),
-    .SPI0_SS_T(),
+    .SPI0_SCLK_I(SPI0_SCLK_I),
+    .SPI0_SCLK_O(SPI0_SCLK_O),
+    .SPI0_SCLK_T(SPI0_SCLK_T),
+    .SPI0_MOSI_I(SPI0_MOSI_I),
+    .SPI0_MOSI_O(SPI0_MOSI_O),
+    .SPI0_MOSI_T(SPI0_MOSI_T),
+    .SPI0_MISO_I(SPI0_MISO_I),
+    .SPI0_MISO_O(SPI0_MISO_O),
+    .SPI0_MISO_T(SPI0_MISO_T),
+    .SPI0_SS_I(SPI0_SS_I),
+    .SPI0_SS_O(SPI0_SS_O),
+    .SPI0_SS1_O(SPI0_SS1_O),
+    .SPI0_SS2_O(SPI0_SS2_O),
+    .SPI0_SS_T(SPI0_SS_T),
     .SPI1_SCLK_I(1'B0),
     .SPI1_SCLK_O(),
     .SPI1_SCLK_T(),

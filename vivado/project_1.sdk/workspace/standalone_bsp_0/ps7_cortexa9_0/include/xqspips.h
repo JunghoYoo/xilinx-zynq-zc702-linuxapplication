@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2010 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2010 - 2015 Xilinx, Inc.  All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -18,8 +18,8 @@
 *
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-* XILINX CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
 * OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
@@ -33,6 +33,9 @@
 /**
 *
 * @file xqspips.h
+* @addtogroup qspips_v3_2
+* @{
+* @details
 *
 * This file contains the implementation of the XQspiPs driver. It supports only
 * master mode. User documentation for the driver functions is contained in this
@@ -265,6 +268,9 @@
 *                    CR#737760.
 * 3.1   hk  08/13/14 When writing to the configuration register, set/reset
 *                    required bits leaving reserved bits untouched. CR# 796813.
+* 3.2	sk	02/05/15 Add SLCR reset in abort function as a workaround because
+* 					 controller does not update FIFO status flags as expected
+* 					 when thresholds are used.
 *
 * </pre>
 *
@@ -780,4 +786,4 @@ void XQspiPs_GetDelays(XQspiPs *InstancePtr, u8 *DelayNss, u8 *DelayBtwn,
 #endif
 
 #endif /* end of protection macro */
-
+/** @} */
