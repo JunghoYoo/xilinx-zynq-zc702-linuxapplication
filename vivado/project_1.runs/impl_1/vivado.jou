@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Vivado v2015.3 (64-bit)
-# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
-# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
-# Start of session at: Sun Dec 27 19:07:10 2015
-# Process ID: 1552
-# Current directory: D:/Developers_KIT/Zynq702/Hdmi_adi/project_1.runs/impl_1
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Jan 13 22:37:38 2016
+# Process ID: 9084
+# Current directory: D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.runs/impl_1
 # Command line: vivado.exe -log system_top.vdi -applog -messageDb vivado.pb -mode batch -source system_top.tcl -notrace
-# Log file: D:/Developers_KIT/Zynq702/Hdmi_adi/project_1.runs/impl_1/system_top.vdi
-# Journal file: D:/Developers_KIT/Zynq702/Hdmi_adi/project_1.runs/impl_1\vivado.jou
+# Log file: D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.runs/impl_1/system_top.vdi
+# Journal file: D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source system_top.tcl -notrace

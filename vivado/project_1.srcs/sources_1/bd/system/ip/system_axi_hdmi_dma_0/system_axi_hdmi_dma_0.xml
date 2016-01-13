@@ -2357,7 +2357,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>bbc25aa5</spirit:value>
+            <spirit:value>1fb67cae</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -2373,7 +2373,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Dec 26 01:13:28 UTC 2015</spirit:value>
+            <spirit:value>Wed Jan 13 13:26:28 UTC 2016</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -2415,7 +2415,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>bbc25aa5</spirit:value>
+            <spirit:value>1fb67cae</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -2431,7 +2431,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Dec 26 01:13:29 UTC 2015</spirit:value>
+            <spirit:value>Wed Jan 13 13:26:29 UTC 2016</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -2450,7 +2450,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>bbc25aa5</spirit:value>
+            <spirit:value>1fb67cae</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -2466,7 +2466,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Dec 26 01:13:29 UTC 2015</spirit:value>
+            <spirit:value>Wed Jan 13 13:26:29 UTC 2016</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -2508,7 +2508,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>e51c7462</spirit:value>
+            <spirit:value>d9638900</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -2524,7 +2524,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Dec 26 01:13:29 UTC 2015</spirit:value>
+            <spirit:value>Wed Jan 13 13:26:29 UTC 2016</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -2543,7 +2543,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>e51c7462</spirit:value>
+            <spirit:value>d9638900</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -2559,7 +2559,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Dec 26 01:13:29 UTC 2015</spirit:value>
+            <spirit:value>Wed Jan 13 13:26:29 UTC 2016</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -2577,7 +2577,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>bbc25aa5</spirit:value>
+            <spirit:value>1fb67cae</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -2593,7 +2593,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Dec 26 01:13:29 UTC 2015</spirit:value>
+            <spirit:value>Wed Jan 13 13:26:29 UTC 2016</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -5146,16 +5146,16 @@
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>blk_mem_gen_v8_3_0</spirit:logicalName>
+        <spirit:logicalName>blk_mem_gen_v8_3_1</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>blk_mem_gen_v8_3_0</spirit:logicalName>
+        <spirit:logicalName>blk_mem_gen_v8_3_1</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="blk_mem_gen" xilinx:version="8.3" xilinx:isGenerated="true" xilinx:checksum="1fe64713">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="blk_mem_gen" xilinx:version="8.3" xilinx:isGenerated="true" xilinx:checksum="74959cdf">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -5166,16 +5166,16 @@
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/fifo_generator_v13_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v13_0_0</spirit:logicalName>
+        <spirit:logicalName>fifo_generator_v13_0_1</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/fifo_generator_v13_0/hdl/fifo_generator_v13_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v13_0_0</spirit:logicalName>
+        <spirit:logicalName>fifo_generator_v13_0_1</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="13.0" xilinx:isGenerated="true" xilinx:checksum="ada79d87">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="13.0" xilinx:isGenerated="true" xilinx:checksum="93448794">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -5186,16 +5186,16 @@
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/lib_fifo_v1_0/hdl/src/vhdl/async_fifo_fg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>lib_fifo_v1_0_3</spirit:logicalName>
+        <spirit:logicalName>lib_fifo_v1_0_4</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/lib_fifo_v1_0/hdl/src/vhdl/sync_fifo_fg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>lib_fifo_v1_0_3</spirit:logicalName>
+        <spirit:logicalName>lib_fifo_v1_0_4</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="lib_fifo" xilinx:version="1.0" xilinx:isGenerated="true" xilinx:checksum="f3d13140">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="lib_fifo" xilinx:version="1.0" xilinx:isGenerated="true" xilinx:checksum="e1b08b14">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -5206,11 +5206,11 @@
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/lib_bmg_v1_0/hdl/src/vhdl/blk_mem_gen_wrapper.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>lib_bmg_v1_0_2</spirit:logicalName>
+        <spirit:logicalName>lib_bmg_v1_0_3</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="lib_bmg" xilinx:version="1.0" xilinx:isGenerated="true" xilinx:checksum="f7f839f9">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="lib_bmg" xilinx:version="1.0" xilinx:isGenerated="true" xilinx:checksum="ca2b542c">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -5251,206 +5251,206 @@
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_reset.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_afifo_autord.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_sfifo_autord.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_fifo.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_cmd_status.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_scc.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_strb_gen2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_pcc.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_addr_cntl.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_rdmux.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_rddata_cntl.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_rd_status_cntl.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_wr_demux.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_wrdata_cntl.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_wr_status_cntl.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_skid2mm_buf.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_skid_buf.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_rd_sf.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_wr_sf.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_stbs_set.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_stbs_set_nodre.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_ibttcc.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_indet_btt.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_dre_mux2_1_x_n.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_dre_mux4_1_x_n.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_dre_mux8_1_x_n.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_mm2s_dre.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_s2mm_dre.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_ms_strb_set.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_mssai_skid_buf.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_slice.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_s2mm_scatter.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_s2mm_realign.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_s2mm_basic_wrap.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_s2mm_omit_wrap.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_s2mm_full_wrap.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_mm2s_basic_wrap.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_mm2s_omit_wrap.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_mm2s_full_wrap.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="axi_datamover" xilinx:version="5.1" xilinx:isGenerated="true" xilinx:checksum="bab70327">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="axi_datamover" xilinx:version="5.1" xilinx:isGenerated="true" xilinx:checksum="73fa360c">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -5478,345 +5478,345 @@
         <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/verilog/axi_vdma_v6_2_5_axis_infrastructure_v1_0_axis_infrastructure.vh</spirit:name>
+        <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/verilog/axi_vdma_v6_2_6_axis_infrastructure_v1_0_axis_infrastructure.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/verilog/axi_vdma_v6_2_axis_infrastructure_v1_0_util_axis2vector.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/verilog/axi_vdma_v6_2_axis_infrastructure_v1_0_util_vector2axis.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/verilog/axi_vdma_v6_2_axis_register_slice_v1_0_axisc_register_slice.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/verilog/axi_vdma_v6_2_axis_register_slice_v1_0_axis_register_slice.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/verilog/axi_vdma_v6_2_axis_dwidth_converter_v1_0_axisc_upsizer.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/verilog/axi_vdma_v6_2_axis_dwidth_converter_v1_0_axisc_downsizer.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/verilog/axi_vdma_v6_2_axis_dwidth_converter_v1_0_axis_dwidth_converter.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_pkg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_ftch_sm.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_ftch_pntr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_ftch_cmdsts_if.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_ftch_mngr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_afifo_autord.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_ftch_queue.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_ftch_noqueue.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_ftch_q_mngr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_updt_cmdsts_if.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_updt_sm.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_updt_mngr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_updt_queue.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_updt_noqueue.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_updt_q_mngr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_intrpt.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_pkg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_cdc.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_vid_cdc.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_sg_cdc.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_reset.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_rst_module.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_lite_if.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_register.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_regdirect.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_reg_mux.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_reg_module.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_reg_if.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_intrpt.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_sof_gen.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_skid_buf.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_sfifo.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_sfifo_autord.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_afifo_builtin.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_afifo.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_afifo_autord.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_mm2s_linebuf.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_s2mm_linebuf.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_blkmem.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_fsync_gen.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_vregister.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_vregister_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_sgregister.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_vaddrreg_mux.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_vaddrreg_mux_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_vidreg_module.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_vidreg_module_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_genlock_mux.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_greycoder.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_genlock_mngr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_sg_if.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_sm.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_cmdsts_if.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_sts_mngr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_mngr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_mngr_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_mm2s_axis_dwidth_converter.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_s2mm_axis_dwidth_converter.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -5865,18 +5865,18 @@
         <spirit:name>../../ipshared/xilinx.com/fifo_generator_v13_0/simulation/fifo_generator_vhdl_beh.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>fifo_generator_v13_0_0</spirit:logicalName>
+        <spirit:logicalName>fifo_generator_v13_0_1</spirit:logicalName>
         <spirit:exportedName>fifo_generator_vhdl_beh</spirit:exportedName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/fifo_generator_v13_0/hdl/fifo_generator_v13_0_rfs.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>fifo_generator_v13_0_0</spirit:logicalName>
+        <spirit:logicalName>fifo_generator_v13_0_1</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="13.0" xilinx:isGenerated="true" xilinx:checksum="27aacf40">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="13.0" xilinx:isGenerated="true" xilinx:checksum="d203a012">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -5888,17 +5888,17 @@
         <spirit:name>../../ipshared/xilinx.com/lib_fifo_v1_0/hdl/src/vhdl/async_fifo_fg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>lib_fifo_v1_0_3</spirit:logicalName>
+        <spirit:logicalName>lib_fifo_v1_0_4</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/lib_fifo_v1_0/hdl/src/vhdl/sync_fifo_fg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>lib_fifo_v1_0_3</spirit:logicalName>
+        <spirit:logicalName>lib_fifo_v1_0_4</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="lib_fifo" xilinx:version="1.0" xilinx:isGenerated="true" xilinx:checksum="f3d13140">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="lib_fifo" xilinx:version="1.0" xilinx:isGenerated="true" xilinx:checksum="e1b08b14">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -5910,12 +5910,12 @@
         <spirit:name>../../ipshared/xilinx.com/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>blk_mem_gen_v8_3_0</spirit:logicalName>
-        <spirit:exportedName>blk_mem_gen_v8_3_0</spirit:exportedName>
+        <spirit:logicalName>blk_mem_gen_v8_3_1</spirit:logicalName>
+        <spirit:exportedName>blk_mem_gen_v8_3_1</spirit:exportedName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="blk_mem_gen" xilinx:version="8.3" xilinx:isGenerated="true" xilinx:checksum="7e1045fc">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="blk_mem_gen" xilinx:version="8.3" xilinx:isGenerated="true" xilinx:checksum="5e24daa0">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -5927,11 +5927,11 @@
         <spirit:name>../../ipshared/xilinx.com/lib_bmg_v1_0/hdl/src/vhdl/blk_mem_gen_wrapper.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>lib_bmg_v1_0_2</spirit:logicalName>
+        <spirit:logicalName>lib_bmg_v1_0_3</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="lib_bmg" xilinx:version="1.0" xilinx:isGenerated="true" xilinx:checksum="f7f839f9">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="lib_bmg" xilinx:version="1.0" xilinx:isGenerated="true" xilinx:checksum="ca2b542c">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -5977,245 +5977,245 @@
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_reset.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_afifo_autord.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_sfifo_autord.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_fifo.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_cmd_status.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_scc.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_strb_gen2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_pcc.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_addr_cntl.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_rdmux.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_rddata_cntl.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_rd_status_cntl.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_wr_demux.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_wrdata_cntl.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_wr_status_cntl.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_skid2mm_buf.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_skid_buf.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_rd_sf.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_wr_sf.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_stbs_set.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_stbs_set_nodre.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_ibttcc.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_indet_btt.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_dre_mux2_1_x_n.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_dre_mux4_1_x_n.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_dre_mux8_1_x_n.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_mm2s_dre.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_s2mm_dre.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_ms_strb_set.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_mssai_skid_buf.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_slice.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_s2mm_scatter.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_s2mm_realign.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_s2mm_basic_wrap.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_s2mm_omit_wrap.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_s2mm_full_wrap.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_mm2s_basic_wrap.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_mm2s_omit_wrap.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover_mm2s_full_wrap.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_datamover_v5_1/hdl/src/vhdl/axi_datamover.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_datamover_v5_1_8</spirit:logicalName>
+        <spirit:logicalName>axi_datamover_v5_1_9</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="axi_datamover" xilinx:version="5.1" xilinx:isGenerated="true" xilinx:checksum="98e36e61">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="axi_datamover" xilinx:version="5.1" xilinx:isGenerated="true" xilinx:checksum="51ae5b4a">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -6224,413 +6224,413 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/verilog/axi_vdma_v6_2_5_axis_infrastructure_v1_0_axis_infrastructure.vh</spirit:name>
+        <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/verilog/axi_vdma_v6_2_6_axis_infrastructure_v1_0_axis_infrastructure.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/verilog/axi_vdma_v6_2_axis_infrastructure_v1_0_util_axis2vector.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/verilog/axi_vdma_v6_2_axis_infrastructure_v1_0_util_vector2axis.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/verilog/axi_vdma_v6_2_axis_register_slice_v1_0_axisc_register_slice.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/verilog/axi_vdma_v6_2_axis_register_slice_v1_0_axis_register_slice.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/verilog/axi_vdma_v6_2_axis_dwidth_converter_v1_0_axisc_upsizer.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/verilog/axi_vdma_v6_2_axis_dwidth_converter_v1_0_axisc_downsizer.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/verilog/axi_vdma_v6_2_axis_dwidth_converter_v1_0_axis_dwidth_converter.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_pkg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_ftch_sm.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_ftch_pntr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_ftch_cmdsts_if.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_ftch_mngr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_afifo_autord.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_ftch_queue.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_ftch_noqueue.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_ftch_q_mngr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_updt_cmdsts_if.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_updt_sm.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_updt_mngr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_updt_queue.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_updt_noqueue.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_updt_q_mngr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg_intrpt.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_sg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_pkg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_cdc.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_vid_cdc.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_sg_cdc.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_reset.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_rst_module.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_lite_if.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_register.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_regdirect.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_reg_mux.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_reg_module.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_reg_if.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_intrpt.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_sof_gen.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_skid_buf.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_sfifo.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_sfifo_autord.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_afifo_builtin.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_afifo.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_afifo_autord.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_mm2s_linebuf.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_s2mm_linebuf.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_blkmem.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_fsync_gen.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_vregister.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_vregister_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_sgregister.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_vaddrreg_mux.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_vaddrreg_mux_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_vidreg_module.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_vidreg_module_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_genlock_mux.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_greycoder.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_genlock_mngr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_sg_if.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_sm.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_cmdsts_if.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_sts_mngr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_mngr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_mngr_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_mm2s_axis_dwidth_converter.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma_s2mm_axis_dwidth_converter.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/xilinx.com/axi_vdma_v6_2/hdl/src/vhdl/axi_vdma.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_vdma_v6_2_5</spirit:logicalName>
+        <spirit:logicalName>axi_vdma_v6_2_6</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -7303,7 +7303,7 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>AXI Video Direct Memory Access</xilinx:displayName>
-      <xilinx:coreRevision>5</xilinx:coreRevision>
+      <xilinx:coreRevision>6</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXI_RESETN.POLARITY" xilinx:valueSource="constant"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.MM2S_INTROUT.PortWidth" xilinx:valueSource="default_prop"/>
@@ -7385,10 +7385,10 @@
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2015.3</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2015.4</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7f2e3e8f"/>
       <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="abeacedb"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="53e60f0d"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="4a68ece3"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="9a838d64"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="22762df3"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="b5060682"/>

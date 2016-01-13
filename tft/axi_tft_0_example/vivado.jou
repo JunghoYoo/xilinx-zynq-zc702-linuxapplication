@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sat Jan 09 18:03:44 2016
+# Process ID: 8196
+# Current directory: d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example
+# Command line: vivado.exe -source d:/Developers_KIT/Zynq702/TFTLCD/.Xil/axi_tft_0/tmp_axi_tft_0.srcs/sources_1/ip/axi_tft_0/axi_tft_0_ex.tcl
+# Log file: d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/vivado.log
+# Journal file: d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source d:/Developers_KIT/Zynq702/TFTLCD/.Xil/axi_tft_0/tmp_axi_tft_0.srcs/sources_1/ip/axi_tft_0/axi_tft_0_ex.tcl
+set_property -dict [list CONFIG.C_M_AXI_DATA_WIDTH {64}] [get_ips axi_tft_0]
+generate_target all [get_files  d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci]
+export_ip_user_files -of_objects [get_files d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci]
+launch_run -jobs 4 axi_tft_0_synth_1
+wait_on_run axi_tft_0_synth_1
+export_simulation -of_objects [get_files d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci] -directory d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.ip_user_files/sim_scripts -force -quiet
+set_property elab_link_dcps false [current_fileset]
+reset_target all [get_files  d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci]
+export_ip_user_files -of_objects  [get_files  d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset axi_tft_0] d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci]
+export_ip_user_files -of_objects [get_files d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci]
+launch_run -jobs 4 axi_tft_0_synth_1
+wait_on_run axi_tft_0_synth_1
+export_simulation -of_objects [get_files d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci] -directory d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.ip_user_files/sim_scripts -force -quiet
+set_property ip.user_files_dir D:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.ip_user_files [current_project]
+set_property -name {xsim.elaborate.debug_level} -value {off} -objects [current_fileset -simset]
+set_property elab_link_dcps true [current_fileset]
+reset_target all [get_files  d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci]
+export_ip_user_files -of_objects  [get_files  d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset axi_tft_0] d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci]
+export_ip_user_files -of_objects [get_files d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci]
+launch_run -jobs 4 axi_tft_0_synth_1
+wait_on_run axi_tft_0_synth_1
+export_simulation -of_objects [get_files d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci] -directory D:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.ip_user_files/sim_scripts -force -quiet
+set_property -name {xsim.elaborate.debug_level} -value {all} -objects [current_fileset -simset]
+reset_target all [get_files  d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci]
+export_ip_user_files -of_objects  [get_files  d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset axi_tft_0] d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci]
+export_ip_user_files -of_objects [get_files d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci]
+launch_run -jobs 4 axi_tft_0_synth_1
+wait_on_run axi_tft_0_synth_1
+export_simulation -of_objects [get_files d:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sources_1/ip/axi_tft_0/axi_tft_0.xci] -directory D:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.ip_user_files/sim_scripts -force -quiet

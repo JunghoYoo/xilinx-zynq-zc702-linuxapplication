@@ -1,9 +1,0 @@
-19:47:54 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
-19:47:55 INFO  : XSDB server has started successfully.
-19:49:08 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
-19:49:09 INFO  : XSDB server has started successfully.
-19:49:17 WARN  : Change BSP handler invoked, but no selected application in workspace.
-19:49:51 INFO  : Project 'system_hw_platform_0' created. You can now create BSPs and application projects targeting this hardware platform.
-19:52:56 INFO  : Invoking Bootgen: bootgen -image output.bif -o D:\Developers_KIT\Zynq702\xilinx-zynq-zc702-linuxapplication\bootimage\BOOT.bin -w on
-19:52:56 INFO  : Overwriting existing bif file D:\Developers_KIT\Zynq702\xilinx-zynq-zc702-linuxapplication\bootimage\output.bif
-19:52:57 INFO  : Bootgen command execution is done.

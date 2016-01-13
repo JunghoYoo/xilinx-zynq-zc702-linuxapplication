@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../axi_tft_0_example.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v"
+verilog xil_defaultlib  "../../../axi_tft_0_example.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v"
+verilog axi_tft_v2_1_11  "../../../axi_tft_0_example.ip_user_files/ip/axi_tft_0/axi_tft_v2_1_11/hdl/src/verilog/axi_tft_v2_1_iic_init.v"
+verilog axi_tft_v2_1_11  "../../../axi_tft_0_example.ip_user_files/ip/axi_tft_0/axi_tft_v2_1_11/hdl/src/verilog/axi_tft_v2_1_v_sync.v"
+verilog axi_tft_v2_1_11  "../../../axi_tft_0_example.ip_user_files/ip/axi_tft_0/axi_tft_v2_1_11/hdl/src/verilog/axi_tft_v2_1_tft_interface.v"
+verilog axi_tft_v2_1_11  "../../../axi_tft_0_example.ip_user_files/ip/axi_tft_0/axi_tft_v2_1_11/hdl/src/verilog/axi_tft_v2_1_slave_register.v"
+verilog axi_tft_v2_1_11  "../../../axi_tft_0_example.ip_user_files/ip/axi_tft_0/axi_tft_v2_1_11/hdl/src/verilog/axi_tft_v2_1_line_buffer.v"
+verilog axi_tft_v2_1_11  "../../../axi_tft_0_example.ip_user_files/ip/axi_tft_0/axi_tft_v2_1_11/hdl/src/verilog/axi_tft_v2_1_h_sync.v"
+verilog axi_tft_v2_1_11  "../../../axi_tft_0_example.ip_user_files/ip/axi_tft_0/axi_tft_v2_1_11/hdl/src/verilog/axi_tft_v2_1_tft_controller.v"
+verilog xil_defaultlib  "../../../axi_tft_0_example.srcs/sources_1/imports/example_design/axi_interface.v"
+verilog xil_defaultlib  "../../../axi_tft_0_example.srcs/sources_1/imports/example_design/clk_gen.v"
+verilog xil_defaultlib  "../../../axi_tft_0_example.srcs/sources_1/imports/example_design/axi_tft_0_exdes.v"
+verilog xil_defaultlib  "../../../axi_tft_0_example.srcs/sim_1/imports/example_design/tft_checker.v"
+verilog xil_defaultlib  "../../../axi_tft_0_example.srcs/sim_1/imports/example_design/axi_tft_0_exdes_tb.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

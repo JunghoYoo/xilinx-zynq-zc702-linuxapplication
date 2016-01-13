@@ -14,130 +14,159 @@ preplace port ps_intr_12 -pg 1 -y 1230 -defaultsOSRD
 preplace port spdif -pg 1 -y 830 -defaultsOSRD
 preplace port hdmi_vsync -pg 1 -y 80 -defaultsOSRD
 preplace port hdmi_hsync -pg 1 -y 60 -defaultsOSRD
-preplace port SDIO1 -pg 1 -y 1860 -defaultsOSRD
-preplace port I2C1_SCL_O -pg 1 -y 1780 -defaultsOSRD
+preplace port SDIO1_CMD_T -pg 1 -y 1930 -defaultsOSRD
+preplace port I2C1_SCL_O -pg 1 -y 1760 -defaultsOSRD
 preplace port I2C1_SDA_T -pg 1 -y 1740 -defaultsOSRD
-preplace port ps_intr_13 -pg 1 -y 1250 -defaultsOSRD
 preplace port ps_intr_0 -pg 1 -y 990 -defaultsOSRD
+preplace port SDIO1_LED -pg 1 -y 1980 -defaultsOSRD
 preplace port ps_intr_1 -pg 1 -y 1010 -defaultsOSRD
-preplace port sdio1_cmd_t -pg 1 -y 1880 -defaultsOSRD
+preplace port SDIO1_CMD_I -pg 1 -y 1910 -defaultsOSRD
 preplace port I2C1_SDA_I -pg 1 -y 1370 -defaultsOSRD
 preplace port UART0_RX -pg 1 -y 1350 -defaultsOSRD
 preplace port ps_intr_2 -pg 1 -y 1030 -defaultsOSRD
 preplace port ps_intr_3 -pg 1 -y 1050 -defaultsOSRD
+preplace port SDIO1_CLK_FB -pg 1 -y 1880 -defaultsOSRD
 preplace port clkout12288 -pg 1 -y 710 -defaultsOSRD
 preplace port ps_intr_4 -pg 1 -y 1070 -defaultsOSRD
-preplace port I2C1_SCL_T -pg 1 -y 1800 -defaultsOSRD
+preplace port I2C1_SCL_T -pg 1 -y 1840 -defaultsOSRD
 preplace port ps_intr_5 -pg 1 -y 1090 -defaultsOSRD
 preplace port FIXED_IO -pg 1 -y 1600 -defaultsOSRD
+preplace port SDIO1_CDN -pg 1 -y 2000 -defaultsOSRD
 preplace port ps_intr_6 -pg 1 -y 1110 -defaultsOSRD
 preplace port I2C1_SCL_I -pg 1 -y 1410 -defaultsOSRD
 preplace port ps_intr_7 -pg 1 -y 1130 -defaultsOSRD
 preplace port hdmi_data_e -pg 1 -y 100 -defaultsOSRD
 preplace port hdmi_out_clk -pg 1 -y 40 -defaultsOSRD
+preplace port SDIO1_BUSPOW -pg 1 -y 2040 -defaultsOSRD
+preplace port SDIO1_WP -pg 1 -y 2020 -defaultsOSRD
+preplace port SDIO1_CMD_O -pg 1 -y 1900 -defaultsOSRD
 preplace port I2C1_SDA_O -pg 1 -y 1720 -defaultsOSRD
 preplace port ps_intr_8 -pg 1 -y 1150 -defaultsOSRD
+preplace port VGA_INTF -pg 1 -y 1680 -defaultsOSRD
+preplace port SDIO1_CLK -pg 1 -y 1870 -defaultsOSRD
 preplace port ps_intr_9 -pg 1 -y 1170 -defaultsOSRD
+preplace portBus SDIO1_DATA_T -pg 1 -y 2000 -defaultsOSRD
 preplace portBus GPIO_T -pg 1 -y 1560 -defaultsOSRD
+preplace portBus SDIO1_DATA_I -pg 1 -y 1940 -defaultsOSRD
 preplace portBus GPIO_I -pg 1 -y 1330 -defaultsOSRD
 preplace portBus SDATA_O -pg 1 -y 410 -defaultsOSRD
 preplace portBus hdmi_data -pg 1 -y 120 -defaultsOSRD
+preplace portBus SDIO1_DATA_O -pg 1 -y 1960 -defaultsOSRD
 preplace portBus BCLK_O -pg 1 -y 370 -defaultsOSRD
 preplace portBus GPIO_O -pg 1 -y 1540 -defaultsOSRD
+preplace portBus SDIO1_BUSVOLT -pg 1 -y 2060 -defaultsOSRD
 preplace portBus SDATA_I -pg 1 -y 380 -defaultsOSRD
 preplace portBus LRCLK_O -pg 1 -y 390 -defaultsOSRD
-preplace portBus sdio1_data_t -pg 1 -y 1900 -defaultsOSRD
-preplace inst vcc -pg 1 -lvl 5 -y 2140 -defaultsOSRD
+preplace inst axi_tft_0 -pg 1 -lvl 3 -y 1710 -defaultsOSRD
+preplace inst vcc -pg 1 -lvl 6 -y 2400 -defaultsOSRD
 preplace inst axi_hdmi_clkgen -pg 1 -lvl 3 -y 560 -defaultsOSRD
-preplace inst axi_hdmi_core -pg 1 -lvl 5 -y 180 -defaultsOSRD
-preplace inst axi_iic_main -pg 1 -lvl 5 -y 470 -defaultsOSRD
-preplace inst sys_concat_intc -pg 1 -lvl 4 -y 1140 -defaultsOSRD
+preplace inst axi_hdmi_core -pg 1 -lvl 6 -y 180 -defaultsOSRD
+preplace inst axi_iic_main -pg 1 -lvl 6 -y 470 -defaultsOSRD
+preplace inst axi_interconnect_tft -pg 1 -lvl 4 -y 1740 -defaultsOSRD
+preplace inst sys_concat_intc -pg 1 -lvl 5 -y 1250 -defaultsOSRD
 preplace inst sys_audio_clkgen -pg 1 -lvl 3 -y 830 -defaultsOSRD
 preplace inst axi_hdmi_dma -pg 1 -lvl 3 -y 300 -defaultsOSRD
 preplace inst sys_rstgen -pg 1 -lvl 1 -y 800 -defaultsOSRD
-preplace inst axi_i2s_adi_0 -pg 1 -lvl 4 -y 280 -defaultsOSRD
-preplace inst axi_hdmi_interconnect -pg 1 -lvl 4 -y 570 -defaultsOSRD
-preplace inst sys_ps7 -pg 1 -lvl 5 -y 1770 -defaultsOSRD
+preplace inst axi_i2s_adi_0 -pg 1 -lvl 5 -y 280 -defaultsOSRD
+preplace inst axi_hdmi_interconnect -pg 1 -lvl 5 -y 620 -defaultsOSRD
 preplace inst axi_cpu_interconnect -pg 1 -lvl 2 -y 600 -defaultsOSRD
-preplace inst axi_spdif_tx_core -pg 1 -lvl 4 -y 820 -defaultsOSRD
-preplace netloc spdif_s 1 4 2 NJ 830 NJ
-preplace netloc ps_intr_4_1 1 0 4 NJ 1070 NJ 1070 NJ 1070 NJ
-preplace netloc ps_intr_9_1 1 0 4 NJ 1170 NJ 1170 NJ 1170 NJ
-preplace netloc sys_ps7_GPIO_O 1 5 1 NJ
-preplace netloc sys_100m_clk 1 0 6 20 710 350 380 710 150 1210 130 1580 1430 2230
-preplace netloc axi_i2s_adi_0_SDATA_O 1 4 2 NJ 400 NJ
-preplace netloc sys_ps7_ddr 1 5 1 NJ
-preplace netloc ps_intr_3_1 1 0 4 NJ 1050 NJ 1050 NJ 1050 NJ
-preplace netloc ps_intr_13_1 1 0 4 NJ 1250 NJ 1250 NJ 1250 NJ
-preplace netloc sys_audio_clkgen_clk_out2 1 3 1 1190
-preplace netloc sys_ps7_GPIO_T 1 5 1 NJ
-preplace netloc sys_ps7_I2C1_SCL_O 1 5 1 NJ
-preplace netloc axi_hdmi_tx_core_mm2s_tkeep 1 3 2 1120 90 NJ
-preplace netloc sys_audio_clkgen_clk_out3 1 3 3 NJ 930 NJ 720 NJ
-preplace netloc ps_intr_6_1 1 0 4 NJ 1110 NJ 1110 NJ 1110 NJ
-preplace netloc sys_100m_resetn 1 1 4 340 370 720 430 1220 430 1690
-preplace netloc axi_hdmi_tx_core_hdmi_vsync 1 5 1 NJ
-preplace netloc ps_intr_12_1 1 0 4 NJ 1230 NJ 1230 NJ 1230 NJ
-preplace netloc axi_i2s_adi_0_DMA_REQ_TX 1 4 1 1600
-preplace netloc sys_ps7_I2C1_SCL_T 1 5 1 NJ
-preplace netloc sys_ps7_DMA1_ACK 1 3 3 1250 690 NJ 690 2270
-preplace netloc ps_intr_8_1 1 0 4 NJ 1150 NJ 1150 NJ 1150 NJ
+preplace inst sys_ps7 -pg 1 -lvl 6 -y 1830 -defaultsOSRD
+preplace inst axi_spdif_tx_core -pg 1 -lvl 5 -y 930 -defaultsOSRD
+preplace netloc sys_ps7_SDIO1_BUSVOLT 1 6 1 N
+preplace netloc sys_ps7_SDIO1_CLK 1 6 1 2710
+preplace netloc spdif_s 1 5 2 NJ 830 NJ
+preplace netloc ps_intr_4_1 1 0 5 NJ 1070 NJ 1070 NJ 1070 NJ 1070 NJ
+preplace netloc ps_intr_9_1 1 0 5 NJ 1170 NJ 1170 NJ 1170 NJ 1170 NJ
+preplace netloc sys_ps7_GPIO_O 1 6 1 NJ
+preplace netloc sys_100m_clk 1 0 7 -110 710 220 320 600 960 1070 960 1540 120 1950 2340 2570
+preplace netloc axi_tft_0_VGA_INTF 1 3 4 NJ 1500 NJ 1500 NJ 1370 NJ
+preplace netloc sys_ps7_FCLK_CLK2 1 2 5 620 2350 NJ 2350 NJ 2350 NJ 2350 2560
+preplace netloc axi_i2s_adi_0_SDATA_O 1 5 2 NJ 400 NJ
+preplace netloc sys_ps7_ddr 1 6 1 NJ
+preplace netloc ps_intr_3_1 1 0 5 NJ 1050 NJ 1050 NJ 1050 NJ 1050 NJ
+preplace netloc sys_audio_clkgen_clk_out2 1 3 2 1060 240 N
+preplace netloc sys_ps7_GPIO_T 1 6 1 NJ
+preplace netloc sys_ps7_I2C1_SCL_O 1 6 1 NJ
+preplace netloc axi_hdmi_tx_core_mm2s_tkeep 1 3 3 1020 90 NJ 90 NJ
+preplace netloc sys_audio_clkgen_clk_out3 1 3 4 NJ 760 NJ 760 NJ 710 NJ
+preplace netloc ps_intr_6_1 1 0 5 NJ 1110 NJ 1110 NJ 1110 NJ 1110 NJ
+preplace netloc sys_100m_resetn 1 1 5 230 330 610 990 1020 990 1510 130 2030
+preplace netloc SDIO1_CMD_I_1 1 0 7 NJ 1910 NJ 1910 NJ 1910 NJ 1910 NJ 1910 NJ 2310 2610
+preplace netloc axi_hdmi_tx_core_hdmi_vsync 1 6 1 NJ
+preplace netloc ps_intr_12_1 1 0 5 NJ 1230 NJ 1230 NJ 1230 NJ 1230 NJ
+preplace netloc axi_i2s_adi_0_DMA_REQ_TX 1 5 1 1990
+preplace netloc sys_ps7_I2C1_SCL_T 1 6 1 NJ
+preplace netloc sys_ps7_DMA1_ACK 1 4 3 NJ 740 NJ 740 2670
+preplace netloc SDIO1_CLK_FB_1 1 0 7 NJ 1880 NJ 1880 NJ 1880 NJ 1880 NJ 1880 NJ 2300 2620
+preplace netloc ps_intr_8_1 1 0 5 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ
+preplace netloc sys_ps7_SDIO1_CMD_O 1 6 1 2700
 preplace netloc sys_200m_resetn 1 1 1 N
-preplace netloc sys_ps7_fixed_io 1 5 1 NJ
-preplace netloc UART0_RX_1 1 0 6 NJ 1350 NJ 1350 NJ 1350 NJ 1350 NJ 1350 2210
-preplace netloc sys_ps7_I2C1_SDA_O 1 5 1 NJ
-preplace netloc sys_ps7_SDIO_1 1 5 1 N
-preplace netloc axi_cpu_interconnect_s00_axi 1 1 5 360 40 NJ 40 NJ 40 NJ 550 2290
-preplace netloc ps_intr_7_1 1 0 4 NJ 1130 NJ 1130 NJ 1130 NJ
-preplace netloc axi_hdmi_tx_core_hdmi_data 1 5 1 NJ
-preplace netloc sys_ps7_SDIO1_CMD_T 1 5 1 NJ
-preplace netloc ps_intr_0_1 1 0 4 NJ 990 NJ 990 NJ 990 NJ
-preplace netloc axi_hdmi_tx_core_mm2s_tlast 1 3 2 1140 100 NJ
-preplace netloc axi_cpu_interconnect_m04_axi 1 2 2 710 650 NJ
-preplace netloc axi_i2s_adi_0_LRCLK_O 1 4 2 NJ 390 NJ
-preplace netloc sys_ps7_I2C1_SDA_T 1 5 1 NJ
-preplace netloc sys_ps7_SPI_0 1 5 1 NJ
-preplace netloc ps_intr_2_1 1 0 4 NJ 1030 NJ 1030 NJ 1030 NJ
-preplace netloc I2C1_SDA_I_1 1 0 6 NJ 1370 NJ 1370 NJ 1370 NJ 1370 NJ 1370 2200
-preplace netloc ps_intr_10_1 1 0 4 NJ 1190 NJ 1190 NJ 1190 NJ
-preplace netloc axi_spdif_dma_ack_tx 1 3 3 1250 710 NJ 710 2250
-preplace netloc axi_hdmi_interconnect_s00_axi 1 3 1 1170
-preplace netloc axi_spdif_dma_req_tx 1 4 1 1570
-preplace netloc SDATA_I_1 1 0 4 NJ 140 NJ 140 NJ 140 NJ
-preplace netloc axi_hdmi_tx_core_hdmi_out_clk 1 5 1 NJ
-preplace netloc axi_cpu_interconnect_m00_axi 1 2 3 660 10 NJ 10 NJ
-preplace netloc axi_cpu_interconnect_M05_AXI 1 2 2 NJ 170 1170
-preplace netloc axi_cpu_interconnect_m03_axi 1 2 1 690
-preplace netloc axi_hdmi_tx_core_mm2s_tdata 1 3 2 1110 80 NJ
-preplace netloc sys_200m_clk 1 2 4 730 440 NJ 440 NJ 560 2300
-preplace netloc ps_intr_11_1 1 0 4 NJ 1210 NJ 1210 NJ 1210 NJ
-preplace netloc axi_iic_main_iic 1 5 1 NJ
-preplace netloc sys_concat_intc_dout 1 4 1 1550
-preplace netloc axi_cpu_interconnect_m01_axi 1 2 1 700
-preplace netloc axi_iic_main_iic2intc_irpt 1 3 3 1240 450 NJ 540 2300
-preplace netloc vcc_dout 1 5 1 2240
-preplace netloc sys_aux_reset 1 0 6 20 940 NJ 940 NJ 940 NJ 940 NJ 940 2280
-preplace netloc axi_hdmi_interconnect_m00_axi 1 4 1 1560
-preplace netloc sys_audio_clkgen_clk 1 3 1 1200
-preplace netloc ps_intr_1_1 1 0 4 NJ 1010 NJ 1010 NJ 1010 NJ
-preplace netloc ps_intr_5_1 1 0 4 NJ 1090 NJ 1090 NJ 1090 NJ
-preplace netloc sys_ps7_SDIO1_DATA_T 1 5 1 NJ
-preplace netloc axi_hdmi_tx_core_hdmi_data_e 1 5 1 NJ
-preplace netloc axi_cpu_interconnect_m02_axi 1 2 3 670 20 NJ 20 NJ
-preplace netloc sys_ps7_UART0_TX 1 5 1 NJ
-preplace netloc axi_i2s_adi_0_BCLK_O 1 4 2 NJ 380 NJ
-preplace netloc I2C1_SCL_I_1 1 0 6 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 2190
-preplace netloc sys_ps7_DMA2_ACK 1 3 3 1230 700 NJ 700 2260
-preplace netloc axi_hdmi_tx_core_hdmi_hsync 1 5 1 NJ
-preplace netloc axi_hdmi_tx_core_hdmi_clk 1 3 2 1130 70 NJ
-preplace netloc axi_hdmi_tx_core_mm2s_tready 1 3 2 1150 110 NJ
-preplace netloc axi_hdmi_tx_core_mm2s_tvalid 1 3 2 1160 120 NJ
-preplace netloc axi_hdmi_tx_core_mm2s_fsync 1 2 4 730 50 NJ 50 1710 370 2290
-preplace netloc axi_i2s_adi_0_DMA_REQ_RX 1 4 1 1610
-preplace netloc axi_hdmi_dma_mm2s_introut 1 3 1 1120
-preplace netloc GPIO_I_1 1 0 6 NJ 1330 NJ 1330 NJ 1330 NJ 1340 NJ 1340 2220
-preplace cgraphic comment_0 place abs 1906 2198 textcolor 4 linecolor 3 linewidth 2
-levelinfo -pg 1 0 180 510 920 1400 1960 2330 -top 0 -bot 2190
+preplace netloc sys_ps7_fixed_io 1 6 1 NJ
+preplace netloc UART0_RX_1 1 0 7 NJ 1350 NJ 1350 NJ 1350 NJ 1350 NJ 1480 NJ 1310 2620
+preplace netloc SDIO1_WP_1 1 0 7 NJ 2020 NJ 2020 NJ 2020 NJ 2020 NJ 2020 NJ 2330 2580
+preplace netloc sys_ps7_I2C1_SDA_O 1 6 1 NJ
+preplace netloc axi_cpu_interconnect_s00_axi 1 1 6 240 900 NJ 900 NJ 790 NJ 790 NJ 790 2650
+preplace netloc ps_intr_7_1 1 0 5 NJ 1130 NJ 1130 NJ 1130 NJ 1130 NJ
+preplace netloc sys_ps7_SDIO1_LED 1 6 1 N
+preplace netloc axi_hdmi_tx_core_hdmi_data 1 6 1 NJ
+preplace netloc sys_ps7_SDIO1_CMD_T 1 6 1 2690
+preplace netloc ps_intr_0_1 1 0 5 NJ 980 NJ 980 NJ 980 NJ 980 NJ
+preplace netloc axi_cpu_interconnect_m04_axi 1 2 3 580 650 NJ 650 NJ
+preplace netloc axi_hdmi_tx_core_mm2s_tlast 1 3 3 1040 100 NJ 100 NJ
+preplace netloc axi_i2s_adi_0_LRCLK_O 1 5 2 NJ 390 NJ
+preplace netloc sys_ps7_I2C1_SDA_T 1 6 1 NJ
+preplace netloc sys_ps7_SPI_0 1 6 1 NJ
+preplace netloc ps_intr_2_1 1 0 5 NJ 1030 NJ 1030 NJ 1030 NJ 1030 NJ
+preplace netloc I2C1_SDA_I_1 1 0 7 NJ 1370 NJ 1370 NJ 1370 NJ 1370 NJ 1450 NJ 1330 2610
+preplace netloc ps_intr_10_1 1 0 5 NJ 1190 NJ 1190 NJ 1190 NJ 1190 NJ
+preplace netloc SDIO1_CDN_1 1 0 7 NJ 2000 NJ 2000 NJ 2000 NJ 2000 NJ 2000 NJ 2290 2550
+preplace netloc axi_spdif_dma_ack_tx 1 4 3 NJ 810 NJ 810 2630
+preplace netloc axi_spdif_dma_req_tx 1 5 1 1970
+preplace netloc axi_hdmi_interconnect_s00_axi 1 3 2 N 220 1530
+preplace netloc axi_cpu_interconnect_m00_axi 1 2 4 580 450 NJ 450 NJ 450 NJ
+preplace netloc SDATA_I_1 1 0 5 NJ 160 NJ 160 NJ 160 NJ 160 NJ
+preplace netloc axi_hdmi_tx_core_hdmi_out_clk 1 6 1 NJ
+preplace netloc axi_cpu_interconnect_M05_AXI 1 2 3 NJ 170 N 170 1550
+preplace netloc axi_cpu_interconnect_m03_axi 1 2 1 570
+preplace netloc sys_ps7_SDIO1_DATA_O 1 6 1 2780
+preplace netloc axi_hdmi_tx_core_mm2s_tdata 1 3 3 1000 80 NJ 80 NJ
+preplace netloc sys_200m_clk 1 2 5 620 910 NJ 820 NJ 820 NJ 820 2640
+preplace netloc ps_intr_11_1 1 0 5 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ
+preplace netloc axi_iic_main_iic 1 6 1 NJ
+preplace netloc axi_interconnect_tft_M00_AXI 1 4 2 N 1740 NJ
+preplace netloc axi_cpu_interconnect_m01_axi 1 2 1 590
+preplace netloc sys_concat_intc_dout 1 5 1 1940
+preplace netloc axi_iic_main_iic2intc_irpt 1 4 3 NJ 1470 NJ 1240 2550
+preplace netloc vcc_dout 1 6 1 2680
+preplace netloc sys_aux_reset 1 0 7 -110 2450 NJ 2450 NJ 2450 NJ 2450 NJ 2450 NJ 2450 2590
+preplace netloc axi_hdmi_interconnect_m00_axi 1 5 1 1960
+preplace netloc sys_audio_clkgen_clk 1 3 2 N 810 1520
+preplace netloc ps_intr_1_1 1 0 5 NJ 1010 NJ 1010 NJ 1010 NJ 1010 NJ
+preplace netloc ps_intr_5_1 1 0 5 NJ 1090 NJ 1090 NJ 1090 NJ 1090 NJ
+preplace netloc sys_ps7_SDIO1_DATA_T 1 6 1 2760
+preplace netloc axi_hdmi_tx_core_hdmi_data_e 1 6 1 NJ
+preplace netloc axi_cpu_interconnect_M06_AXI 1 2 1 570
+preplace netloc axi_tft_0_ip2intc_irpt 1 3 2 NJ 1360 N
+preplace netloc SDIO1_DATA_I_1 1 0 7 NJ 1940 NJ 1940 NJ 1940 NJ 1940 NJ 1940 NJ 2320 2600
+preplace netloc axi_cpu_interconnect_m02_axi 1 2 4 550 40 NJ 40 NJ 40 NJ
+preplace netloc sys_ps7_SDIO1_BUSPOW 1 6 1 N
+preplace netloc sys_ps7_UART0_TX 1 6 1 NJ
+preplace netloc axi_i2s_adi_0_BCLK_O 1 5 2 NJ 370 NJ
+preplace netloc I2C1_SCL_I_1 1 0 7 NJ 1490 NJ 1490 NJ 1490 NJ 1490 NJ 1490 NJ 1360 2600
+preplace netloc sys_ps7_DMA2_ACK 1 4 3 NJ 750 NJ 750 2660
+preplace netloc axi_hdmi_tx_core_hdmi_hsync 1 6 1 NJ
+preplace netloc axi_hdmi_tx_core_hdmi_clk 1 3 3 1030 50 NJ 50 NJ
+preplace netloc axi_hdmi_tx_core_mm2s_tready 1 3 3 1010 60 NJ 60 NJ
+preplace netloc axi_hdmi_tx_core_mm2s_tvalid 1 3 3 1050 110 NJ 110 NJ
+preplace netloc axi_hdmi_tx_core_mm2s_fsync 1 2 5 620 430 NJ 430 N 430 1940 380 2630
+preplace netloc axi_tft_0_M_AXI_MM 1 3 1 N
+preplace netloc axi_i2s_adi_0_DMA_REQ_RX 1 5 1 2000
+preplace netloc axi_hdmi_dma_mm2s_introut 1 3 2 N 380 1500
+preplace netloc GPIO_I_1 1 0 7 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1460 NJ 1350 2550
+preplace cgraphic comment_0 place abs 1906 2468 textcolor 4 linecolor 3 linewidth 2
+levelinfo -pg 1 -140 60 400 810 1240 1740 2320 2810 -top 0 -bot 2470
 ",
 }
-0
+{
+   da_axi4_cnt: "5",
+}

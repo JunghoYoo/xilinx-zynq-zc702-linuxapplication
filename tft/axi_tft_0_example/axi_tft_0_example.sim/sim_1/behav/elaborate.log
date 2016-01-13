@@ -1,0 +1,101 @@
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 702cef960e9a4516ae7d95e96ed36e9c --debug all --relax --mt 2 -L xil_defaultlib -L axi_lite_ipif_v3_0_3 -L lib_cdc_v1_0_2 -L lib_pkg_v1_0_2 -L fifo_generator_v13_0_1 -L lib_fifo_v1_0_4 -L lib_srl_fifo_v1_0_2 -L axi_master_burst_v2_0_7 -L axi_tft_v2_1_11 -L unisims_ver -L unimacro_ver -L secureip --snapshot axi_tft_0_top_tb_behav xil_defaultlib.axi_tft_0_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 4 into Bus2IP_RdCE is out of bounds [D:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.ip_user_files/ip/axi_tft_0/axi_tft_v2_1_11/hdl/src/verilog/axi_tft_v2_1_slave_register.v:226]
+WARNING: [VRFC 10-1783] select index 4 into Bus2IP_WrCE is out of bounds [D:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.ip_user_files/ip/axi_tft_0/axi_tft_v2_1_11/hdl/src/verilog/axi_tft_v2_1_slave_register.v:229]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package axi_lite_ipif_v3_0_3.ipif_pkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package lib_pkg_v1_0_2.lib_pkg
+Compiling package unisim.vcomponents
+Compiling package std.textio
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.MMCME2_ADV(CLKIN1_PERIOD=5.0,CLK...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.axi_tft_0_clk_gen
+Compiling module xil_defaultlib.axi_tft_0_axi_slave_intf(DATA_WI...
+Compiling architecture imp of entity axi_lite_ipif_v3_0_3.pselect_f [\pselect_f(2,2,"00","nofamily")(...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_3.pselect_f [\pselect_f(2,2,"01","nofamily")(...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_3.pselect_f [\pselect_f(2,2,"10","nofamily")(...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_3.pselect_f [\pselect_f(2,2,"11","nofamily")(...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_3.address_decoder [\address_decoder(4,"000000000000...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_3.slave_attachment [\slave_attachment(("000000000000...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_3.axi_lite_ipif [\axi_lite_ipif(32,4,"00000000000...]
+Compiling architecture implementation of entity axi_master_burst_v2_0_7.axi_master_burst_reset [axi_master_burst_reset_default]
+Compiling architecture implementation of entity axi_master_burst_v2_0_7.axi_master_burst_first_stb_offset [\axi_master_burst_first_stb_offs...]
+Compiling architecture implementation of entity axi_master_burst_v2_0_7.axi_master_burst_stbs_set [\axi_master_burst_stbs_set(8)\]
+Compiling architecture implementation of entity axi_master_burst_v2_0_7.axi_master_burst_cmd_status [\axi_master_burst_cmd_status(32,...]
+Compiling architecture implementation of entity axi_master_burst_v2_0_7.axi_master_burst_strb_gen [\axi_master_burst_strb_gen(0,8,3...]
+Compiling architecture implementation of entity axi_master_burst_v2_0_7.axi_master_burst_strb_gen [\axi_master_burst_strb_gen(1,8,3...]
+Compiling architecture implementation of entity axi_master_burst_v2_0_7.axi_master_burst_pcc [\axi_master_burst_pcc(1,3,32,64,...]
+Compiling architecture implementation of entity axi_master_burst_v2_0_7.axi_master_burst_addr_cntl [\axi_master_burst_addr_cntl(1,32...]
+Compiling architecture implementation of entity axi_master_burst_v2_0_7.axi_master_burst_rdmux [\axi_master_burst_rdmux(3,64,64)...]
+Compiling architecture implementation of entity axi_master_burst_v2_0_7.axi_master_burst_rddata_cntl [\axi_master_burst_rddata_cntl(0,...]
+Compiling architecture implementation of entity axi_master_burst_v2_0_7.axi_master_burst_rd_status_cntl [\axi_master_burst_rd_status_cntl...]
+Compiling architecture implementation of entity axi_master_burst_v2_0_7.axi_master_burst_skid_buf [\axi_master_burst_skid_buf(64)\]
+Compiling architecture implementation of entity axi_master_burst_v2_0_7.axi_master_burst_wrdata_cntl [\axi_master_burst_wrdata_cntl(0,...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(3,7,"zynq")(1,4)\]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(7,3,"zynq")(1,4)...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(7,3,"zynq")(1,4)\]
+Compiling architecture imp of entity axi_master_burst_v2_0_7.axi_master_burst_fifo [\axi_master_burst_fifo(7,3,0,2,"...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(3,"zynq")...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(3,2,"zynq")(1,4)\]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(2,3,"zynq")(1,4)...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(2,3,"zynq")(1,4)\]
+Compiling architecture imp of entity axi_master_burst_v2_0_7.axi_master_burst_fifo [\axi_master_burst_fifo(2,3,0,2,"...]
+Compiling architecture implementation of entity axi_master_burst_v2_0_7.axi_master_burst_wr_status_cntl [\axi_master_burst_wr_status_cntl...]
+Compiling architecture implementation of entity axi_master_burst_v2_0_7.axi_master_burst_wr_demux [\axi_master_burst_wr_demux(3,64,...]
+Compiling architecture implementation of entity axi_master_burst_v2_0_7.axi_master_burst_skid2mm_buf [\axi_master_burst_skid2mm_buf(64...]
+Compiling architecture implementation of entity axi_master_burst_v2_0_7.axi_master_burst_rd_wr_cntlr [\axi_master_burst_rd_wr_cntlr(0,...]
+Compiling architecture implementation of entity axi_master_burst_v2_0_7.axi_master_burst_rd_llink [\axi_master_burst_rd_llink(64)\]
+Compiling architecture implementation of entity axi_master_burst_v2_0_7.axi_master_burst_wr_llink [\axi_master_burst_wr_llink(64)\]
+Compiling architecture implementation of entity axi_master_burst_v2_0_7.axi_master_burst [\axi_master_burst(32,64,16,1,64,...]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE('0','0','0','0')\]
+Compiling architecture fdr_v of entity unisim.FDR [\FDR('0')\]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(1,0,1,0,1,4)\]
+Compiling module unisims_ver.sffsrce_fdre
+Compiling module unisims_ver.FDRE(INIT=1'b0)
+Compiling module unisims_ver.FDR
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(0,1,1,0,1,4)\]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(1,0,0,0,11,4)\]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(1,0,1,0,1,2)\]
+Compiling module axi_tft_v2_1_11.axi_tft_v2_1_10_slave_register(C...
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1_bhv_as [\fifo_generator_v13_0_1_bhv_as("...]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1_bhv_preload0 [\fifo_generator_v13_0_1_bhv_prel...]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1_conv [\fifo_generator_v13_0_1_conv(0,0...]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_vhdl_beh [\fifo_generator_vhdl_beh(0,0,9,"...]
+Compiling architecture xilinx of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1 [\fifo_generator_v13_0_1(0,0,9,"B...]
+Compiling architecture implementation of entity lib_fifo_v1_0_4.async_fifo_fg [\async_fifo_fg(1,"zynq",48,0,512...]
+Compiling module axi_tft_v2_1_11.axi_tft_v2_1_10_line_buffer(C_FA...
+Compiling module axi_tft_v2_1_11.axi_tft_v2_1_10_h_sync
+Compiling module axi_tft_v2_1_11.axi_tft_v2_1_10_v_sync
+Compiling module unisims_ver.sffsrce_fdse
+Compiling module unisims_ver.FDSE(INIT=1'b1)
+Compiling module unisims_ver.FDS
+Compiling module unisims_ver.ODDR
+Compiling module axi_tft_v2_1_11.axi_tft_v2_1_10_tft_interface(C_...
+Compiling module axi_tft_v2_1_11.axi_tft_v2_1_tft_controller(C_TF...
+Compiling architecture imp of entity axi_tft_v2_1_11.axi_tft [\axi_tft("zynq",0,0,"01110110","...]
+Compiling architecture axi_tft_0_arch of entity xil_defaultlib.axi_tft_0 [axi_tft_0_default]
+Compiling module xil_defaultlib.axi_tft_0_top
+Compiling module xil_defaultlib.axi_tft_0_tft_checker
+Compiling module xil_defaultlib.axi_tft_0_top_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 1 sub-compilation(s) to finish...
+Built simulation snapshot axi_tft_0_top_tb_behav

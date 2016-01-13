@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2015 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2016 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -50,7 +50,7 @@
 // IP VLNV: analog.com:user:axi_hdmi_tx:1.0
 // IP Revision: 1
 
-(* X_CORE_INFO = "axi_hdmi_tx,Vivado 2015.3" *)
+(* X_CORE_INFO = "axi_hdmi_tx,Vivado 2015.4" *)
 (* CHECK_LICENSE_TYPE = "system_axi_hdmi_core_0,axi_hdmi_tx,{}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_axi_hdmi_core_0 (

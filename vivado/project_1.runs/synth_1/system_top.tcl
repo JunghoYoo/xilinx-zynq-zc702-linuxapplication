@@ -4,50 +4,57 @@
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config  -ruleid {}  -id {IP_Flow 19-1687}  -new_severity {INFO} 
+set_msg_config  -ruleid {2147483647}  -id {IP_Flow 19-1687}  -new_severity {INFO} 
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir D:/Developers_KIT/Zynq702/Hdmi_adi/project_1.cache/wt [current_project]
-set_property parent.project_path D:/Developers_KIT/Zynq702/Hdmi_adi/project_1.xpr [current_project]
+set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
+set_property webtalk.parent_dir D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.cache/wt [current_project]
+set_property parent.project_path D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part xilinx.com:zc702:part0:1.0 [current_project]
-set_property ip_repo_paths d:/Developers_KIT/Zynq702/Hdmi_adi/library [current_project]
+set_property ip_repo_paths {
+  d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/library
+  d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/tft/axi_tft_v2_1
+} [current_project]
 set_property vhdl_version vhdl_2k [current_fileset]
-add_files D:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/bd/system/system.bd
-set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.xdc]
-set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/bd/system/ip/system_axi_iic_main_0/system_axi_iic_main_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/bd/system/ip/system_axi_iic_main_0/system_axi_iic_main_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0.xdc]
-set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/ipshared/analog.com/axi_hdmi_tx_v1_0/axi_hdmi_tx_constr.xdc]
-set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0.xdc]
-set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc]
-set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/ipshared/analog.com/axi_spdif_tx_v1_0/axi_spdif_tx_constr.xdc]
-set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all D:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/bd/system/system_ooc.xdc]
-set_property is_locked true [get_files D:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/bd/system/system.bd]
+add_files D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/system.bd
+set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/ip/system_axi_iic_main_0/system_axi_iic_main_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/ip/system_axi_iic_main_0/system_axi_iic_main_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/ip/system_axi_hdmi_core_0/axi_hdmi_tx_constr.xdc]
+set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/ip/system_axi_spdif_tx_core_0/axi_spdif_tx_constr.xdc]
+set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/ip/system_axi_tft_0_2/system_axi_tft_0_2.xdc]
+set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/ip/system_axi_tft_0_2/system_axi_tft_0_2_clocks.xdc]
+set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/ip/system_axi_tft_0_2/system_axi_tft_0_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/system_ooc.xdc]
+set_property is_locked true [get_files D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/system.bd]
 
 read_verilog -library xil_defaultlib {
-  D:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/ad_iobuf.v
-  D:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/bd/system/hdl/system_wrapper.v
-  D:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/sources_1/system_top.v
+  D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/ad_iobuf.v
+  D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/bd/system/hdl/system_wrapper.v
+  D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/sources_1/system_top.v
 }
-read_xdc D:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/constrs_1/new/system_top.xdc
-set_property used_in_implementation false [get_files D:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/constrs_1/new/system_top.xdc]
+read_xdc D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/constrs_1/zc702_system_constr.xdc
+set_property used_in_implementation false [get_files D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/constrs_1/zc702_system_constr.xdc]
 
-read_xdc D:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/constrs_1/zc702_system_constr.xdc
-set_property used_in_implementation false [get_files D:/Developers_KIT/Zynq702/Hdmi_adi/project_1.srcs/constrs_1/zc702_system_constr.xdc]
+read_xdc D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/constrs_1/system_top.xdc
+set_property used_in_implementation false [get_files D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.srcs/constrs_1/system_top.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

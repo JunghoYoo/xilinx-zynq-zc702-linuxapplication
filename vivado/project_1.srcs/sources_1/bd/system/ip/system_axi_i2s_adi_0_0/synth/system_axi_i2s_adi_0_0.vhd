@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2015 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2016 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -176,7 +176,7 @@ ARCHITECTURE system_axi_i2s_adi_0_0_arch OF system_axi_i2s_adi_0_0 IS
     );
   END COMPONENT axi_i2s_adi;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF system_axi_i2s_adi_0_0_arch: ARCHITECTURE IS "axi_i2s_adi,Vivado 2015.3";
+  ATTRIBUTE X_CORE_INFO OF system_axi_i2s_adi_0_0_arch: ARCHITECTURE IS "axi_i2s_adi,Vivado 2015.4";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF system_axi_i2s_adi_0_0_arch : ARCHITECTURE IS "system_axi_i2s_adi_0_0,axi_i2s_adi,{}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;

@@ -1,0 +1,11 @@
+verilog axi_tft_v2_1_11 "../../../ip/axi_tft_0/axi_tft_v2_1_11/hdl/src/verilog/axi_tft_v2_1_iic_init.v" 
+verilog axi_tft_v2_1_11 "../../../ip/axi_tft_0/axi_tft_v2_1_11/hdl/src/verilog/axi_tft_v2_1_v_sync.v" 
+verilog axi_tft_v2_1_11 "../../../ip/axi_tft_0/axi_tft_v2_1_11/hdl/src/verilog/axi_tft_v2_1_tft_interface.v" 
+verilog axi_tft_v2_1_11 "../../../ip/axi_tft_0/axi_tft_v2_1_11/hdl/src/verilog/axi_tft_v2_1_slave_register.v" 
+verilog axi_tft_v2_1_11 "../../../ip/axi_tft_0/axi_tft_v2_1_11/hdl/src/verilog/axi_tft_v2_1_line_buffer.v" 
+verilog axi_tft_v2_1_11 "../../../ip/axi_tft_0/axi_tft_v2_1_11/hdl/src/verilog/axi_tft_v2_1_h_sync.v" 
+verilog axi_tft_v2_1_11 "../../../ip/axi_tft_0/axi_tft_v2_1_11/hdl/src/verilog/axi_tft_v2_1_tft_controller.v" 
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

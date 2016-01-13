@@ -106,7 +106,17 @@ module system_top (
   
   sdio1_cdn,
   sdio1_clk,
-  sdio1_wp
+  sdio1_wp,
+  
+  // TFT LCD
+  VGA_INTF_clk,
+  VGA_INTF_de,
+  VGA_INTF_dps,
+  VGA_INTF_hsync,
+  VGA_INTF_vsync,
+  VGA_INTF_red,
+  VGA_INTF_green,
+  VGA_INTF_blue  
   );
 
   inout   [14:0]  DDR_addr;
@@ -172,14 +182,22 @@ module system_top (
   input sdio1_cdn;
   output sdio1_clk;
   input sdio1_wp;
-      
+  
+  output VGA_INTF_clk;
+  output VGA_INTF_de;
+  output VGA_INTF_dps;
+  output VGA_INTF_hsync;
+  output VGA_INTF_vsync;
+  output [7:0]VGA_INTF_red;
+  output [7:0]VGA_INTF_green;
+  output [7:0]VGA_INTF_blue;    
   // internal signals
 
   wire    [7:0]  gpio_i;
   wire    [7:0]  gpio_o;
   wire    [7:0]  gpio_t;
 
-  wire    [15:0]  ps_intrs;
+  wire    [12:0]  ps_intrs;
 
   wire I2C1_SCL_I;
   wire I2C1_SCL_O;
@@ -346,22 +364,31 @@ module system_top (
     .spi0_ss1_o(spi_ss1_o),
     .spi0_ss2_o(spi_ss2_o), 
 
-    .SDIO1_buspow(sdio1_buspow),
-    .SDIO1_busvolt(sdio1_busvolt),
-    .SDIO1_led(sdio1_led),
+    .SDIO1_BUSPOW(sdio1_buspow),
+    .SDIO1_BUSVOLT(sdio1_busvolt),
+    .SDIO1_LED(sdio1_led),
 
-    .SDIO1_cdn(sdio1_cdn),
-    .SDIO1_clk(sdio1_clk),
-    .SDIO1_clk_fb(sdio1_clk_fb),
-    .SDIO1_wp(sdio1_wp),
+    .SDIO1_CDN(sdio1_cdn),
+    .SDIO1_CLK(sdio1_clk),
+    .SDIO1_CLK_FB(sdio1_clk_fb),
+    .SDIO1_WP(sdio1_wp),
 
-    .sdio1_cmd_i(sdio1_cmd_i),
-    .sdio1_cmd_o(sdio1_cmd_o),
-    .sdio1_cmd_t(sdio1_cmd_t),
-    .sdio1_data_i(sdio1_data_i),
-    .sdio1_data_o(sdio1_data_o),
-    .sdio1_data_t(sdio1_data_t),
-            
+    .SDIO1_CMD_I(sdio1_cmd_i),
+    .SDIO1_CMD_O(sdio1_cmd_o),
+    .SDIO1_CMD_T(sdio1_cmd_t),
+    .SDIO1_DATA_I(sdio1_data_i),
+    .SDIO1_DATA_O(sdio1_data_o),
+    .SDIO1_DATA_T(sdio1_data_t),
+
+    .VGA_INTF_clk(VGA_INTF_clk),
+    .VGA_INTF_de(VGA_INTF_de),
+    .VGA_INTF_dps(VGA_INTF_dps),
+    .VGA_INTF_hsync(VGA_INTF_hsync),
+    .VGA_INTF_vsync(VGA_INTF_vsync),
+    .VGA_INTF_red(VGA_INTF_red),
+    .VGA_INTF_green(VGA_INTF_green),
+    .VGA_INTF_blue(VGA_INTF_blue),
+                
     .ps_intr_0 (ps_intrs[0]),
     .ps_intr_1 (ps_intrs[1]),
     .ps_intr_2 (ps_intrs[2]),
@@ -375,7 +402,7 @@ module system_top (
     .ps_intr_10 (ps_intrs[10]),
     .ps_intr_11 (ps_intrs[11]),
     .ps_intr_12 (ps_intrs[12]),
-    .ps_intr_13 (ps_intrs[13]),
+
     .spdif (spdif));
 
 endmodule

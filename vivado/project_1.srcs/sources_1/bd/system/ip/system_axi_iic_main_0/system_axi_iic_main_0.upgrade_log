@@ -1,0 +1,16 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Mon Jan 11 21:50:41 2016
+| Host         : Peter-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_iic_main_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_axi_iic_main_0 (xilinx.com:ip:axi_iic:2.0) from (Rev. 9) to (Rev. 10)
+

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1451210457">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1452691796">
   <File Type="OPT-DCP" Name="system_top_opt.dcp"/>
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
   <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
@@ -58,7 +58,7 @@
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/system/system.bd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../analogdevicelibrary/hdl/hdl-hdl_2014_r2/hdl-hdl_2014_r2/projects/adv7511/zc702/adv7511_zc702.srcs/sources_1/bd/system/system.bd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../analogdevicelibrary/hdl/hdl-hdl_2014_r2/hdl-hdl_2014_r2/projects/adv7511/zc702/adv7511_zc702.srcs/sources_1/bd/system/system.bd"/>
         <Attr Name="ImportTime" Val="1422171241"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -91,9 +91,7 @@
     <File Path="$PSRCDIR/sources_1/bd/system/ip/system_axi_hdmi_interconnect_0/system_axi_hdmi_interconnect_0.upgrade_log"/>
     <File Path="$PSRCDIR/sources_1/bd/system/ip/system_axi_iic_main_0/system_axi_iic_main_0.upgrade_log"/>
     <File Path="$PSRCDIR/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.upgrade_log"/>
-    <File Path="$PSRCDIR/sources_1/bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.upgrade_log"/>
-    <File Path="$PSRCDIR/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0.upgrade_log"/>
-    <File Path="$PSRCDIR/sources_1/bd/system/ip/system_sys_concat_intc_0/system_sys_concat_intc_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/system/ip/system_axi_tft_0_2/system_axi_tft_0_2.upgrade_log"/>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="system_top"/>
@@ -102,20 +100,19 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/new/system_top.xdc">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/constrs_1/zc702_system_constr.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/constrs_1/system_top.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
-      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/system_top.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>

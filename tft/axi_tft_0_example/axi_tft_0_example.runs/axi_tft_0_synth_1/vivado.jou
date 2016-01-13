@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sat Jan 09 19:37:00 2016
+# Process ID: 2544
+# Current directory: D:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.runs/axi_tft_0_synth_1
+# Command line: vivado.exe -log axi_tft_0.vds -mode batch -messageDb vivado.pb -notrace -source axi_tft_0.tcl
+# Log file: D:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.runs/axi_tft_0_synth_1/axi_tft_0.vds
+# Journal file: D:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.runs/axi_tft_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source axi_tft_0.tcl -notrace

@@ -1,7 +1,7 @@
 //Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
-//Date        : Sat Dec 26 23:47:01 2015
+//Tool Version: Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+//Date        : Wed Jan 13 22:25:59 2016
 //Host        : Peter-PC running 64-bit Service Pack 1  (build 7601)
 //Command     : generate_target system_wrapper.bd
 //Design      : system_wrapper
@@ -44,15 +44,29 @@ module system_wrapper
     LRCLK_O,
     SDATA_I,
     SDATA_O,
-    SDIO1_buspow,
-    SDIO1_busvolt,
-    SDIO1_cdn,
-    SDIO1_clk,
-    SDIO1_clk_fb,
-    SDIO1_led,
-    SDIO1_wp,
+    SDIO1_BUSPOW,
+    SDIO1_BUSVOLT,
+    SDIO1_CDN,
+    SDIO1_CLK,
+    SDIO1_CLK_FB,
+    SDIO1_CMD_I,
+    SDIO1_CMD_O,
+    SDIO1_CMD_T,
+    SDIO1_DATA_I,
+    SDIO1_DATA_O,
+    SDIO1_DATA_T,
+    SDIO1_LED,
+    SDIO1_WP,
     UART0_RX,
     UART0_TX,
+    VGA_INTF_blue,
+    VGA_INTF_clk,
+    VGA_INTF_de,
+    VGA_INTF_dps,
+    VGA_INTF_green,
+    VGA_INTF_hsync,
+    VGA_INTF_red,
+    VGA_INTF_vsync,
     clkout12288,
     hdmi_data,
     hdmi_data_e,
@@ -66,7 +80,6 @@ module system_wrapper
     ps_intr_10,
     ps_intr_11,
     ps_intr_12,
-    ps_intr_13,
     ps_intr_2,
     ps_intr_3,
     ps_intr_4,
@@ -75,12 +88,6 @@ module system_wrapper
     ps_intr_7,
     ps_intr_8,
     ps_intr_9,
-    sdio1_cmd_i,
-    sdio1_cmd_o,
-    sdio1_cmd_t,
-    sdio1_data_i,
-    sdio1_data_o,
-    sdio1_data_t,
     spdif,
     spi0_io0_io,
     spi0_io1_io,
@@ -123,15 +130,29 @@ module system_wrapper
   output [0:0]LRCLK_O;
   input [0:0]SDATA_I;
   output [0:0]SDATA_O;
-  output SDIO1_buspow;
-  output [2:0]SDIO1_busvolt;
-  input SDIO1_cdn;
-  output SDIO1_clk;
-  input SDIO1_clk_fb;
-  output SDIO1_led;
-  input SDIO1_wp;
+  output SDIO1_BUSPOW;
+  output [2:0]SDIO1_BUSVOLT;
+  input SDIO1_CDN;
+  output SDIO1_CLK;
+  input SDIO1_CLK_FB;
+  input SDIO1_CMD_I;
+  output SDIO1_CMD_O;
+  output SDIO1_CMD_T;
+  input [3:0]SDIO1_DATA_I;
+  output [3:0]SDIO1_DATA_O;
+  output [3:0]SDIO1_DATA_T;
+  output SDIO1_LED;
+  input SDIO1_WP;
   input UART0_RX;
   output UART0_TX;
+  output [7:0]VGA_INTF_blue;
+  output VGA_INTF_clk;
+  output VGA_INTF_de;
+  output VGA_INTF_dps;
+  output [7:0]VGA_INTF_green;
+  output VGA_INTF_hsync;
+  output [7:0]VGA_INTF_red;
+  output VGA_INTF_vsync;
   output clkout12288;
   output [15:0]hdmi_data;
   output hdmi_data_e;
@@ -145,7 +166,6 @@ module system_wrapper
   input ps_intr_10;
   input ps_intr_11;
   input ps_intr_12;
-  input ps_intr_13;
   input ps_intr_2;
   input ps_intr_3;
   input ps_intr_4;
@@ -154,12 +174,6 @@ module system_wrapper
   input ps_intr_7;
   input ps_intr_8;
   input ps_intr_9;
-  input sdio1_cmd_i;
-  output sdio1_cmd_o;
-  output sdio1_cmd_t;
-  input [3:0]sdio1_data_i;
-  output [3:0]sdio1_data_o;
-  output [3:0]sdio1_data_t;
   output spdif;
   inout spi0_io0_io;
   inout spi0_io1_io;
@@ -203,15 +217,29 @@ module system_wrapper
   wire [0:0]LRCLK_O;
   wire [0:0]SDATA_I;
   wire [0:0]SDATA_O;
-  wire SDIO1_buspow;
-  wire [2:0]SDIO1_busvolt;
-  wire SDIO1_cdn;
-  wire SDIO1_clk;
-  wire SDIO1_clk_fb;
-  wire SDIO1_led;
-  wire SDIO1_wp;
+  wire SDIO1_BUSPOW;
+  wire [2:0]SDIO1_BUSVOLT;
+  wire SDIO1_CDN;
+  wire SDIO1_CLK;
+  wire SDIO1_CLK_FB;
+  wire SDIO1_CMD_I;
+  wire SDIO1_CMD_O;
+  wire SDIO1_CMD_T;
+  wire [3:0]SDIO1_DATA_I;
+  wire [3:0]SDIO1_DATA_O;
+  wire [3:0]SDIO1_DATA_T;
+  wire SDIO1_LED;
+  wire SDIO1_WP;
   wire UART0_RX;
   wire UART0_TX;
+  wire [7:0]VGA_INTF_blue;
+  wire VGA_INTF_clk;
+  wire VGA_INTF_de;
+  wire VGA_INTF_dps;
+  wire [7:0]VGA_INTF_green;
+  wire VGA_INTF_hsync;
+  wire [7:0]VGA_INTF_red;
+  wire VGA_INTF_vsync;
   wire clkout12288;
   wire [15:0]hdmi_data;
   wire hdmi_data_e;
@@ -231,7 +259,6 @@ module system_wrapper
   wire ps_intr_10;
   wire ps_intr_11;
   wire ps_intr_12;
-  wire ps_intr_13;
   wire ps_intr_2;
   wire ps_intr_3;
   wire ps_intr_4;
@@ -240,12 +267,6 @@ module system_wrapper
   wire ps_intr_7;
   wire ps_intr_8;
   wire ps_intr_9;
-  wire sdio1_cmd_i;
-  wire sdio1_cmd_o;
-  wire sdio1_cmd_t;
-  wire [3:0]sdio1_data_i;
-  wire [3:0]sdio1_data_o;
-  wire [3:0]sdio1_data_t;
   wire spdif;
   wire spi0_io0_i;
   wire spi0_io0_io;
@@ -330,17 +351,19 @@ module system_wrapper
         .LRCLK_O(LRCLK_O),
         .SDATA_I(SDATA_I),
         .SDATA_O(SDATA_O),
-        .SDIO1_buspow(SDIO1_buspow),
-        .SDIO1_busvolt(SDIO1_busvolt),
-        .SDIO1_cdn(SDIO1_cdn),
-        .SDIO1_clk(SDIO1_clk),
-        .SDIO1_clk_fb(SDIO1_clk_fb),
-        .SDIO1_cmd_i(sdio1_cmd_i),
-        .SDIO1_cmd_o(sdio1_cmd_o),
-        .SDIO1_data_i(sdio1_data_i),
-        .SDIO1_data_o(sdio1_data_o),
-        .SDIO1_led(SDIO1_led),
-        .SDIO1_wp(SDIO1_wp),
+        .SDIO1_BUSPOW(SDIO1_BUSPOW),
+        .SDIO1_BUSVOLT(SDIO1_BUSVOLT),
+        .SDIO1_CDN(SDIO1_CDN),
+        .SDIO1_CLK(SDIO1_CLK),
+        .SDIO1_CLK_FB(SDIO1_CLK_FB),
+        .SDIO1_CMD_I(SDIO1_CMD_I),
+        .SDIO1_CMD_O(SDIO1_CMD_O),
+        .SDIO1_CMD_T(SDIO1_CMD_T),
+        .SDIO1_DATA_I(SDIO1_DATA_I),
+        .SDIO1_DATA_O(SDIO1_DATA_O),
+        .SDIO1_DATA_T(SDIO1_DATA_T),
+        .SDIO1_LED(SDIO1_LED),
+        .SDIO1_WP(SDIO1_WP),
         .SPI0_io0_i(spi0_io0_i),
         .SPI0_io0_o(spi0_io0_o),
         .SPI0_io0_t(spi0_io0_t),
@@ -356,6 +379,14 @@ module system_wrapper
         .SPI0_ss_t(spi0_ss_t),
         .UART0_RX(UART0_RX),
         .UART0_TX(UART0_TX),
+        .VGA_INTF_blue(VGA_INTF_blue),
+        .VGA_INTF_clk(VGA_INTF_clk),
+        .VGA_INTF_de(VGA_INTF_de),
+        .VGA_INTF_dps(VGA_INTF_dps),
+        .VGA_INTF_green(VGA_INTF_green),
+        .VGA_INTF_hsync(VGA_INTF_hsync),
+        .VGA_INTF_red(VGA_INTF_red),
+        .VGA_INTF_vsync(VGA_INTF_vsync),
         .clkout12288(clkout12288),
         .hdmi_data(hdmi_data),
         .hdmi_data_e(hdmi_data_e),
@@ -367,7 +398,6 @@ module system_wrapper
         .ps_intr_10(ps_intr_10),
         .ps_intr_11(ps_intr_11),
         .ps_intr_12(ps_intr_12),
-        .ps_intr_13(ps_intr_13),
         .ps_intr_2(ps_intr_2),
         .ps_intr_3(ps_intr_3),
         .ps_intr_4(ps_intr_4),
@@ -376,7 +406,5 @@ module system_wrapper
         .ps_intr_7(ps_intr_7),
         .ps_intr_8(ps_intr_8),
         .ps_intr_9(ps_intr_9),
-        .sdio1_cmd_t(sdio1_cmd_t),
-        .sdio1_data_t(sdio1_data_t),
         .spdif(spdif));
 endmodule

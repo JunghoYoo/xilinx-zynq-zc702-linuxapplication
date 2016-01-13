@@ -522,7 +522,12 @@
 				pendown-gpio = <&gpio 54 0>;  /* GPIO BANK 3 EMIO [0] */
 				vcc-supply = <&regulator_vcc25>;
 			};
-    	};			
+    	};	
+		axi_tft_0: axi_tft@43c00000 {
+			compatible = "xlnx,xps-tft-1.00.a";
+			reg = <0x43c00000 0x10000>;
+			xlnx,dcr-splb-slave-if = <1>;
+		};     	       			
 	};
 };
 

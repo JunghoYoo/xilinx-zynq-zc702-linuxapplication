@@ -1,0 +1,178 @@
+<: ;#Component and file information :>
+<: set ComponentName [getComponentNameString] :>
+<: setOutputDirectory [ttcl_string_concat $ComponentName "/example_design"] :>
+<: setFileName [ttcl_string_concat "axi_interface"] :>
+<: set data_width [getStringValue "C_M_AXI_DATA_WIDTH"] :>
+<: set addr_width [getStringValue "C_M_AXI_ADDR_WIDTH"] :>
+<: setFileExtension ".v" :>
+// (c) Copyright 2009 - 2013 Xilinx, Inc. All rights reserved.
+// 
+// This file contains confidential and proprietary information
+// of Xilinx, Inc. and is protected under U.S. and
+// international copyright and other intellectual property
+// laws.
+// 
+// DISCLAIMER
+// This disclaimer is not a license and does not grant any
+// rights to the materials distributed herewith. Except as
+// otherwise provided in a valid license issued to you by
+// Xilinx, and to the maximum extent permitted by applicable
+// law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+// BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+// INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+// (2) Xilinx shall not be liable (whether in contract or tort,
+// including negligence, or under any other theory of
+// liability) for any loss or damage of any kind or nature
+// related to, arising under or in connection with these
+// materials, including for any direct, or any indirect,
+// special, incidental, or consequential loss or damage
+// (including loss of data, profits, goodwill, or any type of
+// loss or damage suffered as a result of any action brought
+// by a third party) even if such damage or loss was
+// reasonably foreseeable or Xilinx had been advised of the
+// possibility of the same.
+// 
+// CRITICAL APPLICATIONS
+// Xilinx products are not designed or intended to be fail-
+// safe, or for use in any application requiring fail-safe
+// performance, such as life-support or safety devices or
+// systems, Class III medical devices, nuclear facilities,
+// applications related to the deployment of airbags, or any
+// other applications that could lead to death, personal
+// injury, or severe property or environmental damage
+// (individually and collectively, "Critical
+// Applications"). Customer assumes the sole risk and
+// liability of any use of Xilinx products in Critical
+// Applications, subject only to applicable laws and
+// regulations governing limitations on product liability.
+// 
+// THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+// PART OF THIS FILE AT ALL TIMES.
+`timescale 1ps/1ps
+module <=: $ComponentName :>_axi_slave_intf
+    #(parameter DATA_WIDTH = 64)
+(
+    input               s_axi_aclk,    
+    input               s_axi_aresetn , 
+    output reg          s_axi_arready ,    
+    input               s_axi_arvalid ,    
+    input       [<=: $addr_width :>-1:0] s_axi_araddr  ,    
+    input       [7:0]   s_axi_arlen   ,    
+    input       [2:0]   s_axi_arsize  ,    
+    input       [1:0]   s_axi_arburst ,    
+    input       [2:0]   s_axi_arprot  ,    
+    input       [3:0]   s_axi_arcache ,    
+                                           
+    // MMap Read Data Channel              
+    input               s_axi_rready  ,    
+    output reg          s_axi_rvalid  ,    
+    output reg  [DATA_WIDTH-1:0]        s_axi_rdata   ,    
+    output reg  [1:0]   s_axi_rresp   ,    
+    output reg          s_axi_rlast       
+);
+
+
+   localparam IDLE = 3'b000;
+   localparam ADDR = 3'b001;
+   localparam DATA = 3'b010;
+   localparam TRANS_END = 3'b011;
+
+   localparam SEND_TWO_PIXELS = (DATA_WIDTH > 32) ? 1 : 0;
+
+   reg [7:0] trans_len;
+   reg [2:0] trans_size;
+   reg [2:0] axi_state;
+   reg [DATA_WIDTH-1:0] axi_data;
+   reg [7:0] red;
+   reg [7:0] green;
+   reg [7:0] blue;
+<: if {$data_width == "128"} { :>
+   reg       data_index;
+<: } :>
+
+
+   always @(posedge s_axi_aclk or negedge s_axi_aresetn)
+   begin
+       if(!s_axi_aresetn) begin
+           s_axi_arready <= 1'b0;
+           s_axi_rvalid <= 1'b0;
+<: if {$data_width == "128"} { :>
+           s_axi_rdata <= 128'd0000;
+           data_index <= 1'b0;
+<: } else { :>
+<: if {$data_width == "64"} { :>
+           s_axi_rdata <= 64'd00;
+<: } else { :>
+           s_axi_rdata <= 32'd0;
+<: } :>
+<: } :>
+           s_axi_rdata <= 'd00;
+           s_axi_rresp <= 2'b00;
+           s_axi_rlast <= 1'b0;
+           axi_state <= IDLE;
+           trans_len <= 8'h00;
+           trans_size <= 3'b000;
+           red <= 8'h00;
+           green <= 8'h00;
+           blue <= 8'h00;
+       end else begin
+           case (axi_state) 
+               IDLE: begin
+                    s_axi_rvalid <= 1'b0;
+                    s_axi_rlast <= 1'b0;
+<: if {$data_width == "128"} { :>
+                    data_index <= 1'b0;
+<: } :>
+                    if(s_axi_arvalid && !s_axi_arready) begin
+                        s_axi_arready <= 1'b1;
+                        trans_len <= s_axi_arlen;
+                        trans_size <= s_axi_arsize;
+                        axi_state <= DATA;
+                    end else begin
+                        s_axi_arready <= 1'b0;
+                        trans_len <= 8'h00;
+                        trans_size <= 3'b000;
+                    end
+                end
+                DATA: begin
+                    if(trans_len == 8'h00) begin
+                        s_axi_rlast <= 1'b1;
+                        axi_state <= IDLE;
+                    end else begin
+                        axi_state <= DATA;
+                        s_axi_rlast <= 1'b0;
+                        trans_len <= trans_len - 8'h01;
+                    end
+<: if {$data_width == "128"} { :>
+                    data_index <= ~data_index;
+                    if(data_index) begin
+                        s_axi_rdata <= {8'h00,(red+8'h01),(green+8'h01),(blue+8'h01),8'h00,red,green,blue,64'd00};
+                    end else begin
+                        s_axi_rdata <= {64'd00,8'h00,(red+8'h01),(green+8'h01),(blue+8'h01),8'h00,red,green,blue};
+                    end
+                    red <= red + 8'h02;
+                    green <= green + 8'h02;
+                    blue <= blue + 8'h02;
+<: } else { :>
+<: if {$data_width == "64"} { :>
+                    s_axi_rdata <= {8'h00,(red+8'h01),(green+8'h01),(blue+8'h01),8'h00,red,green,blue};
+                    red <= red + 8'h02;
+                    green <= green + 8'h02;
+                    blue <= blue + 8'h02;
+<: } else { :>
+                    s_axi_rdata <= {8'h00,red,green,blue};
+                    red <= red + 8'h01;
+                    green <= green + 8'h01;
+                    blue <= blue + 8'h01;
+<: } :>
+<: } :>
+                    s_axi_rvalid <= 1'b1;
+                    s_axi_arready <= 1'b0;
+                end
+            endcase
+       end
+   end
+
+endmodule

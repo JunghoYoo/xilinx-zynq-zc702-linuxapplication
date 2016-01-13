@@ -3,3 +3,67 @@
 10:31:46 INFO  : Processing command line option -hwspec D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk/system_top.hdf.
 10:31:47 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
 10:31:48 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+23:33:17 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+23:33:18 INFO  : XSDB server has started successfully.
+23:33:39 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+23:33:40 INFO  : XSDB server has started successfully.
+23:33:40 INFO  : Processing command line option -hwspec D:/Developers_KIT/Zynq702/workspace/project_1.sdk/system_top.hdf.
+23:36:26 INFO  : Invoking Bootgen: bootgen -image output.bif -o D:\Developers_KIT\Zynq702\workspace\project_1.sdk\BOOT.bin
+23:36:26 INFO  : Creating new bif file D:\Developers_KIT\Zynq702\workspace\project_1.sdk\output.bif
+23:36:27 INFO  : Bootgen command execution is done.
+22:45:09 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+22:45:10 INFO  : XSDB server has started successfully.
+22:47:44 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+22:47:45 INFO  : XSDB server has started successfully.
+22:47:58 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+22:47:59 INFO  : XSDB server has started successfully.
+22:48:22 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+22:48:23 INFO  : XSDB server has started successfully.
+22:48:24 INFO  : Processing command line option -hwspec D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk/system_top.hdf.
+22:53:19 INFO  : Invoking Bootgen: bootgen -image output.bif -o D:\Developers_KIT\Zynq702\xilinx-zynq-zc702-linuxapplication\bootimage\BOOT.bin -w on
+22:53:19 INFO  : Overwriting existing bif file D:\Developers_KIT\Zynq702\xilinx-zynq-zc702-linuxapplication\bootimage\output.bif
+22:53:20 INFO  : Bootgen command execution is done.
+22:58:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:58:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203342027A" && level==0} -index 1' command is executed.
+22:58:25 INFO  : FPGA configured successfully with bitstream "D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk/system_top_hw_platform_0/system_top.bit"
+23:02:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203342027A" && level==0} -index 1' command is executed.
+23:02:46 INFO  : 'fpga -state' command is executed.
+23:02:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:02:46 INFO  : Sourcing of 'D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk/system_top_hw_platform_0/ps7_init.tcl' is done.
+23:02:46 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203342027A"} -index 0' command is executed.
+23:02:46 INFO  : Hardware design information is loaded from 'D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk/system_top_hw_platform_0/system.hdf'.
+23:02:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203342027A"} -index 0' command is executed.
+23:02:47 INFO  : 'stop' command is executed.
+23:02:47 INFO  : 'ps7_init' command is executed.
+23:02:47 INFO  : 'ps7_post_config' command is executed.
+23:02:47 INFO  : 'con' command is executed.
+23:02:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:02:48 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:02:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:02:48 INFO  : The application 'D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk/tft/Debug/tft.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:02:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk/system_top_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203342027A"} -index 0
+loadhw D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk/system_top_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203342027A"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203342027A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203342027A"} -index 0
+dow D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.sdk/tft/Debug/tft.elf
+----------------End of Script----------------
+
+23:02:49 INFO  : Memory regions updated for context APU
+23:02:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:02:49 INFO  : 'con' command is executed.
+23:02:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203342027A"} -index 0
+con
+----------------End of Script----------------
+
+23:03:12 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+23:03:13 INFO  : XSDB server has started successfully.

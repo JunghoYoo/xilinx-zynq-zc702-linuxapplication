@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=C:/Xilinx/SDK/2015.3/bin;C:/Xilinx/Vivado/2015.3/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2015.3/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2015.3/bin
+  PATH=C:/Xilinx/SDK/2015.4/bin;C:/Xilinx/Vivado/2015.4/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2015.4/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2015.4/bin
 else
-  PATH=C:/Xilinx/SDK/2015.3/bin;C:/Xilinx/Vivado/2015.3/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2015.3/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2015.3/bin:$PATH
+  PATH=C:/Xilinx/SDK/2015.4/bin;C:/Xilinx/Vivado/2015.4/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2015.4/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2015.4/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD=D:/Developers_KIT/Zynq702/Hdmi_adi/project_1.runs/impl_1
+HD_PWD='D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/vivado/project_1.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

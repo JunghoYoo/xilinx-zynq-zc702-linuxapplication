@@ -1,0 +1,6 @@
+23:02:43 **** Incremental Build of configuration Debug for project tft ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+
+23:02:43 Build Finished (took 156ms)
+

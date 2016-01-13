@@ -1,0 +1,6 @@
+23:00:07 **** Incremental Build of configuration Debug for project fsbl ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+
+23:00:07 Build Finished (took 234ms)
+
