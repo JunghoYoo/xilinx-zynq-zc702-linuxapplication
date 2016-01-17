@@ -3,8 +3,8 @@ Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 702cef960e9a4516ae7d95e96ed36e9c --debug all --relax --mt 2 -L xil_defaultlib -L axi_lite_ipif_v3_0_3 -L lib_cdc_v1_0_2 -L lib_pkg_v1_0_2 -L fifo_generator_v13_0_1 -L lib_fifo_v1_0_4 -L lib_srl_fifo_v1_0_2 -L axi_master_burst_v2_0_7 -L axi_tft_v2_1_11 -L unisims_ver -L unimacro_ver -L secureip --snapshot axi_tft_0_top_tb_behav xil_defaultlib.axi_tft_0_top_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-1783] select index 4 into Bus2IP_RdCE is out of bounds [D:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.ip_user_files/ip/axi_tft_0/axi_tft_v2_1_11/hdl/src/verilog/axi_tft_v2_1_slave_register.v:226]
-WARNING: [VRFC 10-1783] select index 4 into Bus2IP_WrCE is out of bounds [D:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.ip_user_files/ip/axi_tft_0/axi_tft_v2_1_11/hdl/src/verilog/axi_tft_v2_1_slave_register.v:229]
+WARNING: [VRFC 10-1783] select index 4 into Bus2IP_RdCE is out of bounds [D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/tft/axi_tft_0_example/axi_tft_0_example.ip_user_files/ip/axi_tft_0/axi_tft_v2_1_11/hdl/src/verilog/axi_tft_v2_1_slave_register.v:226]
+WARNING: [VRFC 10-1783] select index 4 into Bus2IP_WrCE is out of bounds [D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/tft/axi_tft_0_example/axi_tft_0_example.ip_user_files/ip/axi_tft_0/axi_tft_v2_1_11/hdl/src/verilog/axi_tft_v2_1_slave_register.v:229]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

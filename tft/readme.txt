@@ -26,4 +26,8 @@ xtft_example : baremetal TFT test program
 
 test_framebuffer : linux application to test framebuffer 
 
+xilinxfb.c : modified linux device driver at drivers/video/fbdev/xilinxfb.c
 
+echo 1 > /sys/class/graphics/fb0/blank : turn off tft 
+
+echo 0 > /sys/class/graphics/fb0/blank : turn on tft

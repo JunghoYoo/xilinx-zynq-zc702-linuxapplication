@@ -1,7 +1,7 @@
-Running: xsim.dir/axi_tft_0_top_tb_behav/xsimk.exe -simmode gui -wdb axi_tft_0_top_tb_behav.wdb -simrunnum 0 -socket 9393
+Running: xsim.dir/axi_tft_0_top_tb_behav/xsimk.exe -simmode gui -wdb axi_tft_0_top_tb_behav.wdb -simrunnum 0 -socket 4306
 Design successfully loaded
-Design Loading Memory Usage: 26432 KB (Peak: 26432 KB)
-Design Loading CPU Usage: 1279 ms
+Design Loading Memory Usage: 27000 KB (Peak: 27000 KB)
+Design Loading CPU Usage: 1466 ms
 Simulation completed
-Simulation Memory Usage: 36868 KB (Peak: 36868 KB)
-Simulation CPU Usage: 127624 ms
+Simulation Memory Usage: 38708 KB (Peak: 38708 KB)
+Simulation CPU Usage: 185843 ms

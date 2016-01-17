@@ -1,0 +1,8 @@
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/tft/axi_tft_0_example/axi_tft_0_example.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Jan 16 22:46:41 2016...

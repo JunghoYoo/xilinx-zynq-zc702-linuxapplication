@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="10" Path="D:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.xpr">
+<Project Version="7" Minor="10" Path="D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/tft/axi_tft_0_example/axi_tft_0_example.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="702cef960e9a4516ae7d95e96ed36e9c"/>
@@ -18,7 +18,7 @@
     <Option Name="BoardPart" Val="xilinx.com:zc702:part0:1.0"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../AXI_TFT"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../axi_tft_v2_1"/>
     <Option Name="EnableCoreContainer" Val="TRUE"/>
     <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
     <Option Name="IPUserFilesDir" Val="$PPRDIR/axi_tft_0_example.ip_user_files"/>

@@ -1,9 +1,11 @@
 Vivado Simulator 2015.4
 Time resolution is 1 ps
 Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-Time: 0 ps  Iteration: 0  Process: /axi_tft_0_top_tb/EXDES/DUT/U0/TFT_CTRL_I/LINE_BUFFER_U4/RAM/use_2n_depth/v6_s6_and_later/I_ASYNC_FIFO_BRAM/gntve_beh_sim/gnbi_beh_sim/inst_fifo_gen_ntve/gconvfifo/inst_conv_fifo/line__5552  File: D:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.ip_user_files/ip/axi_tft_0/fifo_generator_v13_0_1/simulation/fifo_generator_vhdl_beh.vhd
+Time: 0 ps  Iteration: 0  Process: /axi_tft_0_top_tb/EXDES/DUT/U0/TFT_CTRL_I/LINE_BUFFER_U4/RAM/use_2n_depth/v6_s6_and_later/I_ASYNC_FIFO_BRAM/gntve_beh_sim/gnbi_beh_sim/inst_fifo_gen_ntve/gconvfifo/inst_conv_fifo/line__5552  File: D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/tft/axi_tft_0_example/axi_tft_0_example.ip_user_files/ip/axi_tft_0/fifo_generator_v13_0_1/simulation/fifo_generator_vhdl_beh.vhd
+Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+Time: 0 ps  Iteration: 0  Process: /axi_tft_0_top_tb/EXDES/DUT/U0/TFT_CTRL_I/LINE_BUFFER_U4/RAM/use_2n_depth/v6_s6_and_later/I_ASYNC_FIFO_BRAM/gntve_beh_sim/gnbi_beh_sim/inst_fifo_gen_ntve/gconvfifo/inst_conv_fifo/line__5552  File: D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/tft/axi_tft_0_example/axi_tft_0_example.ip_user_files/ip/axi_tft_0/fifo_generator_v13_0_1/simulation/fifo_generator_vhdl_beh.vhd
            396167601 test completed successfully
 ***********************************************************************************
 *************************** INFO:TEST PASSED **************************************
 ***********************************************************************************
-$finish called at time : 396267601 ps : File "D:/Developers_KIT/Zynq702/TFTLCD/AXI_TFT/axi_tft_0_example/axi_tft_0_example.srcs/sim_1/imports/example_design/axi_tft_0_exdes_tb.v" Line 119
+$finish called at time : 396267601 ps : File "D:/Developers_KIT/Zynq702/xilinx-zynq-zc702-linuxapplication/tft/axi_tft_0_example/axi_tft_0_example.srcs/sim_1/imports/example_design/axi_tft_0_exdes_tb.v" Line 119

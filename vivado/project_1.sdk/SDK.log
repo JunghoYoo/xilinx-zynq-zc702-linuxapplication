@@ -67,3 +67,5 @@ con
 
 23:03:12 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
 23:03:13 INFO  : XSDB server has started successfully.
+22:31:38 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+22:31:40 INFO  : XSDB server has started successfully.

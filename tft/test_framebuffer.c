@@ -11,7 +11,7 @@
         struct fb_fix_screeninfo finfo;
         long int screensize = 0;
         char *fbp = 0;
-        int x = 0, y = 0;
+        unsigned int x = 0, y = 0;
         long int location = 0;
         int framebufferindex;
 
@@ -29,7 +29,6 @@
             }else{
                 printf("Open framebuffer %d.\n",framebufferindex);
             }
-
         }
 
         // Open the file for reading and writing
@@ -70,10 +69,14 @@
             exit(3);
         }
 
-        printf("%dx%d, %dbpp\n", vinfo.xres, vinfo.yres, vinfo.bits_per_pixel);
+        printf("Actual  : %dx%d, %dbpp\n", vinfo.xres, vinfo.yres, vinfo.bits_per_pixel);
+
+        printf("Virtual : %dx%d\n", vinfo.xres_virtual, vinfo.yres_virtual);
+
+        printf("xoffset : %d, yoffset : %d\n",vinfo.xoffset,vinfo.yoffset);
 
         // Figure out the size of the screen in bytes
-        screensize = vinfo.xres * vinfo.yres * vinfo.bits_per_pixel / 8;
+        screensize = vinfo.xres_virtual * vinfo.yres_virtual * vinfo.bits_per_pixel / 8;
 
         // Map the device to memory
         fbp = (char *)mmap(0, screensize, PROT_READ | PROT_WRITE, MAP_SHARED,
@@ -82,30 +85,41 @@
             printf("Error: failed to map framebuffer device to memory.\n");
             exit(4);
         }
+
         printf("The framebuffer device was mapped to memory successfully.\n");
 
         x = 0; y = 0;       // Where we are going to put the pixel
 
+       // y = 400;
         // Figure out where in memory to put the pixel
-       for (y = 0; y < vinfo.yres; y++)
-          for (x = 0; x < vinfo.xres; x++) {
+        for (y = 0; y < vinfo.yres; y++)
+        {
+            location = (vinfo.xoffset) * (vinfo.bits_per_pixel/8) +
+                       (y+vinfo.yoffset) * finfo.line_length;
+            
+            for (x = 0; x < vinfo.xres; x++)
+            {
                 location = (x+vinfo.xoffset) * (vinfo.bits_per_pixel/8) +
                            (y+vinfo.yoffset) * finfo.line_length;
  
                 if (vinfo.bits_per_pixel == 32) {
 
-                    if(x<(vinfo.xres/3)){
+                      if(x<256){
                         *(fbp + location)     = 0;      //  blue
                         *(fbp + location + 1) = 0;      //  green
-                        *(fbp + location + 2) = 255;    //  red
-                    }else if(x<((2*vinfo.xres)/3)){
+                        *(fbp + location + 2) = x;              //  red
+                    }else if(x<512){
                         *(fbp + location)     = 0;      //  blue
-                        *(fbp + location + 1) = 255;    //  green
+                        *(fbp + location + 1) = x & 0xff;      //  green
                         *(fbp + location + 2) = 0;      //  red
-                    }else{
-                        *(fbp + location)     = 255;    //  blue
+                    }else if(x<768){
+                        *(fbp + location)     = x & 0xff;      //  blue
                         *(fbp + location + 1) = 0;      //  green
                         *(fbp + location + 2) = 0;      //  red
+                    }else {
+                        *(fbp + location)     = 0;      //  blue
+                        *(fbp + location + 1) = 0;      //  green
+                        *(fbp + location + 2) = y & 0xff;      //  red
                     }
                 } else  { //assume 16bpp
                     int b = 10;
@@ -114,9 +128,8 @@
                     unsigned short int t = r<<11 | g << 5 | b;
                     *((unsigned short int*)(fbp + location)) = t;
                 }
-
             }
-
+        }
         munmap(fbp, screensize);
         close(fbfd);
         return 0;
