@@ -117,8 +117,8 @@
                         *(fbp + location + 1) = 0;      //  green
                         *(fbp + location + 2) = 0;      //  red
                     }else {
-                        *(fbp + location)     = 0;      //  blue
-                        *(fbp + location + 1) = 0;      //  green
+                        *(fbp + location)     = y & 0xff;      //  blue
+                        *(fbp + location + 1) = y & 0xff;      //  green
                         *(fbp + location + 2) = y & 0xff;      //  red
                     }
                 } else  { //assume 16bpp

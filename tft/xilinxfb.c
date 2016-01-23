@@ -370,6 +370,15 @@ static int xilinxfb_assign(struct platform_device *pdev,
 	/* Clear (turn to black) the framebuffer */
 	memset_io((void __iomem *)drvdata->fb_virt, 0, fbsize);
 
+	/* Put logo on framebuffer */
+	#if defined(CONFIG_FRAMEBUFFER_CONSOLE) && defined(CONFIG_LOGO)
+	  if (fb_prepare_logo(&drvdata->info, FB_ROTATE_UR)) {
+	     /* Start display and show logo on boot */
+	     fb_set_cmap(&drvdata->info.cmap, &drvdata->info);
+	     fb_show_logo(&drvdata->info, FB_ROTATE_UR);
+	  }
+	#endif
+
 	/* Turn on the display */
 	xilinx_fb_out32(drvdata, REG_CTRL,
 					drvdata->reg_ctrl_default);

@@ -15,6 +15,9 @@ TFP	|    Front porch time 	|	  3 	         |                     24
 
 mitsubishi_AA050MA01 : TFT 800x480 datasheet
 
+TFTLCDTest.v : TFT LCD Test Verilog HDL code
+                                it runs without axi_tft_v2_1 core nor PS7 core
+
 axi_tft_v2_1 : modified AXI TFT IP from v2.0
                            it applies 800x480 VGA with 24 bit RGB
 
@@ -31,3 +34,5 @@ xilinxfb.c : modified linux device driver at drivers/video/fbdev/xilinxfb.c
 echo 1 > /sys/class/graphics/fb0/blank : turn off tft 
 
 echo 0 > /sys/class/graphics/fb0/blank : turn on tft
+
+linuxbooting.jpg : initial tft lcd screen capture after linux booting 
