@@ -18,6 +18,8 @@ The tool chain is Code Sourcery CodeBench Lite 2011.09-50.
 
 HDMI IP is not Xylon's(commercial license) but Analog devices'(https://github.com/analogdevicesinc/fpgahdl_xilinx)
 
+TFT Controller is not AXI4S to Video Out IP, but AXI TFT Controller IP.
+
 ##Hardware
 Base : Xilinx Zynq ZC702 + XM105 FMC Debug board
 
