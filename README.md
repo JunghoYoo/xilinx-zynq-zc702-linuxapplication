@@ -1,6 +1,6 @@
 
 ![Zynq ZC702 Ubuntu](/images/ZynqUbuntu.jpg)
-
+https://github.com/JunghoYoo/xilinx-zynq-zc702-linuxapplication/blob/master/images/ZynqUbuntu.JPG
 # xilinx-zynq-zc702-linuxapplication
 
 ##Overview
