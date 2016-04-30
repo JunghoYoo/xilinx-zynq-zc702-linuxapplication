@@ -1,4 +1,4 @@
-![Zynq ZC702 Ubuntu](/images/ZynqUbuntu.jpg)
+![Zynq ZC702 Ubuntu](/images/ZC702Ubuntu.jpg)
 
 # xilinx-zynq-zc702-linuxapplication
 
